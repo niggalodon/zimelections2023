@@ -1,0 +1,21 @@
+.accordion-div{
+    width: 25vw;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 2%;
+}
+
+
+.body-section{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-body{
+    margin-top: 12%;
+}
+
+body{
+    overflow-x: hidden;
+}

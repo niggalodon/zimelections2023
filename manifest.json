@@ -1,0 +1,23 @@
+{
+  "name": "Zimbabwe Elections 2023",
+  "short_name": "Zimbabwe Elections 2023",
+  "id": "/",
+  "scope": ".",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#172966",
+  "theme_color": "#172966",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./assets/images/pwa72.png",
+      "type": "image/png", 
+      "sizes": "72x72"
+    },
+    {
+      "src": "./assets/images/pwa96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ]
+}
