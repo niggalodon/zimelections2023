@@ -28,7 +28,7 @@ document.getElementById("navbar").innerHTML =
 "\
   \<div class\=\"mobile-nav\"\>\
     \<a href\=\"index.html\" class\=\"logo\"\>\
-      \<img src\=\"../assets/images/logo.png\" alt\=\"Logo\"\>\
+      \<img src\=\"../assets/images/logo.png\" class\=\"img-fluid\" alt\=\"Logo\"\>\
     \</a\>\
   \</div\>\
   \<div class\=\"main-nav\"\>\
