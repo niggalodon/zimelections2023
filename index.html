@@ -54,6 +54,28 @@
       margin-right: 0;
     }
 
+    #MatabelelandNorth,
+    #BulawayoMetro {
+      fill: #FEF102;
+    }
+
+    #MatabelelandNorth:hover,
+    #BulawayoMetro:hover {
+      fill: #ffe45d;
+    }
+
+    .modal-body span::after {
+      content: 'WINNER';
+      font-size: 10px;
+      color: #fff;
+      background: #c40001;
+      padding: 2px;
+      position: relative;
+      top: -10px;
+      right: -3px;
+      text-decoration: unset !important;
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
       .owl-carousel .owl-nav button {
@@ -105,460 +127,389 @@
     </div>
     <br>
     <!--Visualisation Heading-->
-    <section>
-      <div class="container" style="padding-bottom: 50px; padding-top: 70px;">
-        <div class="row">
-          <div class="section-title two">
-            <h2>2023 Election Constituency Results</h2>
-          </div>
-          <div class="owl-carousel">
-            <img src="./Results/Bikita East.jpeg" alt="Bikita East" class="img-fluid">
-            <img src="./Results/Chiredzi West.jpeg" alt="Chiredzi West" class="img-fluid">
-            <img src="./Results/Harare West.jpeg" alt="Harare West" class="img-fluid">
-            <img src="./Results/Hwange West.jpeg" alt="Hwange West" class="img-fluid">
-            <img src="./Results/Norton.jpeg" alt="Norton" class="img-fluid">
-            <img src="./Results/Seke.jpeg" alt="Seke" class="img-fluid">
-            <img src="./Results/St Marys.jpeg" alt="St Marys" class="img-fluid">
-            <img src="./Results/Tsholotsho North.jpeg" alt="Tsholotsho North" class="img-fluid">
-            <img src="./Results/Uzumba.jpeg" alt="Uzumba" class="img-fluid">
-          </div>
-        </div>
+    <section style="padding-bottom: 50px; padding-top: 70px;">
+      <div class="container">
         <div class="row" style="padding-top: 50px;">
-          <div class="col-lg-4 col-sm-12">
-            <div class="coming-inner">
-              <div class="accordion-div">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="selectProvince('Bulawayo')">
-                        Bulawayo Province 10/12
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Bulawayo North : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bulawayo South : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Cowdray Park : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Emakhandeni/ Luveve : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Entumbane/ Njube : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Entumbane/ Njube : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Lobengula/Magwegwe : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mpopoma/Mzilikazi : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nketa : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nkulumane : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Pelandaba/Tshabalala : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Pumula : Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="selectProvince('Harare')">
-                        Harare Province 26/30
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Budiriro North : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Budiriro South : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chitungwiza North : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chitungwiza South : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Churu : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Epworth North : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Epworth South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Glen Norah : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Glenview North : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Glenview South : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Harare Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Harare East : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Harare South : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Harare West : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hatcliffe : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hatfield : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Highfield : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hunyani : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kuwadzana East : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kuwadzana East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kuwadzana West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mabvuku/Tafara: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mbare: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mount Pleasant: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Southerton : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">St Marys : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Sunningdale : Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Warren Park: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zengeza East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zengeza West: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="selectProvince('Manicaland')">
-                        Manicaland Province 15/26
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Buhera Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Buhera North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Buhera South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Buhera West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chimanimani East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chimanimani West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chipinge Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chipinge East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chipinge South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chipinge West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Dangamvura–Chikanga: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Headlands: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Makoni Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Makoni North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Makoni South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Makoni West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Musikavanhu: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutare Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutare North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutare South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutare West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutasa Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutasa North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutasa South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nyanga North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nyanga South: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="selectProvince('Mashonaland East')">
-                        Mashonaland Central Province 13/18
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Bindura North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bindura South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Guruve North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Guruve South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mazowe Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mazowe North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mazowe South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mazowe West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mbire: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mount Darwin East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mount Darwin North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mount Darwin South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mount Darwin West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Muzarabani North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Muzarabani South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Rushinga: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Shamva North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Shamva South: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="selectProvince('Mashonaland West')">
-                        Mashonaland East Province 23/23
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Chikomba Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chikomba East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chikomba West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Goromonzi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Goromonzi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Goromonzi West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Maramba–Pfungwe: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Marondera Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Marondera East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Marondera West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mudzi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mudzi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mudzi West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Murehwa North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Murehwa South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Murehwa West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutoko East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutoko North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mutoko South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Seke: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Wedza North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Wedza South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Uzumba: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="selectProvince('Mashonaland West')">
-                        Mashonaland West Province 22/22
-                      </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Chakari: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chegutu East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chegutu West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chinhoyi: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hurungwe Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hurungwe East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hurungwe North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hurungwe West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kadoma Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kariba: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Magunje: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Makonde: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mhangura: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mhondoro–Mubaira: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mhondoro–Ngezi: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Muzvezve: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Norton: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Sanyati: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvimba East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvimba North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvimba South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvimba West: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" onclick="selectProvince('Masvingo')">
-                        Masvingo Province 25/26
-                      </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Bikita East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bikita South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bikita West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chiredzi East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chiredzi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chiredzi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chiredzi West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chivi Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chivi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chivi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gutu Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gutu East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gutu North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gutu South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gutu West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Masvingo Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Masvingo North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Masvingo South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Masvingo Urban: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Masvingo West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mwenezi East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mwenezi West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zaka Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zaka East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zaka North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zaka West: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEight">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" onclick="selectProvince('Matabeleland North')">
-                        Matabeleland North Province 10/13
-                      </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Binga North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Binga South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bubi: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Lupane East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Lupane West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nkayi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Nkayi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Tsholotsho North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Tsholotsho South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hwange East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hwange Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Hwange West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Umguza: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingNine">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" onclick="selectProvince('Matabeleland South')">
-                        Matabeleland South Province 12/13
-                      </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Beitbridge East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Beitbridge West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bulilima East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Bulilima West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gwanda North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gwanda Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gwanda South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Insiza North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Insiza South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mangwe: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Matobo North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Matobo South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Umzingwane: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTen">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" onclick="selectProvince('Midlands')">
-                        Midlands Province 8/28
-                      </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action">Chirumhanzu: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chirumanzu–Zibagwe: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Chiwundura: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Chireya: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Gumunyu: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Kabuyuni: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Kana: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Mapfungautsi: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Nembudziya: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Sengwa: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gokwe–Sasame: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Gweru Urban: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Kwekwe Central: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mberengwa East: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mberengwa North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mbrerengwa South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mberengwa West: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mbizo: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Mkoba: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Redcliff: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Shurugwi North: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Shurugwi South: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Silobela: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Vungu: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zhombe: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvishavane–Ngezi: Winner N/A</button>
-                          <button type="button" class="list-group-item list-group-item-action">Zvishavane–Runde: Winner N/A</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class=" col-lg-12 col-sm-12">
+            <div class="section-title two">
+              <h2>2023 Interactive Elections Breakdown</h2>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 map-chart">
+            <svg baseprofile="tiny" fill="#7c7c7c" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.2" viewbox="0 0 1100 1100" xmlns="http://www.w3.org/2000/svg">
+              <style type="text/css">
+              </style>
+              <path data-bs-toggle="modal" data-bs-target="#mashcentral" d="M959.2 146.3l-0.5 0.3-3.3 3.3-2.2 0.9-2.4 0.4-7.3-0.6-1.1-0.5-2.2-1.1-1.1-0.4-17.3-2.2-3.1 0.4-3.3 1.2-6.1 3.7-3.3 1.2-1.8 0.2-5.2-0.2-1.4 0.3-1.1 0.5-2.1 1.5-2.4 1.4-3 1.1-3 0.7-2.7 0.1-1.2-0.3-2.1-0.9-1.2-0.1-1.8 0.3-2.1 0.8-3.6 2.2-1.3 1.5-1.2 1.9-0.9 2.2-1.4 6.3-0.7 1.3-1.1 1.1-4.2 2.1-1.8 1.6-1.7 2-1.2 2.3-0.8 2.4-0.8 4.4-0.6 1.3-2.9 4.9-1.7 2.1-2 1.9-2.5 1.4-0.7 0.6-0.7 0.9-1.1 2-0.7 1-1.4 1.3-3.3 1.9-1.4 1.2-1.1 1.9-0.2 2.4 0.2 2.5 0.4 2.2 0.2 3.6-1.2 3.1-2.1 2.7-10.9 10.8-2.1 3.4-0.3 1.2-2.2 2.2-11.7 6.2-0.5 0.8-1.4 2.3-1.3 2.6-0.8 1.2-0.9 1.1-1.6-0.6-0.7 0-1.4 1-6.7 6.5-1.4 1.1-1.4 0.6-4.4-1.8-1.5 0.5-2.8 1.5-1.2 0.2-0.9-1-0.6-1.3-0.4-1.4-0.2-1.4 0.3-1.5 4.3-11.3 0.2-0.8-0.1-0.8-1-0.3-20.1-1.8-1.7 0.9-1.7 1.8-2 4.3-2.7 3.1-0.2 0.7 0.8 1.7 0.8 0.5 0.9 0.1 0.3 1.2 0.1 1-2.6 11.2-0.4 5.8-1 2.1-0.8 0.9-0.8 0.4-0.9 0.2-2.3-0.1-1.3 0.5-1.5 0.2-1.2-0.1-0.6-0.1-0.7-0.4-2.1-2-3.5-5.9-2.4-0.8-0.8 0.4-0.7 0.8-0.7 0.8-0.8 0.7-0.8 0-0.8-0.5-1.8-1.2-6-3.2-7-2.9-1.2-0.8-0.5-0.8 0-1.2 0.3-1 0.9-2.6 0.5-2.4-0.2-0.5-0.8-0.2-17.9 0.1-1.2-0.8 0-3.2 1.5-11.1 0-1.9-0.2-2.1-1.7-7.6 0.5-1.6 1.8-2.9 4.8-9.2 0.2-1.3-0.6-0.7-1-1-0.2-0.6 0.4-0.7 1.1-1 1.9-1.8 1.6-1.9 1.6-2.3 0.3-0.6 0.5-1.3 1.4-11-0.2-1.6-0.6-0.7-0.7-0.3-1.5-0.5-1.5-0.2-1.3 0.5-1.6 1-0.5 0-0.6-0.5-0.1-1.3-0.4-0.8-0.7-0.5-0.7 0-0.7 0.3-1.7 1-1.5 1.2-0.6 0.2-0.7-0.1-1.7-0.8-0.8 0-3.2 0.2-1.5-0.1-0.5-0.4-0.4-0.6-0.5-2.7-0.1-3.5 0-0.5 1.6-0.9 0.3-0.4 0.1-0.7-0.9-1.2-2.1-1.7-0.7-1-0.3-1.1-0.7-11.7 0.2-1.7 0.6-1.3 2-2.6 0.6-1.2 0.2-0.8-0.1-1-0.3-1.2-0.9-1.7-0.6-0.9-0.7-0.5-1.3-0.7-1.1-0.7 0.8-2.2-0.1-0.9-1.9-4.4-0.7-0.6-1-0.5-4.1-2.5-0.7-0.3-1.5-0.2-0.6-0.3-1.7-1.1-2-0.9-0.6-0.4-0.4-0.6-1-1.9-1.3-2-0.2-0.9-0.1-1.1 1-5.7 1-3 1.1-1.8 0.5-1.3 0.9-4.2 0.3-3.4 0.6-1.7 1.6-2.9 0.3-0.7 0-1.2-0.2-1.5-0.8-2.9-0.7-1.7-1-1.8-0.9-0.5-0.8-0.2-7.3 0.4-0.7-0.1-0.9-0.6-2.2-2.5-0.5-0.9-1.1-3.5-0.5-1.1-0.7-0.6-0.7-0.3-1.7-0.2-0.8 0-4.6 0.5-1.3 0.6-0.9 0.9-0.4 1.4 0.1 0.7 0.6 2.7 0.1 0.9-0.5 1.3-0.9 1-1.1 0.6-2.8 0.7-1.1 0.7-1.2 1.5-0.6 0.3-0.7 0-2.8-0.7-1.5 0.1-1.3 0.5-0.9 0.9-0.8 2-0.4 0.5-0.5 0.4-1.4 0-1.4-0.4-1.3-0.7-0.2-0.7 0.1-1.4 2.2-5 0.8-1.3 0.7-0.6 1.5-1.1 0.4-0.5 0.4-0.8 0.2-1.1 0.1-1.8-0.7-4.3 0-0.9 0.2-1 0.4-1.1 1.6-2.6 0.6-0.6 3.3-2.2 0.5-0.6 0.2-0.8-0.1-1.3-0.3-0.7-0.6-0.4-0.7-0.1-1.4 0.1-0.6-0.1-1-0.8-0.8-1.1-0.1-0.7 0-1.4-0.2-0.9-0.9-0.8-0.7-1.1-0.2-0.6-0.3-1.4 0-1.2 0.5-3.4-0.1-1.2-0.4-0.7-2.7-1-0.6-0.4-0.9-0.8-0.7-1.2-0.2-0.7 0-1.2 0.7-0.9 33.3-28.9 1-1.7 0.5-1.9-1-2.9-0.7-1.3-1.5-1.8-0.5-1.9-0.1-5.3 0.3-1.5 4.1 1.8 3.6-0.1 5.1-2.1 0.2 10.7 0.2 12.6 0.4 25.1 14.3-0.1 9.2 0 34.5-0.3 5.7 1.2 5.1 3.7 2.1 2.2 1.9 1.4 2.1 0.3 2.8-1.2 1.5-1.3 2.4-2.7 1.9-1 1.1 0.3 1 0.8 0.9 0 1.1-1.8 3.2-2 5.6 0.4 13 3.1 2.4 0.9 2.1 1.5 1.8 2.3 2.4 4.5 1.6 1.8 2.5 1.4 1.2 0.9 0.6 1.2 0.4 1.3 0.8 0.8 0.5 0.1 1.5-0.3 0.6 0.4-0.2 1.2 0.2 0.4 2.5 0.4 2.8 0 2.5 0.4 1.9 1.3 4.9 2.5 21.3 1.4 3.2 1.4 3.5 2.9 7.7 8.5 2.5 2.1 5.3 2.9 1.5 1.2 1.2 2.4 0.6 5.1 1.1 2 2 1 13.3 2.1 25.2-0.6 10 1.5 13.2 5.3 20.2 8.2 15.3 6.2 1.4 1.4 0.6 1.9 0.1 3 1.3 5.3 3.4 2.6 0.7 0.3z" id="MashonalandCentral" name="Mashonaland Central"></path>
+              <path data-bs-toggle="modal" data-bs-target="#hararecity" d="M723 312.1l3.4-0.7 4.2-1.5 0.5-0.6 0.2-0.7-0.4-1.3-0.6-0.9-0.6-0.8-2.7-1.5-0.7-0.6-0.3-0.8 0.2-1.1 0.8-1.8 0-1.5-0.3-0.9-0.5-0.6-0.3-0.7 0-1.1 0.2-1.5 0.3-0.9 0.6-0.6 1.2-0.3 1.4-0.6 1.5-1.1 3.5-4.2 1.5-4.2 2.1 2 0.7 0.4 0.6 0.1 1.2 0.1 1.5-0.2 1.3-0.5 2.3 0.1 0.9-0.2 0.8-0.4 0.8-0.9 1-2.1 0.4-5.8 2.4 0.1 0.6 0.3 0.4 0.5 0.2 1 0.4 1 0.5 0.9 0.9 0.4 2.4 0.4 4.2-0.1 1.2 0.3 0.6 0.6 0.4 1.5 0.2 1.4-0.1 1.5-0.6 2.3 0 0.9 0.3 0.9 0.8 1.7 0.2 0.8-0.1 1.5 0.1 0.8 0.3 1.4 0.3 1.1 1.2 2.6 0.2 1.1-0.3 0.7-0.5 0.8-1.3 1.3-0.5 0.9-0.2 0.9-0.1 1.4-0.7 0.8-1.1 0.7-4.7 2.1-0.1 0.8 0.5 2.3 0.1 1.5-0.1 0.6-0.5 2.3-1.2 1.4-1.8 0.9-0.4 1-0.1 0.6 0.4 0.6 1.2 0.9 0.1 0.3-0.4 0.5-2.2 1.7-0.7 0.3-1.6 0.2-0.9 0.2-2.2 1.2-0.9 0.2-0.8-0.2-1.2-0.5-2.9-2.6-6.2-4.1-4.9-2.1-1.6-0.4-2.5-1-3.4-3.2z" id="Harare" name="Harare"></path>
+              <path data-bs-toggle="modal" data-bs-target="#matnorth" d="M361.2 195.5l-0.1 1 0.7 1 1 0.7 1.8 0.7 0.7 0.6 0.5 0.8 0.6 1.5 0.4 1 0.6 0.7 0.9 0.3 0.8 0 1.3-0.2 0.7 0.1 1.4 0.5 0.6 0.4 0.3 0.5-0.1 0.9-0.4 1.6-0.1 0.8 0.2 0.8 0.3 0.9 0.8 1.1 0.4 0.9-0.1 1.4-0.6 1.5 0.1 0.7 0.3 0.8 0.8 1 0.5 0.9 0.1 1.1-0.1 2.3 0.7 2.2 0.2 1.3 0.3 1.2 0.5 0.8 2.5 1.9 1.2 1.5 1.4 0.9 1.1 0.5 1 0.2 1.4 1.7 1.5 5.9-0.3 4.9-0.3 1.2-1 2.7-0.1 1.7-0.2 0.6-0.9 1-0.6 2.4-0.9 2.2-0.2 0.7-0.1 1 0.1 1.1 0.5 1.7 0 2-0.3 0.6-0.9 1.8-0.7 3.2-0.7 2.1 0 1 0.8 3 0.1 1.1-0.2 0.8-3.6 3.9-2 1.7-0.8 0.9-1 0.6-0.6-0.2-0.9-0.8-1.2-0.3-1.1 0.5-3.4 3-0.2 0.7-0.4 1.6-0.6 1.4-0.1 0.8 0 1 1.5 6.3 0 1.2-0.2 0.9-1.6 3.1-1.1 2.8 0 1.7 0.3 1.3-0.2 0.8-0.4 0.6-1.1 0.6-0.5 0.5-0.4 0.5-0.2 0.7-0.3 1.6-0.6 1.3-0.9 1-2.1 1.6-0.8 0.9-0.1 1 0.2 0.8 0.6 2.1 0.3 1.9 0.3 0.8 0.6 0.7 1.2 0.8 0.8 0.1 2-0.5 0.7 0.1 0.5 0.5 0.3 1-0.1 2.7 0.2 1.5 0.7 2 0.2 0.7-0.1 0.7-0.6 1.3-0.5 0.5-1 0.7-0.9 1-0.2 0.6 0.2 0.9 0.5 0.8 1.3 0.9 1.1 0.4 2.6 0.6 1.3 0.9 0.4 1-0.3 0.4-0.6 0.3-6.9 0.8-3.5 0.8-0.7 0.4-0.5 0.7-0.5 39.4 0.2 1.9 0.5 1.9 1.4 1.2 1 0.7 0.9 0.3 0.9 0.1 1.6 0.1 6.8-0.9 0.8 0 0.7 0.1 2 1 1.6 0.4 5.2 0.3 1.7 0.3 2.3 0.6 12.8 0.4 1.6 0.4 0.8 0.1 1.5-0.1 3-0.6 6.6 0 2.4 0.5 1.8 0.1 5.2-0.3 1.1-0.2 4-1.3 0.8-0.1 8 0.1 0.7-0.2 2.3-0.1 1.5-0.3 2.6-0.9 0.7-0.1 1.7 0.1 2 0.8 2.3 0.7 1.9 0.2 47.7-0.5 1.2 0.2 0.9 0.6 1.7 3.2 0.5 1.5 0.1 1.2-0.6 1.5-1.2 0.9-22.3 9.5-7 1.7-1.2 0.6-0.9 1.2-0.1 2.4 7.5 34.1 0.5 1.6 0.7 1.5 1 1 0.9 0.6 1.6 0.5 0.9 1 1 1.4 2.7 4.7 0.5 1.1 0 1.2-0.4 1.9-0.3 0.6-0.8 1.1-0.6 0.6-0.4 1.3 0 3.8 0.2 0.9 1.1 1.6 1.5 1.1 11.5 12.6 0.8 1.3 0.3 0.9 0.1 1.6-0.4 1-2.8 4.6 0.6 1 16 15.4-1 2.3-0.7 0.7-1.3 1-1 0.2-1-0.2-0.9-0.6-0.7-0.5-1.1-0.8-1.4-0.4-4.2-0.8-0.7 0-1.8 0.3-0.7 0.5-0.3 0.7-0.1 1.6 0.4 1 0.7 0.9 1.9 1.7 0.8 1.1 0.5 1 0.2 1-0.1 1.2-0.4 2.1-0.7 1.1-1.1 1.5-5.6 5-0.5 0.6-0.4 0.8 0.3 1 0.6 0.7 1.7 1.7 0.9 0.7 1 0.6 0.8 0.8 0.4 1 0.1 1.5-0.1 5.3-0.2 1.2-0.6 2-0.9 2.5-0.1 0.9-0.4 1-0.8 1.1-3 2.2-1.7 0.7-1.4 0.3-7.6-1.5-0.7 0.1-0.4 0.4-0.1 0.9 0.2 0.8 0.5 1.3 1.8 7.1 1.2 3 0 1-0.3 0.7-2.2 3.6-1.5 1.2-8.9 5.1-5.6 2.3-0.6 0.4-0.4 0.6-0.4 1 0.1 1.7 0.8 2.7 0 0.7-0.4 0.9-12.5 15.2-2.4 2.3-2.1 1.6-0.8 2.1-3.4 3.6-1.7 0.2-1-0.2-6.6-5.4 8.6-1.9 2.1-0.9 0.9-0.7 0.7-0.8 0.4-0.8 0.3-0.8 0-0.6-0.3-0.6-0.5-0.6-2.5-1.7-0.8-1 0-0.6 0.2-1 0.8-1.5 0.6-1.9-0.1-0.7-0.4-0.4-1.7-0.7-0.5-0.4-0.2-0.6-0.1-1.6-0.6-0.5-0.8 0.1-1.7 0.8-0.9 0.3-1-0.1-0.9-0.4-1.3-1.1-0.6-0.3-1.9-0.4-0.7-0.6-0.1-0.7 0.1-0.5 0.1-1.7 0.6-1.7-0.6-0.6-0.7 0.1-2.5 0.8-2.8 0.5-0.8 0.3-1.6 1.4-0.8 0.4-1 0.1-1.3-0.4-7.2-3.9-0.9-0.2-0.6 0-0.4 0.3-0.2 0.7 0.2 1.6 1.2 5 0 1.2-0.2 0.7-0.6 1.3-0.2 1-0.1 1 0.1 1.4-0.5 0.9-0.8 0.6-1.7 1-0.4 0.6 0.1 0.6 0.6 0.7 1.6 0.5 1 0.1 1.6-0.1 1 0.1 2.2 0.6 1.5-0.1 1.5-0.7 1-0.1 1 0.4 0.9 1.5 1.2 1.3 0.3 1.4-1.6 3.7-3.3 1.4-17.2 13-0.9 0.2-0.7-0.7-1.2-2.7-0.7-2.1-0.5-1.3-0.3-0.6-1.5-2.1-1.4-1.4-0.9-2-0.5-0.4-1.2-0.7-0.9-0.9-0.8-2-2.6-2.1-2.7-3-0.4-0.5-0.1-1.7-0.2-0.6-1.1-1.7-0.6-2.1-0.3-0.6-0.5-0.5-0.7-0.4-1.8-0.7-0.7-0.4-0.5-0.5-0.8-2-0.6-0.7-1 0.1-4.3 1.8-1.3 0.2-5.4 0.2-1.2 0.4-4.7 2.4-0.5-0.1-0.7-0.3-4.5-7-0.7-0.8-0.5 0.4-0.5 1.1-1.8 5.4-0.8 4.3-0.2 3.8-0.4 1.4-0.6 0.7-4 0-5.2-0.9-1.7-0.5-1.5-1-1-1.4-1-0.9-3-1.6-2.1-1.7-9.4-9.2-2.1-1.6-2.3-1.4-1-0.9-4.5-5-2.5-3.9-0.7-0.7-0.8-0.7-0.9-0.9-0.6-1.3-0.3-2.5-0.1-1.7-0.4-1.5-0.8-1.2-1.6-1.1-0.9-1.1-1.1-1.7-1.1-0.4-1.6-0.4-3.3-0.5-2.9-0.7-1.8-1-4.4-3-2.4-1.4-2.6-0.6-6.8-0.9-1 0.1-0.9 0.2-1.1 0.7-1.8 1.5-0.9 0.3-1.1 0.2-2.1-0.2-2.3-0.5-1.9 0.1-1.5 0.3-1.4-0.3-1.5-0.9-0.7-0.2-1.6-0.2-3.2-0.5-17.7 2.2-2.8-0.6-2.3-0.2-2.3 0.1-25 6.1-2 0.7-4.1 2.3-2.2 1.3-0.5-0.5-1.8-1-5.8-1.7-2.3-1-1.8-1.9-0.9-3-1.1-2.6-2.2-2.2-5.1-3.4-2.4-1-5.1-1.2-2.3-0.9-2.5-2.3-3.5-5.5-2.8-1.5-3.9-0.7-1-0.5-1.6-1 0-0.3 0.9-0.4 0.9-1.7 0.9-2.8-0.3-1.1-1.3-1.8-1-1-1.2-1-1.4-0.6-6.8-0.1-5.7-1.6-5-3.1-3.2-4.9-12.2-34.8-3-5.9-3.8-5.2-3.2-5.3-1-2.6-0.5-3.2 0.5-2.8 2-5 0.5-2.8-3.5-10.7-16-14.5-4.5-10.1-0.8-9.9-1.5-4.7-3.2-2.9-4.9-2.5-3.7-3.3-6-8.7-1.8-1.8-4.3-3-8.4-8.9-1.7-2.8-0.6-1.8-1.2-5.6-1-2.7-4.1-6.8-4.1-10.3-2.7-5-3.9-3.1-4.3-2.6-3.5-3.7-5.3-9.1-3.6-9.3-0.9-3.2 0-3.8 5.2-11.5 0.8 1 2.4 1.1 3.9 3 2.5 1.3 1.3 0.1 3.9-0.1 4.3 1.5 1.3 0.3 9.6 0 0.7 0.1 1.2 0.7 0.8 0.2 0.7-0.3 1.1-1.2 0.8-0.3 8.6-1.7 6.7-3 3.1-0.3 1.7 1 1.5 1.4 4.8 1.3 2.8 1.4 2.6 1.7 1.1 1.4 1.2 2.1 5.8 2.4 1.8 2.3-2.1 0.8-0.1 1.9 0.9 2.2 1.3 1.5 7.7 3.7 5.5 0.2 1.4-0.2 7.1-3.7 0.9 1 0.7-1.7 2.1-0.4 2.3-0.1 1.8-0.5 0.1-0.5-0.2-1.7 0.1-0.6 0.8-0.3 2.2-0.5 2.2-1.2 2.9-0.6 1.1-0.6 4.6-3.6 1.1-0.6 1.2 0.5 0.9 1.1 0.7 1.3 0.7 0.8 1.2 0.4 5.8 0.7 1.2 0.6 1.1 0.7 0.8 0.8 0.9 0.3 4.8-0.8 5.8 1.2 9.8 5.4 5.3 1.7 3.4 0.6 2.1 0.8 1.7 1.4 2 2.3 1.7 1.5 2.1 1.1 7.3 2.3 1.8 0.3 1.5-0.4 3.7-3.4 1.6-1 2.1-0.6 3.1-0.3 12-5.6 3 1 4.7-3.1 1.3-0.6 6.1-0.3 2-0.6-0.2 1.8 0.6 1.7 1.8-1.3 1.9 0.5 1.7-1.8 0.7 0.4 1.9 0.5-0.5-1.1-0.7-0.9-1.1-0.4-1.1-0.1 0.8-1.9 1-1.4 1.1-0.5 1.4 0.8 0.3-2.5 7.5-6.4 1.9-3.1-0.8-2.1-0.9-1.1 0.1-1.2 5.4-4.1 1.8-0.4 2.2 0.8 0-1.9-1-0.7-1.1-0.2-0.5-0.5 0.3-1.6 0.6-1.1 16.8-18 4.9-3.7 2.7 1.9 1-0.9 1.9 1 2.3-1.3 1.8-2.3 0.9-2-1.5 1.1-1.2 1.4-1.3 1.1-2.1 0.1 4.4-5.5-0.2-1.6 0.3-0.8 1.2-0.4 3.5 0 4.1-0.6 2.3-0.7 1-0.9 1.1-5.7-0.2-2.1 1.3 0.7 0.2 1.3-0.6 3.4 0.9 0 4.6-15.3 2.3-3.8 2.3-1.5 0.7-1.1-0.8-1.5-0.3-1.4 0.9-1.3 1.6-1 1.3-0.5-1.5-3.9 0.1-1.8 2.6 1.2 0.7-1.5 2.1-1.9 0.8-1.3-2.3-0.4 2-1.5 6.4-2.7 4.5-3.2 1.6-0.4 1.3 0.9 1 1.4 1.2 1.1 1.8-0.6-1.5-1.8-1.2-2 5.4-1.5 2.7-1.2 2-1.4 1.1-1.2 2-3.8-0.7-1.4 0-0.9 1.1-0.4 1.5 0.8 0.8 0.3 0.8-0.2 0.5-0.7 0-0.7-0.2-0.5-0.7 0.1 0.1-1.2 0.2-1.2 0.7 0 4.2 1.5 0.9 0.1 0.4 0.4 0 1.7 0.4 0.5 0.8 0.1 0.7-0.4 2.3 3.1 0.4 0.4z" id="MatabelelandNorth" name="Matabeleland North"></path>
+              <path data-bs-toggle="modal" data-bs-target="#midlands" d="M657.2 434.8l6.8 1.8 2.2 0.9 2 2 3.2 2.3 5.5 2.4 2.5 0.7 1.9 0.8 2.7 2.4 0.9 0.4 2 0.4 2 0.4 3.4 0 2.7 0.4 1 0.4 1.1 0.6 0.8 0.4 0.9 0.2-0.3 0.7-1.3 2.2-0.2 0.5 0.1 0.9 0.4 1.2 2.6 4.6 3 4.2 0.7 1.1 0.4 1 0.3 1.8-0.1 0.5-1.1 0.3-0.5 0.4-0.6 1.9-0.1 0.9 0.4 1.4-0.1 1.1 0.2 0.7 0.4 0.5 2.6 2.1 1.9 2.1 2.5 2.2 1.9 2.4 1.6 1.5 0.6 0.2 3.2 0.8 3.2 1.8-17.9 14.7-1 1-0.3 0.7 0.6 0.5 0.8 0.3 3.9 0.9 1 0.5 0.7 0.8 0.1 1-0.6 1.1-1.7 1-1.3 0.6-0.8 0.6-0.3 1.2-0.2 11.1-1.4 7.2 0.4 2.2 0.6 1.8 0.1 1.4-0.1 1.4-2.3 11 0 1 0.1 3.4-0.1 0.8-1.4 4.3-0.4 2.5 0.1 1.7 0.1 1.5 0.4 1 0.8 0.7 0.2 0.5-0.2 0.6-1.1 0.6-0.9 0.4-3.7 0.9-1.6 0.1-1.6-0.1-3.8-1.1-3.5-1.9-1-0.4-1.2 0-10.9 0.3-1.2 0.7-1.4 2.8-0.1 0.6 0.5 1.5 0.5 0.6 0.1 1.1 0.6 1.4 0 0.8-1.1 1.5-3 2.2-0.3 0.6-0.3 1.3 0 0.7 0.3 0.9-0.4 1.3 0.1 0.8 1.4 0.2-0.7 0.6-1.5 0.4-19.9 0.8-1.5 0.3-9.6 4.7-1 0.7-0.4 0.7 0.7 0.9 0.3 1.1 0.2 1.8-0.9 4.8-1.5 2.9-0.7 5.6 0.1 3.9 0.3 0.3 0.9-0.3 2.2-1.5 2.1 0.2 2.1 0.6 1.6 1.1 0.8 1 0.6 1.7 0.4 2.2 0.2 2.7-0.1 2.7-1 3.4-0.1 1.4 0.4 0.8 0.6 0.3 0.5 0.5 1.7 2.9 1.4 1.4 1.3 0.6 1.4 0.5 2.4 0.1 0.7 0.2 0.5 0.3 0.3 0.6-0.1 1.4 0 0.8 0.6 1.4 0.8 1 1.1 0.8 0.7 0.3 1.5 0.2 0.6 0.3 0.5 0.4 0.4 0.6 0.5 1.4 0.4 0.6 0.9 1 2.9 1.9 0.8 1 0.2 0.7 0.3 2.4 0.4 0.8 5.2 5.9 0.2 0.8-0.1 1-0.6 1.6-0.2 1.1 0.1 1 0.7 2.1 0 0.9-0.2 2.4 0.1 0.8 0.4 1.5 0.8 1.1 1.5 1.3 0.4 0.5 0.2 0.7 0.4 1.7 0.4 1.4 0 0.8-0.2 0.6-1.7 3-0.5 1.7 0 0.8 0.6 2.8-0.2 1.6-1.3 2.7-0.7 3.2-0.3 0.8-0.5 0.8-1.4 1.8-0.5 0.6-0.1 0.8 0.6 10-0.3 2.1-0.9 1.5-12.7 11.8-1.2 0.1-0.9-0.1-1.7-0.6-2.4-1.4-1 0.1-1.3 1-1.6 0.7-1.1 0.6-0.9 0.1-3.5-0.6-2.3 0-3.2-0.4-1.2-0.3-1.3-0.7-0.7-0.7-1.3-1.4-0.7-0.4-2.9-0.9-1.6-0.9-1.2-1.2-2-2.7-1.3-0.9-2-0.8-1.4-0.9-0.8-0.8-1.1-0.8-0.9-0.6-0.8-0.7-0.7-0.6-0.9-0.6-0.9-0.3-1.5 0-1.4 0.1-1.2 0.5-1.6 0.9-15.1 12.7-2.6 1.3-1.5 0.2-1 0.1-6.5-0.9-2 0-4 0.5-8.9 2.1-5.2-0.2-4.7-1.2-3.5-0.1-0.6-0.1-2.5-0.8-1.4-0.7-0.3-0.5-0.1-0.5 1.7-1.5 18.1-12.5 0.5-0.8 0.4-1.2 6.8-31.8-0.1-0.9-0.8-0.1-5.4 1.8-1.2 0.1-0.7-0.3-0.5-1.6-0.5-1.1-0.8-1.2-1.2-1.1-0.3-0.6-0.2-0.7 0.3-1.2 0.6-1.4 0.8-0.3 0.9-0.6 0.8-0.9 0-1.7 1.2-2.9 0.2-1.5 0-7.1 0.9-0.2 1 0.3 4.2 3 1.2 0.5 1.1-0.6 0.9-0.8 2.2-2.8 0.9-1.9 1-2.6 0.3-1.4 0.1-1.1-0.2-4.4 0-1.2 0.2-0.8 7.6-18.5 0.2-0.9 0.6-6.5 0.2-0.7 8.5-18.1 0.4-1.4 0-1.3-4-6.8-1 0-1.8 1.2-0.5 0-0.5-0.2-0.8-3.4-0.9-1.5-1.8-0.1-8.9 2.2-1.1-0.3-0.6-1.6-0.9-4.2-0.5-1.4-0.7-0.1-0.7 0.1-1.3 0.6-0.7 0.2-5.7 1.3-0.7-0.1-0.8-0.4-5.7-4.4-8.4-4.2-1.1-0.3-1.9-0.1-2.2 1-2.2 0.6-1.4-0.3-1.3-2.7-0.5-1.5-0.2-1.3 0-1.6 1.4-6.6-0.2-1.1-0.4-1.3-1-2.3-0.8-1.5-3.4-3.4-1.1-1.8-1-3-0.1-1.1-0.4-0.8-0.6-0.9-3-2.7-1-1.5-3-5.8-1.3-3.7-1.8-2.2-6.5-6-16-15.4-0.6-1 2.8-4.6 0.4-1-0.1-1.6-0.3-0.9-0.8-1.3-11.5-12.6-1.5-1.1-1.1-1.6-0.2-0.9 0-3.8 0.4-1.3 0.6-0.6 0.8-1.1 0.3-0.6 0.4-1.9 0-1.2-0.5-1.1-2.7-4.7-1-1.4-0.9-1-1.6-0.5-0.9-0.6-1-1-0.7-1.5-0.5-1.6-7.5-34.1 0.1-2.4 0.9-1.2 1.2-0.6 7-1.7 22.3-9.5 1.2-0.9 0.6-1.5-0.1-1.2-0.5-1.5-1.7-3.2-0.9-0.6-1.2-0.2-47.7 0.5-1.9-0.2-2.3-0.7-2-0.8-1.7-0.1-0.7 0.1-2.6 0.9-1.5 0.3-2.3 0.1-0.7 0.2-8-0.1-0.8 0.1-4 1.3-1.1 0.2-5.2 0.3-1.8-0.1-2.4-0.5-6.6 0-3 0.6-1.5 0.1-0.8-0.1-1.6-0.4-12.8-0.4-2.3-0.6-1.7-0.3-5.2-0.3-1.6-0.4-2-1-0.7-0.1-0.8 0-6.8 0.9-1.6-0.1-0.9-0.1-0.9-0.3-1-0.7-1.4-1.2-0.5-1.9-0.2-1.9 0.5-39.4 0.5-0.7 0.7-0.4 3.5-0.8 6.9-0.8 0.6-0.3 0.3-0.4-0.4-1-1.3-0.9-2.6-0.6-1.1-0.4-1.3-0.9-0.5-0.8-0.2-0.9 0.2-0.6 0.9-1 1-0.7 0.5-0.5 0.6-1.3 0.1-0.7-0.2-0.7-0.7-2-0.2-1.5 0.1-2.7-0.3-1-0.5-0.5-0.7-0.1-2 0.5-0.8-0.1-1.2-0.8-0.6-0.7-0.3-0.8-0.3-1.9-0.6-2.1-0.2-0.8 0.1-1 0.8-0.9 2.1-1.6 0.9-1 0.6-1.3 0.3-1.6 0.2-0.7 0.4-0.5 0.5-0.5 1.1-0.6 0.4-0.6 0.2-0.8-0.3-1.3 0-1.7 1.1-2.8 1.6-3.1 0.2-0.9 0-1.2-1.5-6.3 0-1 0.1-0.8 0.6-1.4 0.4-1.6 0.2-0.7 3.4-3 1.1-0.5 1.2 0.3 0.9 0.8 0.6 0.2 1-0.6 0.8-0.9 2-1.7 3.6-3.9 0.2-0.8-0.1-1.1-0.8-3 0-1 0.7-2.1 0.7-3.2 0.9-1.8 0.3-0.6 0-2-0.5-1.7-0.1-1.1 0.1-1 0.2-0.7 0.9-2.2 0.6-2.4 0.9-1 0.2-0.6 0.1-1.7 1-2.7 0.3-1.2 0.3-4.9 4.1 0.7 1.8-0.3 1.5-0.9 12.9-3 2.1-0.3 1.9 0.2 2.9 0.7 0.8-0.1 1.4-0.8 0.7 0.1 1.2 1 1.1 0.7 0.7 0 0.6-0.3 0.9-1.3 0.7-0.8 2.3-1.4 0.6-0.6 5-6.3 1.2-2.6 1.4-2.5 5.1-6 1.2-1 0.9-0.4 0.9-0.1 2.7 0.4 1.2-0.1 0.6-0.3 0.5-0.5 1.1-1.9 0.7-0.8 1.1-0.9 3.7-2.3 1-0.4 6-1.9 1.5-0.2 0.8 0 3.5 0.6 1.1 0 0.8-0.2 0.6-0.3 3.9-3.1 0.7-0.2 0.6 0.2 1.3 1.5 0.6 1.1 0.5 2.1 0.3 0.6 1.1 1.7 0.3 0.5 0.8 1.9 0.7 1.1 0.8 1 1 0.9 8.9 3 3.6 2.9 0.7 0.4 2 0.3 1.6 0.6 1.5 1.3 0.6 0.4 8 2.8 2.2 0.3 1.1-0.2 1.4-0.5 0.9-0.1 0.9 0.1 1.7 0.9 1.2 1 0.9 0.9 0.9 1.8 0.4 1.3 0.6 2.9 0.2 0.7 0.6 1.2 8.5 9.9 0.9 0.5 1.1 0.5 2.3 0.8 0.9 0.6 0.3 0.6-0.9 2.3-0.3 0.5-0.9 0.9-2.2 1.4-1 0.9-0.8 1-0.9 2-0.8 1.2-0.9 0.9-1.1 0.8-0.8 1-0.2 0.7 0 0.8 0.4 0.8 1.5 1.5 0.4 0.7 0.2 0.7 0.3 3.1-0.5 3.3-0.1 3.3-0.1 0.8-0.6 1.4-0.7 1.1-2.1 1.6-0.5 0.4-0.1 0.8 0.2 0.8 1.2 1.3 0.6 0.8 0.3 0.9-0.2 0.7-0.7 1.2-0.8 1.1-1.6 1.2-0.8 1-0.3 0.7-0.6 3.5-0.6 1.4-1.7 2.1-0.3 0.6-0.8 2.1-1.5 2.4-3.4 8.4-0.8 1.1-0.5 1.3-0.2 1.5-0.5 1-0.1 1 0.6 2 0.3 1.4 0.1 0.7-0.1 1.6 0 0.7 0.8 1.9 0.3 1.5 0.4 0.7 0.6 0.8 1.9 1.8 0.4 0.7 0.1 1.6 0.4 1.4 0.3 0.5 3.4 3.2 0.7 1.2 0.6 1.4 0.6 0.8 3.2 3.6 1 0.7 2.8 1.4 0.8 0.6 0.6 0.7 1.1 1.7 1.2 1.4 1 0.6 2 0.5 1.3 0.5 17.6 11.3 4.8 2.3 0.7 0.6 0.4 0.7 0 0.8-0.3 1.7-1.3 3.5-0.2 0.8 0 2.2-0.3 1-1.3 1.2-0.4 0.5-0.2 0.7 0 0.7 0.5 6.3-0.4 2.6 0.1 1.6 0.2 1 0.5 1.1 1 1.6 0.8 0.7 0.9 0.4 1.2 0.3 1.6 0.7 4.9 3 1.3 0.5 0.7-0.1 1.2-0.5 0.7 0 3.2 0.6 0.8 0.1 1 0.2 1.1 0.4 1.6 0.9 0.9 0.8 0.9 1.1 0.8 0.5 0.7 0 1.4-0.3 0.9 0.1 2.7 1.2 1.3 0.3 0.9 0.7 1.1 1.7 0.7 0.6 0.7 0.3 1.9 0.3 4.2 2 0.8 0.3 4.8 0.9 0.7 0 0.5-0.3 1-0.9 0.6-0.4 2-0.6 0.9-0.1 1.1 0.2 4.3 2.1 2.4 0.2 0.8 0.2 3.1 1.6 0.7 0.3 1.6 0.4 1.7 0.1 3.3-0.2 0.8 0.1 4.4 1.2 1.7 0.6 1.6 1 1.1 0.9 2.7 2.9 0.9 0.7 0.9 0.4 2 0.6 3 1.4 2.9 0.6 1.7 0.6 0.9 0.5 1.1 0.9 4.5 4.3z" id="Midlands" name="Midlands"></path>
+              <path data-bs-toggle="modal" data-bs-target="#masheast" d="M989.6 220.7l-0.8 0-2.7 0.8-9.5 3.8-1.2 0.9-3 2.8-8.5 6.2-1 1.4-3.8 7.6-0.2 0.7-0.1 1.6-0.1 0.9-0.7 1.2-0.8 0.8-0.8 0.5-1.9 0.9-1.3 0.3-4 1.6-0.8 0.6-0.5 0.7-0.2 0.7-0.2 2.4-0.4 1.6-0.4 0.7-5.3 5.8-1.4 0.9-1.1 0.6-0.7 0.2-1.4 0.4-1.9 0.8-2.3 0.2-4.4 2.1-0.7 0.7-1.7 2.2-1.9 2.1-1.1 0.7-0.9 0.2-1.4-0.5-0.8-0.2-0.8 0-1.2 0.2-1.3 0.4-2.4 1.1-2 1.3-5.2 5.3-1.2 0.9-2.9 1.6-1.1 1-0.6 0.6-0.7 1.1-1.2 2.4-1 1.3-1.3 1.2-2.7 1.1-2.7 1.5-3.5 1.3-0.8 0.5-0.6 0.6-0.6 1.4-0.9 5.1-0.1 1.6 0.3 2.3-0.1 0.6-0.5 0.7-29.9 30.6-0.1 0.8 0 0.9 0.3 2.3-0.5 1.4-1 1.8-4.8 6.4-0.4 1.6-0.2 4.4 0.3 2.3 0.4 1.3 0.3 0.5 0.1 1.4-1.9 3.7-0.4 1.4 0.4 2.6-0.2 1.4-0.9 0.7-1.3 0.5-5.6 1.3-1.2 0.5-1 0.6-0.5 1.1-0.2 1.2-0.1 1.4-0.3 1.3-0.3 1.1-1.6 1.3-0.7 0.9 0.5 1 1.4 2.3 0.4 2.2 1.1 2.3 0.1 1.1-0.5 1.4-0.7 1.7 0 1 0.6 1.3 0.3 1.5 0.2 0.6 1.2 1.6 1.2 2.4 0.8 1.1 1.4 1.4 1.1 1.7 1.2 1.6 0.6 1.4 0.6 2.6 0.5 1.5 0.7 1.1 0.5 0.4 1.4 0.6 2.3 0.1 1.5 0.3 1.2 0.8 0.3 0.6 2.8 7.1 2.3 11.7 0.6 1.3 0.4 0.4 1.8 1.1 0.4 0.6 0.3 1.4 0.6 1.2 1.2 1.6 0.7 1.2 0.5 1.2 0.2 1.3-0.4 5.7 0.1 2.5-0.4 2.6 0 1.8 0.6 3.3-0.8 2.4-0.8-0.7-1-0.3-1.3-0.3-0.9 0-2.2 0.7-1.2 0.2-2.6-0.6-5.1-2.5-4.7-1.2-2-1.5-4.8-5-1.8-1.2-2.1-0.7-2.2 0.2-6.3 1-2.4-0.1-4.2-2-2.8-0.8-1.2 0.1-0.5 0.4 0.2 0.6 0.9 1 0.4 1.2-0.1 0.6-0.9 1.9-1 2.9-1.8 3.9-1 1.7-0.8 1.1-2.4 2.3-0.8 0.4-0.8-0.2-1.2-0.7-1.5-0.6-1.5 0-0.9-0.2-0.8-0.3-0.2-0.7-0.1-1.4-0.5-1.3-2.4-2.4-0.8-0.5-1-0.4-0.7 0.1-0.6 0.4-1 1-0.7 0.6-0.8 0.2-0.8-0.1-1.3-0.5-1.2-0.7-1.2-0.3-1.7-0.1-3.4 0.3-1.3 0.6-0.6 0.8-0.1 0.6-0.5 0.8-0.1 5.4-1.3 3.2 0 6.6-1.5 0.8-12.4 1.4-20.1 0.5-5.5-0.8-0.4-0.7-0.2-0.7-0.1-1.6 0.1-1.7 0.4-1.6 0.6-1.3-0.2-0.6 0.5-0.7 0.3-1 0-1.7-0.9-0.3-4.4-0.4-1.4 0.2-0.8 0.7-1.4 2.1-0.8 1-1.1 0.5-1.8 0.3-0.8 0.2-0.3 0.5 0.2 1.1 0.5 1.2-0.2 2.9-5.5 5.1-3.2-1.8-3.2-0.8-0.6-0.2-1.6-1.5-1.9-2.4-2.5-2.2-1.9-2.1-2.6-2.1-0.4-0.5-0.2-0.7 0.1-1.1-0.4-1.4 0.1-0.9 0.6-1.9 0.5-0.4 1.1-0.3 0.1-0.5-0.3-1.8-0.4-1-0.7-1.1-3-4.2-2.6-4.6-0.4-1.2-0.1-0.9 0.2-0.5 1.3-2.2 0.3-0.7-0.9-0.2-0.8-0.4-1.1-0.6-1-0.4-2.7-0.4-3.4 0-2-0.4-2-0.4-0.9-0.4-2.7-2.4-1.9-0.8-2.5-0.7-5.5-2.4-3.2-2.3-2-2-2.2-0.9-6.8-1.8 2.2-2.2 0.9-2 1.1-6.3 0.3-1.1 5.5-11.3 1-1.3 0.7-0.3 0.6 0.4 0.7 1.2 1.3 4 0.9 1.3 2.1 4.9 0.6 0.1 1-0.1 2.6-0.9 1-0.7 0.5-0.5-0.5-1.9-0.1-0.7 0.1-0.6 0.5-0.3 0.8 0.1 2.7 0.9 0.5 0.4 1.1 0.9 0.7 0.3 0.9 0.1 1.4-0.2 0.7-0.8-0.7-2.7 0-0.8 0.2-0.8 0.6-0.2 0.7 0.1 2.9 0.7 0.4 0.2 0.8 1.1 0.6-0.6 5.9-10.1 5.5-5.4 0.8-1.1 0.5-1.1 0.3-1.7 1-18.5 0.2-1.1 0.3-1.4 0.7-0.9 0.8-0.7 1.3-1 0.5-0.8 0.1-0.7-0.1-0.7-0.6-1.3-0.7-1.1-3.5-3.9-5.3-4.9-0.9-1-0.6-1.2-0.1-0.7-0.2-4.4 0.1-1.3 0.3-0.7 0.6-0.5 1.8-0.8 1-1 1.2-1.4 2.2-3.5 0.7-1.7 0.2-1.2-0.4-1.3 0.1-0.8 1.2-4.3 0.5-1.1 0.7-0.7 1.7-1.3 0.4-0.7 0-0.7-1.9-4.5-0.3-1.9 0.3-1.6 0.4-0.8 0.5-0.8 2-0.8 1.4-1 0.3-0.7 0-0.7-0.7-2-0.2-0.8 0-1.2 0.3-1.8 0.4-1 0.5-0.2 1.4 0.6 3.5 1.4 1.7 0.9 0.7 0.5 3.4 3.2 2.5 1 1.6 0.4 4.9 2.1 6.2 4.1 2.9 2.6 1.2 0.5 0.8 0.2 0.9-0.2 2.2-1.2 0.9-0.2 1.6-0.2 0.7-0.3 2.2-1.7 0.4-0.5-0.1-0.3-1.2-0.9-0.4-0.6 0.1-0.6 0.4-1 1.8-0.9 1.2-1.4 0.5-2.3 0.1-0.6-0.1-1.5-0.5-2.3 0.1-0.8 4.7-2.1 1.1-0.7 0.7-0.8 0.1-1.4 0.2-0.9 0.5-0.9 1.3-1.3 0.5-0.8 0.3-0.7-0.2-1.1-1.2-2.6-0.3-1.1-0.3-1.4-0.1-0.8 0.1-1.5-0.2-0.8-0.8-1.7-0.3-0.9 0-0.9 0.6-2.3 0.1-1.5-0.2-1.4-0.4-1.5-0.6-0.6-1.2-0.3-4.2 0.1-2.4-0.4-0.9-0.4-0.5-0.9-0.4-1-0.2-1-0.4-0.5-0.6-0.3-2.4-0.1 2.6-11.2-0.1-1-0.3-1.2-0.9-0.1-0.8-0.5-0.8-1.7 0.2-0.7 2.7-3.1 2-4.3 1.7-1.8 1.7-0.9 20.1 1.8 1 0.3 0.1 0.8-0.2 0.8-4.3 11.3-0.3 1.5 0.2 1.4 0.4 1.4 0.6 1.3 0.9 1 1.2-0.2 2.8-1.5 1.5-0.5 4.4 1.8 1.4-0.6 1.4-1.1 6.7-6.5 1.4-1 0.7 0 1.6 0.6 0.9-1.1 0.8-1.2 1.3-2.6 1.4-2.3 0.5-0.8 11.7-6.2 2.2-2.2 0.3-1.2 2.1-3.4 10.9-10.8 2.1-2.7 1.2-3.1-0.2-3.6-0.4-2.2-0.2-2.5 0.2-2.4 1.1-1.9 1.4-1.2 3.3-1.9 1.4-1.3 0.7-1 1.1-2 0.7-0.9 0.7-0.6 2.5-1.4 2-1.9 1.7-2.1 2.9-4.9 0.6-1.3 0.8-4.4 0.8-2.4 1.2-2.3 1.7-2 1.8-1.6 4.2-2.1 1.1-1.1 0.7-1.3 1.4-6.3 0.9-2.2 1.2-1.9 1.3-1.5 3.6-2.2 2.1-0.8 1.8-0.3 1.2 0.1 2.1 0.9 1.2 0.3 2.7-0.1 3-0.7 3-1.1 2.4-1.4 2.1-1.5 1.1-0.5 1.4-0.3 5.2 0.2 1.8-0.2 3.3-1.2 6.1-3.7 3.3-1.2 3.1-0.4 17.3 2.2 1.1 0.4 2.2 1.1 1.1 0.5 7.3 0.6 2.4-0.4 2.2-0.9 3.3-3.3 0.5-0.3 1.2-0.7 1.7-0.7 2-0.3 4 0.2 7.8 1.8 4 0.2 2.1-0.6 3.8-2.4 2.2-0.9 1.5-0.2-0.9 3.8-3.6 14.1-2.1 4.3-2 2.6-9.2 9 0.2 0.9 12.5 22.4 3.3 7.7 1.7 8.2 0.2 5z" id="Mashonaland East" name="Mashonaland East"></path>
+              <path data-bs-toggle="modal" data-bs-target="#manica" d="M918.1 764.8l-12.2-7.9-2.1-2.6 0.2-2.1-4.5-11.1-1-3.2-0.6-0.7-8.9-4.5 1.4-2.1-0.4-1.3-2.8-2.3-0.7-1.2-0.4-1.3-1.2-6.3-0.5-1.3-1.1-1.6-0.1-1.2 1.8-3 0.5-1.4 0.6-3 4.6-8.7 2.4-7 0.2-2.8 0.5-2.4 1.2-2.1 2.7-3.4 1.3-8.1 1.8-2.6 1.1-6.6 0.6-19.2 6.4-38.2 0.1-13.6-0.8-1.1-0.3-1.3-2.4-1.5-6.6-3.4-8.5-6.6-1.7-0.6-1.2-0.3-1-0.2-2.5 0.1-2.9 0.5-0.8-0.3-0.8-0.5-1.1-1.2-0.8-0.8-0.9-0.6-1.5-0.4-1.1-0.2-1.4-0.3-1.6-0.8-2.7-2-1.9-2-1-1.2-1.1-2-0.5-0.6-0.8-0.7-3.4-1.5-1.4-1.1-1-1.3-0.8-1.7-1.2-4.2-0.7-0.8-1-1.1-3.9-3.7-3-3.5-0.7-1.3-0.8-2.6-0.4-0.7-0.9-0.9-1.5-1-5.9-3.2-0.8-0.8-1.1-1.2-0.6-0.9-0.3-0.8-0.1-0.8-0.4-1.3-0.5-0.6-3.9-3.8-0.6-1.3-0.4-1 0-1.9-0.5-0.5-0.9-0.4-3.1-0.5-1.3-0.3-1.8-0.8-1.1-0.6-0.9-0.8-0.7-0.4-1-0.1-1.3 0.5-0.7 0.2-0.8-0.2-0.8-0.5-0.7-1-0.5-0.8-0.7-0.8-1.1-0.9-3.3-2.4-1.3-0.7-2.5-0.5-1.3-0.7-1.4-1.4-0.5-0.4-0.8-0.2-1.3-0.1-0.9 0.2-1.3 0.7-0.6 0.2-0.8-0.1-1.5-0.7-1.6-1.2-4.7-3.8-20.7-12.8-1.6-2.1 12.4-1.4 1.5-0.8 0-6.6 1.3-3.2 0.1-5.4 0.5-0.8 0.1-0.6 0.6-0.8 1.3-0.6 3.4-0.3 1.7 0.1 1.2 0.3 1.2 0.7 1.3 0.5 0.8 0.1 0.8-0.2 0.7-0.6 1-1 0.6-0.4 0.7-0.1 1 0.4 0.8 0.5 2.4 2.4 0.5 1.3 0.1 1.4 0.2 0.7 0.8 0.3 0.9 0.2 1.5 0 1.5 0.6 1.2 0.7 0.8 0.2 0.8-0.4 2.4-2.3 0.8-1.1 1-1.7 1.8-3.9 1-2.9 0.9-1.9 0.1-0.6-0.4-1.2-0.9-1-0.2-0.6 0.5-0.4 1.2-0.1 2.8 0.8 4.2 2 2.4 0.1 6.3-1 2.2-0.2 2.1 0.7 1.8 1.2 4.8 5 2 1.5 4.7 1.2 5.1 2.5 2.6 0.6 1.2-0.2 2.2-0.7 0.9 0 1.3 0.3 1 0.3 0.8 0.7 0.8-2.4-0.6-3.3 0-1.8 0.4-2.6-0.1-2.5 0.4-5.7-0.2-1.3-0.5-1.2-0.7-1.2-1.2-1.6-0.6-1.2-0.3-1.4-0.4-0.6-1.8-1.1-0.4-0.4-0.6-1.3-2.3-11.7-2.8-7.1-0.3-0.6-1.2-0.8-1.5-0.3-2.3-0.1-1.4-0.6-0.5-0.4-0.7-1.1-0.5-1.5-0.6-2.6-0.6-1.4-1.2-1.6-1.1-1.7-1.4-1.4-0.8-1.1-1.2-2.4-1.2-1.6-0.2-0.6-0.3-1.5-0.6-1.3 0-1 0.7-1.7 0.5-1.4-0.1-1.1-1.1-2.3-0.4-2.2-1.4-2.3-0.5-1 0.7-0.9 1.6-1.3 0.3-1.1 0.3-1.3 0.1-1.4 0.2-1.2 0.5-1.1 1-0.6 1.2-0.5 5.6-1.3 1.3-0.5 0.9-0.7 0.2-1.4-0.4-2.6 0.4-1.4 1.9-3.7-0.1-1.4-0.3-0.5-0.4-1.3-0.3-2.3 0.2-4.4 0.4-1.6 4.8-6.4 1-1.8 0.5-1.4-0.3-2.3 0-0.9 0.1-0.8 29.9-30.6 0.5-0.7 0.1-0.6-0.3-2.3 0.1-1.6 0.9-5.1 0.6-1.4 0.6-0.6 0.8-0.5 3.5-1.3 2.7-1.5 2.7-1.1 1.3-1.2 1-1.3 1.2-2.4 0.7-1.1 0.6-0.6 1.1-1 2.9-1.6 1.2-0.9 5.2-5.3 2-1.3 2.4-1.1 1.3-0.4 1.2-0.2 0.8 0 0.8 0.2 1.4 0.5 0.9-0.2 1.1-0.7 1.9-2.1 1.7-2.2 0.7-0.7 4.4-2.1 2.3-0.2 1.9-0.8 1.4-0.4 0.7-0.2 1.1-0.6 1.4-0.9 5.3-5.8 0.4-0.7 0.4-1.6 0.2-2.4 0.2-0.7 0.5-0.7 0.8-0.6 4-1.6 1.3-0.3 1.9-0.9 0.8-0.5 0.8-0.8 0.7-1.2 0.1-0.9 0.1-1.6 0.2-0.7 3.8-7.6 1-1.4 8.5-6.2 3-2.8 1.2-0.9 9.5-3.8 2.7-0.8 0.8 0 0 1.3 0.5 2.9 1.4 2.7 1.1 0.9 2.8 1.6 0.9 1.2 0.1 2.1-0.8 2.1-2.4 3.8-5 9.8-0.8 1-1.1 0.7-0.8 0.9 0 1.5 1.3 4.5 0.6 1.1 2.2 1.8 4.8 2.2 1.7 2.4 0.6 2.7-0.5 2.6-2.1 5-0.5 5.1 0.4 5.9-0.6 4.9-3.2 2.2-2.1 0.9-1.4 2.3-0.9 2.8-0.3 2.6 0.2 2.6 1.5 3.8 0.2 2.3-0.5 1.8-1 0.9-1 0.7-0.6 1 0.2 1.3 1.5 1.9-0.1 1.1-0.7 2.7 0.3 3 4.5 13.8 0.4 4.5-0.1 1-1.1 2.8-1 1.8-0.7 1-0.3 1.2 0.6 2 1.9 2.8 6 4.9 2.3 2.6 1 2.5-0.6 1.5-3.7 2.8-2.7 4-0.3-0.1 0.2 1.3 1.6 1.9 0.4 1.4-0.8 2.7-2.3 1.7-2.8 1.4-2.5 1.5-2.2 1.2-2.5 0.7-2.2 0.9-1.5 1.8-0.4 2.3 0.5 2.8 1.6 4.8 3.8 7.7 1 3.6-0.2 4.5-0.9 3.6-1.4 2.9-2.2 1.8-3.4 0.3-5.2-0.4-3.8 0.6-12.3 5.8-0.2 1.2 0.9 7.2 0.8 2 1.6 1.1-1.4 1-1.6 0.9-1.3 1.2-0.1 1.6 0.9 3 0.2 1.5-0.2 1.7 0.3 1.8 1 1.1 1.5 0.5 1.7 0.1 7.9-1.2 2.3 0.2 1.3 0.6 0.8 0.6 0.4 1 0.3 1.5 0.6 1.7 1 1 1.2 1 1.1 1.3 0.8 4.6-3.7 16.8-0.2 3.3-0.4 2.4-1 2.3-1.9 3-4.7 5.4-0.3 1.4 0.2 3.9-0.8 5.5 0.2 2.8 1.3 1.6 2.5 0.1 2.3-0.3 1.8 0.7 0.8 2.9 0.1 2.5-0.9 9.8 0 1.2 0.3 1.4 0.2 1.7-0.5 1.3-0.8 1.2-0.4 1.4 0.4 3 1.5 1.5 2.3 0.5 2.9 0.1 2.9-0.8 3.8-3.9 2.4-0.8 2.3 1.3 0.1 2.7-1 5.3 1 2.4 2.2 2.1 2.7 1.8 2.8 1.2 1.3 1.5-0.4 2.6-0.8 3.2-0.2 5.6-2.5 8-0.5 10 0.8 3.2 0.4 1-6.9-0.2-1.7 1.5-0.7 4.2-1 1.9-2 0.6-2.1 0.4-1.2 1.3-0.9 6.6-0.7 2.1-1.7 3.2-0.3 1.3 0.2 1 0.8 1.8 0.1 1.1-0.9 4.1-0.7 2-1 1.7-14 17.4-4 7.8-4.1 8.2-3.3 3.6-5.4 0.9-6-0.7-5.6 0.7-4 5.2-1.3 5.8-0.3 5.6 1.9 14.7 1.7 14.2-0.8 5.2-3 6-6.4 8.3-9.9 12.7 0.7 1.2 1.9 1.2 1.1 1.6 1.2 0 0.3 0.3 0 0.9-0.9 1.7-0.2 0.5 9.3 16 0.3 1.2-4.9-3.2z" id="Manicaland" name="Manicaland"></path>
+              <path data-bs-toggle="modal" data-bs-target="#matsouth" d="M576.1 728.4l2 6.5 0.9 2 5.8 6.8 0.6 0.4 1 0.4 3 1.8 0.5 0.5-0.1 1.4 0.3 1.2 1.3 2.9 0.7 1.1 0.6 0.7 1.1 0.2 0.7 0.3 1.2 0.8 0.5 0.7 0.3 1 0.2 3.8 0.3 0.9 0.3 0.4 1.1 0.2 1 0.4 0.5 0.5 0.2 0.7 0.3 1.7 0.3 0.4 1.3 0.7 0.7 0.7 1.9 4.6 0.6 1.2 0.6 0.8 2 1.1 1 0.8 1.1 0.9 1.4 0.8 0.7 0.5 1.3 1.4 2.2 3.7 0.5 0.7 1.4 0.8 2.4 2.2 1 1.7 0.7 1 0.7 0.6 0.8 0.3 1 0.6 0.5 0.8 0.6 1.1 0.5 0.4 0.5 0.2 1-0.2 0.6 0 1.7 0.6 0.7 0.1 1.7 0 1.1 0.5 0.5 0.8 0.5 1.9 0.5 0.5 0.7 0.3 1 0.4 2.7 1.4 0.9 0.5 1.1 0.2 0.6 0.5 0.4 0.5 0.2 0.7 0 0.8-0.2 1.8 0.4 0.6 0.5 0.4 0.8 0.2 10.4 1.3 1.4 0.5 0.7 0.1 0.7-0.2 1.3-0.5 0.7-0.1 3 1.5 3.2 2.2 2.7 1.3 1 1 4 1.4 2.5 0.2 1 0.4 0.4 0.5 0 0.6-0.8 1.1-0.2 0.5 0.1 0.5 1.1 1.6 2.6 2.8 0.7 1 1 1.8 0.6 0.3 1.4-0.1 0.7 0.3 1.6 0.9 2.9 1.2 0.8 0 0.6-0.2 1.4-0.5 0.8 0.1 0.4 0.4 0.1 0.8-0.2 1.6 0.5 0.4 1.7 0.9 0.5 0.7 0.1 0.8 0.1 1.5 0.9 3 0.4 0.9 0.4 0.6 3.3 2 0.7 0.7 0.6 0.8 0.4 0.8 5.7 7.4 0.3 0.6-0.2 1.5 0.1 1 0.9 1.5 0.8 0.8 1 0.6 1.3 0.6 0.4 0.7 0 0.7-0.2 0.6-0.1 2-0.8 1.3-0.1 0.6 0.4 0.4 1.4 0.1 1.1 0.2 1.1 0.5 1.8 1.2 0.9 0.9 0.8 1.2 0.8 0.8 1.3 1.1 0.6 0.9 0.7 1.9 0.5 0.5 0.7 0.2 1.7-0.2 1.2 0 0.6 0.5 0.3 0.6 0 1.6 0.2 0.7 0.4 0.7 1.1 1.4 0.6 1.3 0.3 2 0.5 1.2 0.6 0.7 0.6 0.5 2 0.3 1.3 0.5 0.6 0.5 0.2 0.8-0.2 1.5 0.5 0.4 0.7 0 1.6-0.1 0.9 0.1 1 0.5 0.4 0.6 0.3 1.7 0.3 1.1 0.9 1.7 0.4 0.9 0 1.7 0.3 1 1.5 2.1 0.3 0.9 0.2 1.7 0.4 1 0.7 0.5 0.8 0.3 0.9 0.2 1.5 0 0.5 0.6 1.8 3.5-1.2 0.3-2.2-0.5-4.4-1.9-13.9-3.3-7.6-0.9-3.8-1-4.1 1.7-14.2 1.2-2.5 0.8-3.5 2.4-1.9 0.6-0.9-0.3-1.9-1.4-1.2-0.3-3.7 0.1-8.2-1-2.4 0.1-2.5 0.6-4.8 2.3-2.4 0.8-5.2 0.9-4.7 0.1-4.4-1-4-2.9-1.8-1.6-1.9-1.2-2.4-0.7-3.1-0.2-5.7 0.8-2.2-0.2-3.1-1.6-3.6-2.6-1.9-0.8-3.8-0.5-0.4-1.1-2.5-2.6-1.3-0.6-2.7-0.7-1.3-0.5-3.5-2.2-1.8-0.5-4.6-0.4-3.1-1.7-4.4-0.9-7.4-5-2.6-0.7-8.6 0.4-1.5 0.6-2.3-1.6-2.6 0.3-4.8 2.2-4.3-0.4-2.4 0.5-1.1 2.3-1.4 1.4-3.2-0.3-6.3-1.6-2.7 0.6-4.7 2.6-2.7 1.5-1.9-0.1-0.8-0.2-0.9-0.5-9.7-8.5-0.8-1.3-1-2.7-0.7-1.3-1.2-1.5-0.7-0.5-12 0.4-4.7-0.8-4.8-2.5-3.8-4.2-2.5-5.2-1-5.9 0.6-5.8 1.4-2.9 2.1-3.3 1.5-3.2-0.3-2.7-2.1-1.7-5.1-1.6-2.3-1.5-3.7-0.9-7.7-0.5-3.9-1-18.7-8.8-5.8-1.9-5-3.9-1.7-0.6-3.8-0.3-4.1-1.1-1.4 0.2-1.4 0.7-4.4 1.1-2.1 0.9-2.1 0.4-2.8-0.7-10.3-5.4-5.1-1.8-4.7-0.9-15.2-0.2-9.6-1.9-7.4-0.5-2.1-0.6-1.8-1.2-1.5-1.7-0.7-1.3-1.2-2.8-0.6-1.1-0.9-0.5-0.7 0.1-0.7-0.1-0.5-1.3 0.7-1.8-0.5-0.8-1.4-0.6 0.3-1.3 1-1.6 0.4-1.1-0.3-1.4-3.8-7.8-2.1-2.3-0.8-1.3-0.2-1 0-2.1-0.3-1.1-1.2-2-4.5-5.5-3.3-5.2-3.8-4.7-8.8-6.5-2-2.1-4.4-6.1-1-2.6 0-2.4 1.6-7.2 0.1-2.9-0.9-7.7-0.1-1.3 0.4-3.1-0.1-1.5 0.2-1.8 0.7-1.3 0.9-1.1 0.7-1.6 2-11-0.3-5.5-3.2-10.8 1-4.9 1.6-4.8 0.4-5.4-1-2.4-1.8-1.8-2.3-0.9-5.1-0.1-4.5-2.1-7.2 1.4-10.2-1.4-14.5 0-4.4 0.6-4.8 2.5 2-19.6-2.3-16-6.5-16.8-1.7-2.4-2.3-1.4-2.7-0.8-2.7-0.5-1.5 0-1.3 0.1-1.3-0.1-1.5-0.6-1.4-1.1-2.2-3.2-1.2-1.3-4.3-2.4-4.1-0.4-4.2 0-4.6-0.8-14.4-7.4-4.8-0.9-3 0-2.6-0.5-2.1-1.2-2-2-1.8-2.4-0.9-1.1 2.2-1.3 4.1-2.3 2-0.7 25-6.1 2.3-0.1 2.3 0.2 2.8 0.6 17.7-2.2 3.2 0.5 1.6 0.2 0.7 0.2 1.5 0.9 1.4 0.3 1.5-0.3 1.9-0.1 2.3 0.5 2.1 0.2 1.1-0.2 0.9-0.3 1.8-1.5 1.1-0.7 0.9-0.2 1-0.1 6.8 0.9 2.6 0.6 2.4 1.4 4.4 3 1.8 1 2.9 0.7 3.3 0.5 1.6 0.4 1.1 0.4 1.1 1.7 0.9 1.1 1.6 1.1 0.8 1.2 0.4 1.5 0.1 1.7 0.3 2.5 0.6 1.3 0.9 0.9 0.8 0.7 0.7 0.7 2.5 3.9 4.5 5 1 0.9 2.3 1.4 2.1 1.6 9.4 9.2 2.1 1.7 3 1.6 1 0.9 1 1.4 1.5 1 1.7 0.5 5.2 0.9 4 0 0.6-0.7 0.4-1.4 0.2-3.8 0.8-4.3 1.8-5.4 0.5-1.1 0.5-0.4 0.7 0.8 4.5 7 0.7 0.3 0.5 0.1 4.7-2.4 1.2-0.4 5.4-0.2 1.3-0.2 4.3-1.8 1-0.1 0.6 0.7 0.8 2 0.5 0.5 0.7 0.4 1.8 0.7 0.7 0.4 0.5 0.5 0.3 0.6 0.6 2.1 1.1 1.7 0.2 0.6 0.1 1.7 0.4 0.5 2.7 3 2.6 2.1 0.8 2 0.9 0.9 1.2 0.7 0.5 0.4 0.9 2 1.4 1.4 1.5 2.1 0.3 0.6 0.5 1.3 0.7 2.1 1.2 2.7 0.7 0.7 0.9-0.2 17.2-13 3.3-1.4 2.2 2.6 1.3 0.1 4.1-3.5 1.1 0.1 0.9 0.4 1.5 0.4 1.6 0.8 6.6 5.4 1 0.2 1.7-0.2 3.4-3.6 0.8-2.1 2.1-1.6 2.4-2.3 12.5-15.2 0.4-0.9 0-0.7-0.8-2.7-0.1-1.7 0.4-1 0.4-0.6 0.6-0.4 5.6-2.3 8.9-5.1 1.5-1.2 2.2-3.6 0.3-0.7 0-1-1.2-3-1.8-7.1-0.5-1.3-0.2-0.8 0.1-0.9 0.4-0.4 0.7-0.1 7.6 1.5 1.4-0.3 1.7-0.7 3-2.2 0.8-1.1 0.4-1 0.1-0.9 0.9-2.5 0.6-2 0.2-1.2 0.1-5.3-0.1-1.5-0.4-1-0.8-0.8-1-0.6-0.9-0.7-1.7-1.7-0.6-0.7-0.3-1 0.4-0.8 0.5-0.6 5.6-5 1.1-1.5 0.7-1.1 0.4-2.1 0.1-1.2-0.2-1-0.5-1-0.8-1.1-1.9-1.7-0.7-0.9-0.4-1 0.1-1.6 0.3-0.7 0.7-0.5 1.8-0.3 0.7 0 4.2 0.8 1.4 0.4 1.1 0.8 0.7 0.5 0.9 0.6 1 0.2 1-0.2 1.3-1 0.7-0.7 1-2.3 6.5 6 1.8 2.2 1.3 3.7 3 5.8 1 1.5 3 2.7 0.6 0.9 0.4 0.8 0.1 1.1 1 3 1.1 1.8 3.4 3.4 0.8 1.5 1 2.3 0.4 1.3 0.2 1.1-1.4 6.6 0 1.6 0.2 1.3 0.5 1.5 1.3 2.7 1.4 0.3 2.2-0.6 2.2-1 1.9 0.1 1.1 0.3 8.4 4.2 5.7 4.4 0.8 0.4 0.7 0.1 5.7-1.3 0.7-0.2 1.3-0.6 0.7-0.1 0.7 0.1 0.5 1.4 0.9 4.2 0.6 1.6 1.1 0.3 8.9-2.2 1.8 0.1 0.9 1.5 0.8 3.4 0.5 0.2 0.5 0 1.8-1.2 1 0 4 6.8 0 1.3-0.4 1.4-8.5 18.1-0.2 0.7-0.6 6.5-0.2 0.9-7.6 18.5-0.2 0.8 0 1.2 0.2 4.4-0.1 1.1-0.3 1.4-1 2.6-0.9 1.9-2.2 2.8-0.9 0.8-1.1 0.6-1.2-0.5-4.2-3-1-0.3-0.9 0.2 0 7.1-0.2 1.5-1.2 2.9 0 1.7-0.8 0.9-0.9 0.6-0.8 0.3-0.6 1.4-0.3 1.2 0.2 0.7 0.3 0.6 1.2 1.1 0.8 1.2 0.5 1.1 0.5 1.6 0.7 0.3 1.2-0.1 5.4-1.8 0.8 0.1 0.1 0.9-6.8 31.8-0.4 1.2-0.5 0.8-18.1 12.5-1.7 1.5 0.1 0.5 0.3 0.5 1.4 0.7 2.5 0.8 0.6 0.1 3.5 0.1 4.7 1.2 5.2 0.2 8.9-2.1 4-0.5 2 0z" id="Matabeleland South" name="Matabeleland South"></path>
+              <path data-bs-toggle="modal" data-bs-target="#bulawayocity" d="M432.2 621l-1.6-0.8-1.5-0.4-0.9-0.4-1.1-0.1-4.1 3.5-1.3-0.1-2.2-2.6 1.6-3.7-0.3-1.4-1.2-1.3-0.9-1.5-1-0.4-1 0.1-1.5 0.7-1.5 0.1-2.2-0.6-1-0.1-1.6 0.1-1-0.1-1.6-0.5-0.6-0.7-0.1-0.6 0.4-0.6 1.7-1 0.8-0.6 0.5-0.9-0.1-1.4 0.1-1 0.2-1 0.6-1.3 0.2-0.7 0-1.2-1.2-5-0.2-1.6 0.2-0.7 0.4-0.3 0.6 0 0.9 0.2 7.2 3.9 1.3 0.4 1-0.1 0.8-0.4 1.6-1.4 0.8-0.3 2.8-0.5 2.5-0.8 0.7-0.1 0.6 0.6-0.6 1.7-0.1 1.7-0.1 0.5 0.1 0.7 0.7 0.6 1.9 0.4 0.6 0.3 1.3 1.1 0.9 0.4 1 0.1 0.9-0.3 1.7-0.8 0.8-0.1 0.6 0.5 0.1 1.6 0.2 0.6 0.5 0.4 1.7 0.7 0.4 0.4 0.1 0.7-0.6 1.9-0.8 1.5-0.2 1 0 0.6 0.8 1 2.5 1.7 0.5 0.6 0.3 0.6 0 0.6-0.3 0.8-0.4 0.8-0.7 0.8-0.9 0.7-2.1 0.9-8.6 1.9z" id="BulawayoMetro" name="Bulawayo"></path>
+              <path data-bs-toggle="modal" data-bs-target="#masvingo" d="M763.8 487.1l1.6 2.1 20.7 12.8 4.7 3.8 1.6 1.2 1.5 0.7 0.8 0.1 0.6-0.2 1.3-0.7 0.9-0.2 1.3 0.1 0.8 0.2 0.5 0.4 1.4 1.4 1.3 0.7 2.5 0.5 1.3 0.7 3.3 2.4 1.1 0.9 0.7 0.8 0.5 0.8 0.7 1 0.8 0.5 0.8 0.2 0.7-0.2 1.3-0.5 1 0.1 0.7 0.4 0.9 0.8 1.1 0.6 1.8 0.8 1.3 0.3 3.1 0.5 0.9 0.4 0.5 0.5 0 1.9 0.4 1 0.6 1.3 3.9 3.8 0.5 0.6 0.4 1.3 0.1 0.8 0.3 0.8 0.6 0.9 1.1 1.2 0.8 0.8 5.9 3.2 1.5 1 0.9 0.9 0.4 0.7 0.8 2.6 0.7 1.3 3 3.5 3.9 3.7 1 1.1 0.7 0.8 1.2 4.2 0.8 1.7 1 1.3 1.4 1.1 3.4 1.5 0.8 0.7 0.5 0.6 1.1 2 1 1.2 1.9 2 2.7 2 1.6 0.8 1.4 0.3 1.1 0.2 1.5 0.4 0.9 0.6 0.8 0.8 1.1 1.2 0.8 0.5 0.8 0.3 2.9-0.5 2.5-0.1 1 0.2 1.2 0.3 1.7 0.6 8.5 6.6 6.6 3.4 2.4 1.5 0.3 1.3 0.8 1.1-0.1 13.6-6.4 38.2-0.6 19.2-1.1 6.6-1.8 2.6-1.3 8.1-2.7 3.4-1.2 2.1-0.5 2.4-0.2 2.8-2.4 7-4.6 8.7-0.6 3-0.5 1.4-1.8 3 0.1 1.2 1.1 1.6 0.5 1.3 1.2 6.3 0.4 1.3 0.7 1.2 2.8 2.3 0.4 1.3-1.4 2.1 8.9 4.5 0.6 0.7 1 3.2 4.5 11.1-0.2 2.1 2.1 2.6 12.2 7.9-4.5 5.2-6.2 6.9-6.7 7.4-6.7 7.5-13.4 14.9-26.7 29.8-6.7 7.5-6.7 7.5-6.7 7.5-13.3 15-13.4 14.9-6.7 7.5-6.6 7.5-8.4 5.9-10.1 7.2-3-4.4-1.3-1-1.2-0.1-2.1 0.9-1 0.1-1.1-0.4-1.9-1.3-1-0.2-0.9-0.7-2.6-3.2-1.3-0.9-1.9 0.3-4.3 2.1-0.9 0.2-1.8-3.5-0.5-0.6-1.5 0-0.9-0.2-0.8-0.3-0.7-0.5-0.4-1-0.2-1.7-0.3-0.9-1.5-2.1-0.3-1 0-1.7-0.4-0.9-0.9-1.7-0.3-1.1-0.3-1.7-0.4-0.6-1-0.5-0.9-0.1-1.6 0.1-0.7 0-0.5-0.4 0.2-1.5-0.2-0.8-0.6-0.5-1.3-0.5-2-0.3-0.6-0.5-0.6-0.7-0.5-1.2-0.3-2-0.6-1.3-1.1-1.4-0.4-0.7-0.2-0.7 0-1.6-0.3-0.6-0.6-0.5-1.2 0-1.7 0.2-0.7-0.2-0.5-0.5-0.7-1.9-0.6-0.9-1.3-1.1-0.8-0.8-0.8-1.2-0.9-0.9-1.8-1.2-1.1-0.5-1.1-0.2-1.4-0.1-0.4-0.4 0.1-0.6 0.8-1.3 0.1-2 0.2-0.6 0-0.7-0.4-0.7-1.3-0.6-1-0.6-0.8-0.8-0.9-1.5-0.1-1 0.2-1.5-0.3-0.6-5.7-7.4-0.4-0.8-0.6-0.8-0.7-0.7-3.3-2-0.4-0.6-0.4-0.9-0.9-3-0.1-1.5-0.1-0.8-0.5-0.7-1.7-0.9-0.5-0.4 0.2-1.6-0.1-0.8-0.4-0.4-0.8-0.1-1.4 0.5-0.6 0.2-0.8 0-2.9-1.2-1.6-0.9-0.7-0.3-1.4 0.1-0.6-0.3-1-1.8-0.7-1-2.6-2.8-1.1-1.6-0.1-0.5 0.2-0.5 0.8-1.1 0-0.6-0.4-0.5-1-0.4-2.5-0.2-4-1.4-1-1-2.7-1.3-3.2-2.2-3-1.5-0.7 0.1-1.3 0.5-0.7 0.2-0.7-0.1-1.4-0.5-10.4-1.3-0.8-0.2-0.5-0.4-0.4-0.6 0.2-1.8 0-0.8-0.2-0.7-0.4-0.5-0.6-0.5-1.1-0.2-0.9-0.5-2.7-1.4-1-0.4-0.7-0.3-0.5-0.5-0.5-1.9-0.5-0.8-1.1-0.5-1.7 0-0.7-0.1-1.7-0.6-0.6 0-1 0.2-0.5-0.2-0.5-0.4-0.6-1.1-0.5-0.8-1-0.6-0.8-0.3-0.7-0.6-0.7-1-1-1.7-2.4-2.2-1.4-0.8-0.5-0.7-2.2-3.7-1.3-1.4-0.7-0.5-1.4-0.8-1.1-0.9-1-0.8-2-1.1-0.6-0.8-0.6-1.2-1.9-4.6-0.7-0.7-1.3-0.7-0.3-0.4-0.3-1.7-0.2-0.7-0.5-0.5-1-0.4-1.1-0.2-0.3-0.4-0.3-0.9-0.2-3.8-0.3-1-0.5-0.7-1.2-0.8-0.7-0.3-1.1-0.2-0.6-0.7-0.7-1.1-1.3-2.9-0.3-1.2 0.1-1.4-0.5-0.5-3-1.8-1-0.4-0.6-0.4-5.8-6.8-0.9-2-2-6.5 6.5 0.9 1-0.1 1.5-0.2 2.6-1.3 15.1-12.7 1.6-0.9 1.2-0.5 1.4-0.1 1.5 0 0.9 0.3 0.9 0.6 0.7 0.6 0.8 0.7 0.9 0.6 1.1 0.8 0.8 0.8 1.4 0.9 2 0.8 1.3 0.9 2 2.7 1.2 1.2 1.6 0.9 2.9 0.9 0.7 0.4 1.3 1.4 0.7 0.7 1.3 0.7 1.2 0.3 3.2 0.4 2.3 0 3.5 0.6 0.9-0.1 1.1-0.6 1.6-0.7 1.3-1 1-0.1 2.4 1.4 1.7 0.6 0.9 0.1 1.2-0.1 12.7-11.8 0.9-1.5 0.3-2.1-0.6-10 0.1-0.8 0.5-0.6 1.4-1.8 0.5-0.8 0.3-0.8 0.7-3.2 1.3-2.7 0.2-1.6-0.6-2.8 0-0.8 0.5-1.7 1.7-3 0.2-0.6 0-0.8-0.4-1.4-0.4-1.7-0.2-0.7-0.4-0.5-1.5-1.3-0.8-1.1-0.4-1.5-0.1-0.8 0.2-2.4 0-0.9-0.7-2.1-0.1-1 0.2-1.1 0.6-1.6 0.1-1-0.2-0.8-5.2-5.9-0.4-0.8-0.3-2.4-0.2-0.7-0.8-1-2.9-1.9-0.9-1-0.4-0.6-0.5-1.4-0.4-0.6-0.5-0.4-0.6-0.3-1.5-0.2-0.7-0.3-1.1-0.8-0.8-1-0.6-1.4 0-0.8 0.1-1.4-0.3-0.6-0.5-0.3-0.7-0.2-2.4-0.1-1.4-0.5-1.3-0.6-1.4-1.4-1.7-2.9-0.5-0.5-0.6-0.3-0.4-0.8 0.1-1.4 1-3.4 0.1-2.7-0.2-2.7-0.4-2.2-0.6-1.7-0.8-1-1.6-1.1-2.1-0.6-2.1-0.2-2.2 1.5-0.9 0.3-0.3-0.3-0.1-3.9 0.7-5.6 1.5-2.9 0.9-4.8-0.2-1.8-0.3-1.1-0.7-0.9 0.4-0.7 1-0.7 9.6-4.7 1.5-0.3 19.9-0.8 1.5-0.4 0.7-0.6-1.4-0.2-0.1-0.8 0.4-1.3-0.3-0.9 0-0.7 0.3-1.3 0.3-0.6 3-2.2 1.1-1.5 0-0.8-0.6-1.4-0.1-1.1-0.5-0.6-0.5-1.5 0.1-0.6 1.4-2.8 1.2-0.7 10.9-0.3 1.2 0 1 0.4 3.5 1.9 3.8 1.1 1.6 0.1 1.6-0.1 3.7-0.9 0.9-0.4 1.1-0.6 0.2-0.6-0.2-0.5-0.8-0.7-0.4-1-0.1-1.5-0.1-1.7 0.4-2.5 1.4-4.3 0.1-0.8-0.1-3.4 0-1 2.3-11 0.1-1.4-0.1-1.4-0.6-1.8-0.4-2.2 1.4-7.2 0.2-11.1 0.3-1.2 0.8-0.6 1.3-0.6 1.7-1 0.6-1.1-0.1-1-0.7-0.8-1-0.5-3.9-0.9-0.8-0.3-0.6-0.5 0.3-0.7 1-1 17.9-14.7 5.5-5.1 0.2-2.9-0.5-1.2-0.2-1.1 0.3-0.5 0.8-0.2 1.8-0.3 1.1-0.5 0.8-1 1.4-2.1 0.8-0.7 1.4-0.2 4.4 0.4 0.9 0.3 0 1.7-0.3 1-0.5 0.7 0.2 0.6-0.6 1.3-0.4 1.6-0.1 1.7 0.1 1.6 0.2 0.7 0.4 0.7 5.5 0.8 20.1-0.5z" id="Masvingo" name="Masvingo"></path>
+              <path data-bs-toggle="modal" data-bs-target="#mashwest" d="M648.6 4.2l-0.3 1.5 0.1 5.3 0.5 1.9 1.5 1.8 0.7 1.3 1 2.9-0.5 1.9-1 1.7-33.3 28.9-0.7 0.9 0 1.2 0.2 0.7 0.7 1.2 0.9 0.8 0.6 0.4 2.7 1 0.4 0.7 0.1 1.2-0.5 3.4 0 1.2 0.3 1.4 0.2 0.6 0.7 1.1 0.9 0.8 0.2 0.9 0 1.4 0.1 0.7 0.8 1.1 1 0.8 0.6 0.1 1.4-0.1 0.7 0.1 0.6 0.4 0.3 0.7 0.1 1.3-0.2 0.8-0.5 0.6-3.3 2.2-0.6 0.6-1.6 2.6-0.4 1.1-0.2 1 0 0.9 0.7 4.3-0.1 1.8-0.2 1.1-0.4 0.8-0.4 0.5-1.5 1.1-0.7 0.6-0.8 1.3-2.2 5-0.1 1.4 0.2 0.7 1.3 0.7 1.4 0.4 1.4 0 0.5-0.4 0.4-0.5 0.8-2 0.9-0.9 1.3-0.5 1.5-0.1 2.8 0.7 0.7 0 0.6-0.3 1.2-1.5 1.1-0.7 2.8-0.7 1.1-0.6 0.9-1 0.5-1.3-0.1-0.9-0.6-2.7-0.1-0.7 0.4-1.4 0.9-0.9 1.3-0.6 4.6-0.5 0.8 0 1.7 0.2 0.7 0.3 0.7 0.6 0.5 1.1 1.1 3.5 0.5 0.9 2.2 2.5 0.9 0.6 0.7 0.1 7.3-0.4 0.8 0.2 0.9 0.5 1 1.8 0.7 1.7 0.8 2.9 0.2 1.5 0 1.2-0.3 0.7-1.6 2.9-0.6 1.7-0.3 3.4-0.9 4.2-0.5 1.3-1.1 1.8-1 3-1 5.7 0.1 1.1 0.2 0.9 1.3 2 1 1.9 0.4 0.6 0.6 0.4 2 0.9 1.7 1.1 0.6 0.3 1.5 0.2 0.7 0.3 4.1 2.5 1 0.5 0.7 0.6 1.9 4.4 0.1 0.9-0.8 2.2 1.1 0.7 1.3 0.7 0.7 0.5 0.6 0.9 0.9 1.7 0.3 1.2 0.1 1-0.2 0.8-0.6 1.2-2 2.6-0.6 1.3-0.2 1.7 0.7 11.7 0.3 1.1 0.7 1 2.1 1.7 0.9 1.2-0.1 0.7-0.3 0.4-1.6 0.9 0 0.5 0.1 3.5 0.5 2.7 0.4 0.6 0.5 0.4 1.5 0.1 3.2-0.2 0.8 0 1.7 0.8 0.7 0.1 0.6-0.2 1.5-1.2 1.7-1 0.7-0.3 0.7 0 0.7 0.5 0.4 0.8 0.1 1.3 0.6 0.5 0.5 0 1.6-1 1.3-0.5 1.5 0.2 1.5 0.5 0.7 0.3 0.6 0.7 0.2 1.6-1.4 11-0.5 1.3-0.3 0.6-1.6 2.3-1.6 1.9-1.9 1.8-1.1 1-0.4 0.7 0.2 0.6 1 1 0.6 0.7-0.2 1.3-4.8 9.2-1.8 2.9-0.5 1.6 1.7 7.6 0.2 2.1 0 1.9-1.5 11.1 0 3.2 1.2 0.8 17.9-0.1 0.8 0.2 0.2 0.5-0.5 2.4-0.9 2.6-0.3 1 0 1.2 0.5 0.8 1.2 0.8 7 2.9 6 3.2 1.8 1.2 0.8 0.5 0.8 0 0.8-0.7 0.7-0.8 0.7-0.8 0.8-0.4 2.4 0.8 3.5 5.9-1.5 4.2-3.5 4.2-1.5 1.1-1.4 0.6-1.2 0.3-0.6 0.6-0.3 0.9-0.2 1.5 0 1.1 0.3 0.7 0.5 0.6 0.3 0.9 0 1.5-0.8 1.8-0.2 1.1 0.3 0.8 0.7 0.6 2.7 1.5 0.6 0.8 0.6 0.9 0.4 1.3-0.2 0.7-0.5 0.6-4.2 1.5-3.4 0.7-0.7-0.5-1.7-0.9-3.5-1.4-1.4-0.6-0.5 0.2-0.4 1-0.3 1.8 0 1.2 0.2 0.8 0.7 2 0 0.7-0.3 0.7-1.4 1-2 0.8-0.5 0.8-0.4 0.8-0.3 1.6 0.3 1.9 1.9 4.5 0 0.7-0.4 0.7-1.7 1.3-0.7 0.7-0.5 1.1-1.2 4.3-0.1 0.8 0.4 1.3-0.2 1.2-0.7 1.7-2.2 3.5-1.2 1.4-1 1-1.8 0.8-0.6 0.5-0.3 0.7-0.1 1.3 0.2 4.4 0.1 0.7 0.6 1.2 0.9 1 5.3 4.9 3.5 3.9 0.7 1.1 0.6 1.3 0.1 0.7-0.1 0.7-0.5 0.8-1.3 1-0.8 0.7-0.7 0.9-0.3 1.4-0.2 1.1-1 18.5-0.3 1.7-0.5 1.1-0.8 1.1-5.5 5.4-5.9 10.1-0.6 0.6-0.8-1.1-0.4-0.2-2.9-0.7-0.7-0.1-0.6 0.2-0.2 0.8 0 0.8 0.7 2.7-0.7 0.8-1.4 0.2-0.9-0.1-0.7-0.3-1.1-0.9-0.5-0.4-2.7-0.9-0.8-0.1-0.5 0.3-0.1 0.6 0.1 0.7 0.5 1.9-0.5 0.5-1 0.7-2.6 0.9-1 0.1-0.6-0.1-2.1-4.9-0.9-1.3-1.3-4-0.7-1.2-0.6-0.4-0.7 0.3-1 1.3-5.5 11.3-0.3 1.1-1.1 6.3-0.9 2-2.2 2.2-4.5-4.3-1.1-0.9-0.9-0.5-1.7-0.6-2.9-0.6-3-1.4-2-0.6-0.9-0.4-0.9-0.7-2.7-2.9-1.1-0.9-1.6-1-1.7-0.6-4.4-1.2-0.8-0.1-3.3 0.2-1.7-0.1-1.6-0.4-0.7-0.3-3.1-1.6-0.8-0.2-2.4-0.2-4.3-2.1-1.1-0.2-0.9 0.1-2 0.6-0.6 0.4-1 0.9-0.5 0.3-0.7 0-4.8-0.9-0.8-0.3-4.2-2-1.9-0.3-0.7-0.3-0.7-0.6-1.1-1.7-0.9-0.7-1.3-0.3-2.7-1.2-0.9-0.1-1.4 0.3-0.7 0-0.8-0.5-0.9-1.1-0.9-0.8-1.6-0.9-1.1-0.4-1-0.2-0.8-0.1-3.2-0.6-0.7 0-1.2 0.5-0.7 0.1-1.3-0.5-4.9-3-1.6-0.7-1.2-0.3-0.9-0.4-0.8-0.7-1-1.6-0.5-1.1-0.2-1-0.1-1.6 0.4-2.6-0.5-6.3 0-0.7 0.2-0.7 0.4-0.5 1.3-1.2 0.3-1 0-2.2 0.2-0.8 1.3-3.5 0.3-1.7 0-0.8-0.4-0.7-0.7-0.6-4.8-2.3-17.6-11.3-1.3-0.5-2-0.5-1-0.6-1.2-1.4-1.1-1.7-0.6-0.7-0.8-0.6-2.8-1.4-1-0.7-3.2-3.6-0.6-0.8-0.6-1.4-0.7-1.2-3.4-3.2-0.3-0.5-0.4-1.4-0.1-1.6-0.4-0.7-1.9-1.8-0.6-0.8-0.4-0.7-0.3-1.5-0.8-1.9 0-0.7 0.1-1.6-0.1-0.7-0.3-1.4-0.6-2 0.1-1 0.5-1 0.2-1.5 0.5-1.3 0.8-1.1 3.4-8.4 1.5-2.4 0.8-2.1 0.3-0.6 1.7-2.1 0.6-1.4 0.6-3.5 0.3-0.7 0.8-1 1.6-1.2 0.8-1.1 0.7-1.2 0.2-0.7-0.3-0.9-0.6-0.8-1.2-1.3-0.2-0.8 0.1-0.8 0.5-0.4 2.1-1.6 0.7-1.1 0.6-1.4 0.1-0.8 0.1-3.3 0.5-3.3-0.3-3.1-0.2-0.7-0.4-0.7-1.5-1.5-0.4-0.8 0-0.8 0.2-0.7 0.8-1 1.1-0.8 0.9-0.9 0.8-1.2 0.9-2 0.8-1 1-0.9 2.2-1.4 0.9-0.9 0.3-0.5 0.9-2.3-0.3-0.6-0.9-0.6-2.3-0.8-1.1-0.5-0.9-0.5-8.5-9.9-0.6-1.2-0.2-0.7-0.6-2.9-0.4-1.3-0.9-1.8-0.9-0.9-1.2-1-1.7-0.9-0.9-0.1-0.9 0.1-1.4 0.5-1.1 0.2-2.2-0.3-8-2.8-0.6-0.4-1.5-1.3-1.6-0.6-2-0.3-0.7-0.4-3.6-2.9-8.9-3-1-0.9-0.8-1-0.7-1.1-0.8-1.9-0.3-0.5-1.1-1.7-0.3-0.6-0.5-2.1-0.6-1.1-1.3-1.5-0.6-0.2-0.7 0.2-3.9 3.1-0.6 0.3-0.8 0.2-1.1 0-3.5-0.6-0.8 0-1.5 0.2-6 1.9-1 0.4-3.7 2.3-1.1 0.9-0.7 0.8-1.1 1.9-0.5 0.5-0.6 0.3-1.2 0.1-2.7-0.4-0.9 0.1-0.9 0.4-1.2 1-5.1 6-1.4 2.5-1.2 2.6-5 6.3-0.6 0.6-2.3 1.4-0.7 0.8-0.9 1.3-0.6 0.3-0.7 0-1.1-0.7-1.2-1-0.7-0.1-1.4 0.8-0.8 0.1-2.9-0.7-1.9-0.2-2.1 0.3-12.9 3-1.5 0.9-1.8 0.3-4.1-0.7-1.5-5.9-1.4-1.7-1-0.2-1.1-0.5-1.4-0.9-1.2-1.5-2.5-1.9-0.5-0.8-0.3-1.2-0.2-1.3-0.7-2.2 0.1-2.3-0.1-1.1-0.5-0.9-0.8-1-0.3-0.8-0.1-0.7 0.6-1.5 0.1-1.4-0.4-0.9-0.8-1.1-0.3-0.9-0.2-0.8 0.1-0.8 0.4-1.6 0.1-0.9-0.3-0.5-0.6-0.4-1.4-0.5-0.7-0.1-1.3 0.2-0.8 0-0.9-0.3-0.6-0.7-0.4-1-0.6-1.5-0.5-0.8-0.7-0.6-1.8-0.7-1-0.7-0.7-1 0.1-1 0.6 0.5 0.7-3 1.6-1.9 2.2-1.1 2.6-0.4 0-1-0.9 0 0.6-1.1-1.4-2.1 1-0.9 1.9-0.7 1.4-1.6-1.8 0.2-3.1 1.3-1.6 0.3-2.6-0.1-0.3-0.5 0.8-0.9 0.7-1.2 0.7-3.2 1-2 1.7-1.5 2.7-1.5-2.3-1.2 0.3-1.8 1.3-2 1.6-3.5 1.9-0.8 4.3-0.7 7.8-3.1 4.2-0.5 0.2 2.7 5.9-1.1 1-0.3 0.2-2.1 0.9-1.7 1.3-0.9 1.9 0.6 0.5-2.5 1.6-2 1.8-0.6 1.5 1.4-0.2 1.3-0.9 1.2-1.1 1-0.6 0.6 0.2 1.3 0.6 1.4 0.2 1 1 1.6 2.2 1 2.5 0.4 1.8 0.2 1.8 1 0.9 4.8 2.1 1.4-1.2-6.3-1-0.9-0.5-0.3-0.8-0.7-0.7-0.8-0.2-0.9 0.4-0.9 0.6 0 0.8 0.3 0.8-0.3 3.1-5.5 2.2-2.2 2.6 0.3 0.6-0.3 1.5-1 0.5-0.4-0.9-2 1.8-0.9 0.7 1.4 1.2 0.1 1.5-0.1 1.8 0.5-1-2.6 1.3-0.2 2 0.3 1.3-1 2.6 0.5 2.1-4.4 3.1-0.8 1.9 1.5-0.4 2.6 0 2.1 2.8 0.1-0.8 1.3-2.2 2.5-0.5 1.3 0.5 1.1 1.8 1 0.4 1.5 1.2 2.4 2.9 0.5 3.2-0.2 2.2 0.6 1.1-1.6 1.3-1.1 0.8-1.4-0.5-2.3 5.2 1.4 2.7-3.1 0.7-4.4-1.2-2.2-2-0.9 0.7-1.9 1.9-1.9 2-0.8 1.5 0.7 4.2 5.9 0-2.8 0.7-2.2 1.3-1.8 1.5-1.6-2.4 0.1-0.5-0.6 0.8-1.1 1.3-1.1 1.3-0.7 4.1-1.1 1.6-0.1-1.2-1.4-2.1-0.8-2.5-0.4-2.1-0.1 1.1-2.4 1.5-2.1-0.9-1-5.1 2.9-1.9 0.8-2.4 0.3-1.9-0.4-3.5-1.7 1.2-0.8 1.6-0.2 1.7 0.2 1.6 0.8 0.3-0.6 0.6-0.3-2.3-1.5-1.6-1.1-1.7-0.9-8.5-0.5-2.5 0.2 1-2.2 5.1-3.9 1.7-2.1 0.9-4.8 0.5-1.1 3.1-5-0.1-3.1-2.1-5.5-0.4-2.3 0.4-2.9 3.1-7.1-2.2-3.8 0.7-5.3 1.6-5.5 0.7-4.5-0.3-0.7-0.6-0.7-0.6-1-0.2-1.2 0.4-1.5 1.7-2.7 0.4-0.9 2.8-3.5 4.3-4.2 2.4-1.2 2.7-0.5 5.8-0.1 3.1-0.6 1.6-1.5 2.7-5.2 1.3-1.4 2-1.8 2.5-1.6 2.6-0.6 1.1-0.8 4.5-4.8 28.2-13 1.9-0.4 11-1 2.3-1.5 4.8-4 3-0.9 2.7 0.4 2.5 0.7 2.6 0.4 3.1-0.5 7.3-2.4 5.5-0.9 5.3-2.5 2.9-0.6 5.7 0.5 10.9 3 5.5 0.7 5.1-0.8 5-1.5 5.1-0.7 5.1 1.1 3.3 2.2 1.5 0.6 2-0.5 1-0.6 1.9-1.7 1.2-0.4 3.2 0.4 2 0.9z" id="Mashonaland West" name="Mashonaland West"></path>
+            </svg>
+          </div>
+          <!-- mashcentral -->
+          <div class="modal fade" id="mashcentral" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mashcentralLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="mashcentralLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class=" col-lg-8 col-sm-12">
-            <div class="coming-inner">
-              <div class="card-body">
-                <div class="col-12 col-md-12 map-chart">
-                  <div class="single-post-area mb-80">
-                    <div>
-                      <div class="post-thumbnail">
-                        <svg baseprofile="tiny" fill="#7c7c7c" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.2" viewbox="0 0 1100 1100" xmlns="http://www.w3.org/2000/svg">
-                          <style type="text/css">
-                          .noelection {
-                            fill: #cccccc;
-                            fill-opacity: 1;
-                            stroke: white;
-                            stroke-opacity: 1;
-                            stroke-width: 0.5;
-                          }
-
-                          .election {
-                            fill: #4da59e;
-                            fill-opacity: 1;
-                            stroke: white;
-                            stroke-opacity: 1;
-                            stroke-width: 0.5;
-                          }
-
-                          .noelection:hover {
-                            fill: #111;
-                            fill-opacity: 0.3;
-                          }
-
-                          .election:hover {
-                            fill: #111;
-                            fill-opacity: 0.3;
-                          }
-
-                          .land {
-                            fill: #cccccc;
-                            fill-opacity: 1;
-                            stroke: white;
-                            stroke-opacity: 1;
-                            stroke-width: 0.5;
-                          }
-
-                          .infected {
-                            fill: #f7a8aa;
-
-                            fill-opacity: 1;
-                            stroke: white;
-                            stroke-opacity: 1;
-                            stroke-width: 0.5;
-                          }
-
-                          .infected:hover {
-                            fill-opacity: 0.5;
-                          }
-
-                          .high {
-                            fill: #d70206;
-                          }
-
-                          .mid {
-                            fill: #f4696d;
-                          }
-
-                          .land:hover {
-                            fill: #111;
-                            fill-opacity: 0.3;
-                          }
-                          </style>
-                          <path onclick="expandAccordion('collapseFour')" class="noelection" d="M959.2 146.3l-0.5 0.3-3.3 3.3-2.2 0.9-2.4 0.4-7.3-0.6-1.1-0.5-2.2-1.1-1.1-0.4-17.3-2.2-3.1 0.4-3.3 1.2-6.1 3.7-3.3 1.2-1.8 0.2-5.2-0.2-1.4 0.3-1.1 0.5-2.1 1.5-2.4 1.4-3 1.1-3 0.7-2.7 0.1-1.2-0.3-2.1-0.9-1.2-0.1-1.8 0.3-2.1 0.8-3.6 2.2-1.3 1.5-1.2 1.9-0.9 2.2-1.4 6.3-0.7 1.3-1.1 1.1-4.2 2.1-1.8 1.6-1.7 2-1.2 2.3-0.8 2.4-0.8 4.4-0.6 1.3-2.9 4.9-1.7 2.1-2 1.9-2.5 1.4-0.7 0.6-0.7 0.9-1.1 2-0.7 1-1.4 1.3-3.3 1.9-1.4 1.2-1.1 1.9-0.2 2.4 0.2 2.5 0.4 2.2 0.2 3.6-1.2 3.1-2.1 2.7-10.9 10.8-2.1 3.4-0.3 1.2-2.2 2.2-11.7 6.2-0.5 0.8-1.4 2.3-1.3 2.6-0.8 1.2-0.9 1.1-1.6-0.6-0.7 0-1.4 1-6.7 6.5-1.4 1.1-1.4 0.6-4.4-1.8-1.5 0.5-2.8 1.5-1.2 0.2-0.9-1-0.6-1.3-0.4-1.4-0.2-1.4 0.3-1.5 4.3-11.3 0.2-0.8-0.1-0.8-1-0.3-20.1-1.8-1.7 0.9-1.7 1.8-2 4.3-2.7 3.1-0.2 0.7 0.8 1.7 0.8 0.5 0.9 0.1 0.3 1.2 0.1 1-2.6 11.2-0.4 5.8-1 2.1-0.8 0.9-0.8 0.4-0.9 0.2-2.3-0.1-1.3 0.5-1.5 0.2-1.2-0.1-0.6-0.1-0.7-0.4-2.1-2-3.5-5.9-2.4-0.8-0.8 0.4-0.7 0.8-0.7 0.8-0.8 0.7-0.8 0-0.8-0.5-1.8-1.2-6-3.2-7-2.9-1.2-0.8-0.5-0.8 0-1.2 0.3-1 0.9-2.6 0.5-2.4-0.2-0.5-0.8-0.2-17.9 0.1-1.2-0.8 0-3.2 1.5-11.1 0-1.9-0.2-2.1-1.7-7.6 0.5-1.6 1.8-2.9 4.8-9.2 0.2-1.3-0.6-0.7-1-1-0.2-0.6 0.4-0.7 1.1-1 1.9-1.8 1.6-1.9 1.6-2.3 0.3-0.6 0.5-1.3 1.4-11-0.2-1.6-0.6-0.7-0.7-0.3-1.5-0.5-1.5-0.2-1.3 0.5-1.6 1-0.5 0-0.6-0.5-0.1-1.3-0.4-0.8-0.7-0.5-0.7 0-0.7 0.3-1.7 1-1.5 1.2-0.6 0.2-0.7-0.1-1.7-0.8-0.8 0-3.2 0.2-1.5-0.1-0.5-0.4-0.4-0.6-0.5-2.7-0.1-3.5 0-0.5 1.6-0.9 0.3-0.4 0.1-0.7-0.9-1.2-2.1-1.7-0.7-1-0.3-1.1-0.7-11.7 0.2-1.7 0.6-1.3 2-2.6 0.6-1.2 0.2-0.8-0.1-1-0.3-1.2-0.9-1.7-0.6-0.9-0.7-0.5-1.3-0.7-1.1-0.7 0.8-2.2-0.1-0.9-1.9-4.4-0.7-0.6-1-0.5-4.1-2.5-0.7-0.3-1.5-0.2-0.6-0.3-1.7-1.1-2-0.9-0.6-0.4-0.4-0.6-1-1.9-1.3-2-0.2-0.9-0.1-1.1 1-5.7 1-3 1.1-1.8 0.5-1.3 0.9-4.2 0.3-3.4 0.6-1.7 1.6-2.9 0.3-0.7 0-1.2-0.2-1.5-0.8-2.9-0.7-1.7-1-1.8-0.9-0.5-0.8-0.2-7.3 0.4-0.7-0.1-0.9-0.6-2.2-2.5-0.5-0.9-1.1-3.5-0.5-1.1-0.7-0.6-0.7-0.3-1.7-0.2-0.8 0-4.6 0.5-1.3 0.6-0.9 0.9-0.4 1.4 0.1 0.7 0.6 2.7 0.1 0.9-0.5 1.3-0.9 1-1.1 0.6-2.8 0.7-1.1 0.7-1.2 1.5-0.6 0.3-0.7 0-2.8-0.7-1.5 0.1-1.3 0.5-0.9 0.9-0.8 2-0.4 0.5-0.5 0.4-1.4 0-1.4-0.4-1.3-0.7-0.2-0.7 0.1-1.4 2.2-5 0.8-1.3 0.7-0.6 1.5-1.1 0.4-0.5 0.4-0.8 0.2-1.1 0.1-1.8-0.7-4.3 0-0.9 0.2-1 0.4-1.1 1.6-2.6 0.6-0.6 3.3-2.2 0.5-0.6 0.2-0.8-0.1-1.3-0.3-0.7-0.6-0.4-0.7-0.1-1.4 0.1-0.6-0.1-1-0.8-0.8-1.1-0.1-0.7 0-1.4-0.2-0.9-0.9-0.8-0.7-1.1-0.2-0.6-0.3-1.4 0-1.2 0.5-3.4-0.1-1.2-0.4-0.7-2.7-1-0.6-0.4-0.9-0.8-0.7-1.2-0.2-0.7 0-1.2 0.7-0.9 33.3-28.9 1-1.7 0.5-1.9-1-2.9-0.7-1.3-1.5-1.8-0.5-1.9-0.1-5.3 0.3-1.5 4.1 1.8 3.6-0.1 5.1-2.1 0.2 10.7 0.2 12.6 0.4 25.1 14.3-0.1 9.2 0 34.5-0.3 5.7 1.2 5.1 3.7 2.1 2.2 1.9 1.4 2.1 0.3 2.8-1.2 1.5-1.3 2.4-2.7 1.9-1 1.1 0.3 1 0.8 0.9 0 1.1-1.8 3.2-2 5.6 0.4 13 3.1 2.4 0.9 2.1 1.5 1.8 2.3 2.4 4.5 1.6 1.8 2.5 1.4 1.2 0.9 0.6 1.2 0.4 1.3 0.8 0.8 0.5 0.1 1.5-0.3 0.6 0.4-0.2 1.2 0.2 0.4 2.5 0.4 2.8 0 2.5 0.4 1.9 1.3 4.9 2.5 21.3 1.4 3.2 1.4 3.5 2.9 7.7 8.5 2.5 2.1 5.3 2.9 1.5 1.2 1.2 2.4 0.6 5.1 1.1 2 2 1 13.3 2.1 25.2-0.6 10 1.5 13.2 5.3 20.2 8.2 15.3 6.2 1.4 1.4 0.6 1.9 0.1 3 1.3 5.3 3.4 2.6 0.7 0.3z" id="Mashonaland Central" name="Mashonaland Central"></path>
-                          <path onclick="expandAccordion('collapseTwo')" class="noelection" d="M723 312.1l3.4-0.7 4.2-1.5 0.5-0.6 0.2-0.7-0.4-1.3-0.6-0.9-0.6-0.8-2.7-1.5-0.7-0.6-0.3-0.8 0.2-1.1 0.8-1.8 0-1.5-0.3-0.9-0.5-0.6-0.3-0.7 0-1.1 0.2-1.5 0.3-0.9 0.6-0.6 1.2-0.3 1.4-0.6 1.5-1.1 3.5-4.2 1.5-4.2 2.1 2 0.7 0.4 0.6 0.1 1.2 0.1 1.5-0.2 1.3-0.5 2.3 0.1 0.9-0.2 0.8-0.4 0.8-0.9 1-2.1 0.4-5.8 2.4 0.1 0.6 0.3 0.4 0.5 0.2 1 0.4 1 0.5 0.9 0.9 0.4 2.4 0.4 4.2-0.1 1.2 0.3 0.6 0.6 0.4 1.5 0.2 1.4-0.1 1.5-0.6 2.3 0 0.9 0.3 0.9 0.8 1.7 0.2 0.8-0.1 1.5 0.1 0.8 0.3 1.4 0.3 1.1 1.2 2.6 0.2 1.1-0.3 0.7-0.5 0.8-1.3 1.3-0.5 0.9-0.2 0.9-0.1 1.4-0.7 0.8-1.1 0.7-4.7 2.1-0.1 0.8 0.5 2.3 0.1 1.5-0.1 0.6-0.5 2.3-1.2 1.4-1.8 0.9-0.4 1-0.1 0.6 0.4 0.6 1.2 0.9 0.1 0.3-0.4 0.5-2.2 1.7-0.7 0.3-1.6 0.2-0.9 0.2-2.2 1.2-0.9 0.2-0.8-0.2-1.2-0.5-2.9-2.6-6.2-4.1-4.9-2.1-1.6-0.4-2.5-1-3.4-3.2z" id="Harare" name="Harare"></path>
-                          <path onclick="expandAccordion('collapseEight')" class="noelection" d="M361.2 195.5l-0.1 1 0.7 1 1 0.7 1.8 0.7 0.7 0.6 0.5 0.8 0.6 1.5 0.4 1 0.6 0.7 0.9 0.3 0.8 0 1.3-0.2 0.7 0.1 1.4 0.5 0.6 0.4 0.3 0.5-0.1 0.9-0.4 1.6-0.1 0.8 0.2 0.8 0.3 0.9 0.8 1.1 0.4 0.9-0.1 1.4-0.6 1.5 0.1 0.7 0.3 0.8 0.8 1 0.5 0.9 0.1 1.1-0.1 2.3 0.7 2.2 0.2 1.3 0.3 1.2 0.5 0.8 2.5 1.9 1.2 1.5 1.4 0.9 1.1 0.5 1 0.2 1.4 1.7 1.5 5.9-0.3 4.9-0.3 1.2-1 2.7-0.1 1.7-0.2 0.6-0.9 1-0.6 2.4-0.9 2.2-0.2 0.7-0.1 1 0.1 1.1 0.5 1.7 0 2-0.3 0.6-0.9 1.8-0.7 3.2-0.7 2.1 0 1 0.8 3 0.1 1.1-0.2 0.8-3.6 3.9-2 1.7-0.8 0.9-1 0.6-0.6-0.2-0.9-0.8-1.2-0.3-1.1 0.5-3.4 3-0.2 0.7-0.4 1.6-0.6 1.4-0.1 0.8 0 1 1.5 6.3 0 1.2-0.2 0.9-1.6 3.1-1.1 2.8 0 1.7 0.3 1.3-0.2 0.8-0.4 0.6-1.1 0.6-0.5 0.5-0.4 0.5-0.2 0.7-0.3 1.6-0.6 1.3-0.9 1-2.1 1.6-0.8 0.9-0.1 1 0.2 0.8 0.6 2.1 0.3 1.9 0.3 0.8 0.6 0.7 1.2 0.8 0.8 0.1 2-0.5 0.7 0.1 0.5 0.5 0.3 1-0.1 2.7 0.2 1.5 0.7 2 0.2 0.7-0.1 0.7-0.6 1.3-0.5 0.5-1 0.7-0.9 1-0.2 0.6 0.2 0.9 0.5 0.8 1.3 0.9 1.1 0.4 2.6 0.6 1.3 0.9 0.4 1-0.3 0.4-0.6 0.3-6.9 0.8-3.5 0.8-0.7 0.4-0.5 0.7-0.5 39.4 0.2 1.9 0.5 1.9 1.4 1.2 1 0.7 0.9 0.3 0.9 0.1 1.6 0.1 6.8-0.9 0.8 0 0.7 0.1 2 1 1.6 0.4 5.2 0.3 1.7 0.3 2.3 0.6 12.8 0.4 1.6 0.4 0.8 0.1 1.5-0.1 3-0.6 6.6 0 2.4 0.5 1.8 0.1 5.2-0.3 1.1-0.2 4-1.3 0.8-0.1 8 0.1 0.7-0.2 2.3-0.1 1.5-0.3 2.6-0.9 0.7-0.1 1.7 0.1 2 0.8 2.3 0.7 1.9 0.2 47.7-0.5 1.2 0.2 0.9 0.6 1.7 3.2 0.5 1.5 0.1 1.2-0.6 1.5-1.2 0.9-22.3 9.5-7 1.7-1.2 0.6-0.9 1.2-0.1 2.4 7.5 34.1 0.5 1.6 0.7 1.5 1 1 0.9 0.6 1.6 0.5 0.9 1 1 1.4 2.7 4.7 0.5 1.1 0 1.2-0.4 1.9-0.3 0.6-0.8 1.1-0.6 0.6-0.4 1.3 0 3.8 0.2 0.9 1.1 1.6 1.5 1.1 11.5 12.6 0.8 1.3 0.3 0.9 0.1 1.6-0.4 1-2.8 4.6 0.6 1 16 15.4-1 2.3-0.7 0.7-1.3 1-1 0.2-1-0.2-0.9-0.6-0.7-0.5-1.1-0.8-1.4-0.4-4.2-0.8-0.7 0-1.8 0.3-0.7 0.5-0.3 0.7-0.1 1.6 0.4 1 0.7 0.9 1.9 1.7 0.8 1.1 0.5 1 0.2 1-0.1 1.2-0.4 2.1-0.7 1.1-1.1 1.5-5.6 5-0.5 0.6-0.4 0.8 0.3 1 0.6 0.7 1.7 1.7 0.9 0.7 1 0.6 0.8 0.8 0.4 1 0.1 1.5-0.1 5.3-0.2 1.2-0.6 2-0.9 2.5-0.1 0.9-0.4 1-0.8 1.1-3 2.2-1.7 0.7-1.4 0.3-7.6-1.5-0.7 0.1-0.4 0.4-0.1 0.9 0.2 0.8 0.5 1.3 1.8 7.1 1.2 3 0 1-0.3 0.7-2.2 3.6-1.5 1.2-8.9 5.1-5.6 2.3-0.6 0.4-0.4 0.6-0.4 1 0.1 1.7 0.8 2.7 0 0.7-0.4 0.9-12.5 15.2-2.4 2.3-2.1 1.6-0.8 2.1-3.4 3.6-1.7 0.2-1-0.2-6.6-5.4 8.6-1.9 2.1-0.9 0.9-0.7 0.7-0.8 0.4-0.8 0.3-0.8 0-0.6-0.3-0.6-0.5-0.6-2.5-1.7-0.8-1 0-0.6 0.2-1 0.8-1.5 0.6-1.9-0.1-0.7-0.4-0.4-1.7-0.7-0.5-0.4-0.2-0.6-0.1-1.6-0.6-0.5-0.8 0.1-1.7 0.8-0.9 0.3-1-0.1-0.9-0.4-1.3-1.1-0.6-0.3-1.9-0.4-0.7-0.6-0.1-0.7 0.1-0.5 0.1-1.7 0.6-1.7-0.6-0.6-0.7 0.1-2.5 0.8-2.8 0.5-0.8 0.3-1.6 1.4-0.8 0.4-1 0.1-1.3-0.4-7.2-3.9-0.9-0.2-0.6 0-0.4 0.3-0.2 0.7 0.2 1.6 1.2 5 0 1.2-0.2 0.7-0.6 1.3-0.2 1-0.1 1 0.1 1.4-0.5 0.9-0.8 0.6-1.7 1-0.4 0.6 0.1 0.6 0.6 0.7 1.6 0.5 1 0.1 1.6-0.1 1 0.1 2.2 0.6 1.5-0.1 1.5-0.7 1-0.1 1 0.4 0.9 1.5 1.2 1.3 0.3 1.4-1.6 3.7-3.3 1.4-17.2 13-0.9 0.2-0.7-0.7-1.2-2.7-0.7-2.1-0.5-1.3-0.3-0.6-1.5-2.1-1.4-1.4-0.9-2-0.5-0.4-1.2-0.7-0.9-0.9-0.8-2-2.6-2.1-2.7-3-0.4-0.5-0.1-1.7-0.2-0.6-1.1-1.7-0.6-2.1-0.3-0.6-0.5-0.5-0.7-0.4-1.8-0.7-0.7-0.4-0.5-0.5-0.8-2-0.6-0.7-1 0.1-4.3 1.8-1.3 0.2-5.4 0.2-1.2 0.4-4.7 2.4-0.5-0.1-0.7-0.3-4.5-7-0.7-0.8-0.5 0.4-0.5 1.1-1.8 5.4-0.8 4.3-0.2 3.8-0.4 1.4-0.6 0.7-4 0-5.2-0.9-1.7-0.5-1.5-1-1-1.4-1-0.9-3-1.6-2.1-1.7-9.4-9.2-2.1-1.6-2.3-1.4-1-0.9-4.5-5-2.5-3.9-0.7-0.7-0.8-0.7-0.9-0.9-0.6-1.3-0.3-2.5-0.1-1.7-0.4-1.5-0.8-1.2-1.6-1.1-0.9-1.1-1.1-1.7-1.1-0.4-1.6-0.4-3.3-0.5-2.9-0.7-1.8-1-4.4-3-2.4-1.4-2.6-0.6-6.8-0.9-1 0.1-0.9 0.2-1.1 0.7-1.8 1.5-0.9 0.3-1.1 0.2-2.1-0.2-2.3-0.5-1.9 0.1-1.5 0.3-1.4-0.3-1.5-0.9-0.7-0.2-1.6-0.2-3.2-0.5-17.7 2.2-2.8-0.6-2.3-0.2-2.3 0.1-25 6.1-2 0.7-4.1 2.3-2.2 1.3-0.5-0.5-1.8-1-5.8-1.7-2.3-1-1.8-1.9-0.9-3-1.1-2.6-2.2-2.2-5.1-3.4-2.4-1-5.1-1.2-2.3-0.9-2.5-2.3-3.5-5.5-2.8-1.5-3.9-0.7-1-0.5-1.6-1 0-0.3 0.9-0.4 0.9-1.7 0.9-2.8-0.3-1.1-1.3-1.8-1-1-1.2-1-1.4-0.6-6.8-0.1-5.7-1.6-5-3.1-3.2-4.9-12.2-34.8-3-5.9-3.8-5.2-3.2-5.3-1-2.6-0.5-3.2 0.5-2.8 2-5 0.5-2.8-3.5-10.7-16-14.5-4.5-10.1-0.8-9.9-1.5-4.7-3.2-2.9-4.9-2.5-3.7-3.3-6-8.7-1.8-1.8-4.3-3-8.4-8.9-1.7-2.8-0.6-1.8-1.2-5.6-1-2.7-4.1-6.8-4.1-10.3-2.7-5-3.9-3.1-4.3-2.6-3.5-3.7-5.3-9.1-3.6-9.3-0.9-3.2 0-3.8 5.2-11.5 0.8 1 2.4 1.1 3.9 3 2.5 1.3 1.3 0.1 3.9-0.1 4.3 1.5 1.3 0.3 9.6 0 0.7 0.1 1.2 0.7 0.8 0.2 0.7-0.3 1.1-1.2 0.8-0.3 8.6-1.7 6.7-3 3.1-0.3 1.7 1 1.5 1.4 4.8 1.3 2.8 1.4 2.6 1.7 1.1 1.4 1.2 2.1 5.8 2.4 1.8 2.3-2.1 0.8-0.1 1.9 0.9 2.2 1.3 1.5 7.7 3.7 5.5 0.2 1.4-0.2 7.1-3.7 0.9 1 0.7-1.7 2.1-0.4 2.3-0.1 1.8-0.5 0.1-0.5-0.2-1.7 0.1-0.6 0.8-0.3 2.2-0.5 2.2-1.2 2.9-0.6 1.1-0.6 4.6-3.6 1.1-0.6 1.2 0.5 0.9 1.1 0.7 1.3 0.7 0.8 1.2 0.4 5.8 0.7 1.2 0.6 1.1 0.7 0.8 0.8 0.9 0.3 4.8-0.8 5.8 1.2 9.8 5.4 5.3 1.7 3.4 0.6 2.1 0.8 1.7 1.4 2 2.3 1.7 1.5 2.1 1.1 7.3 2.3 1.8 0.3 1.5-0.4 3.7-3.4 1.6-1 2.1-0.6 3.1-0.3 12-5.6 3 1 4.7-3.1 1.3-0.6 6.1-0.3 2-0.6-0.2 1.8 0.6 1.7 1.8-1.3 1.9 0.5 1.7-1.8 0.7 0.4 1.9 0.5-0.5-1.1-0.7-0.9-1.1-0.4-1.1-0.1 0.8-1.9 1-1.4 1.1-0.5 1.4 0.8 0.3-2.5 7.5-6.4 1.9-3.1-0.8-2.1-0.9-1.1 0.1-1.2 5.4-4.1 1.8-0.4 2.2 0.8 0-1.9-1-0.7-1.1-0.2-0.5-0.5 0.3-1.6 0.6-1.1 16.8-18 4.9-3.7 2.7 1.9 1-0.9 1.9 1 2.3-1.3 1.8-2.3 0.9-2-1.5 1.1-1.2 1.4-1.3 1.1-2.1 0.1 4.4-5.5-0.2-1.6 0.3-0.8 1.2-0.4 3.5 0 4.1-0.6 2.3-0.7 1-0.9 1.1-5.7-0.2-2.1 1.3 0.7 0.2 1.3-0.6 3.4 0.9 0 4.6-15.3 2.3-3.8 2.3-1.5 0.7-1.1-0.8-1.5-0.3-1.4 0.9-1.3 1.6-1 1.3-0.5-1.5-3.9 0.1-1.8 2.6 1.2 0.7-1.5 2.1-1.9 0.8-1.3-2.3-0.4 2-1.5 6.4-2.7 4.5-3.2 1.6-0.4 1.3 0.9 1 1.4 1.2 1.1 1.8-0.6-1.5-1.8-1.2-2 5.4-1.5 2.7-1.2 2-1.4 1.1-1.2 2-3.8-0.7-1.4 0-0.9 1.1-0.4 1.5 0.8 0.8 0.3 0.8-0.2 0.5-0.7 0-0.7-0.2-0.5-0.7 0.1 0.1-1.2 0.2-1.2 0.7 0 4.2 1.5 0.9 0.1 0.4 0.4 0 1.7 0.4 0.5 0.8 0.1 0.7-0.4 2.3 3.1 0.4 0.4z" id="Matabeleland North" name="Matabeleland North"></path>
-                          <path onclick="expandAccordion('collapseTen')" class="noelection" d="M657.2 434.8l6.8 1.8 2.2 0.9 2 2 3.2 2.3 5.5 2.4 2.5 0.7 1.9 0.8 2.7 2.4 0.9 0.4 2 0.4 2 0.4 3.4 0 2.7 0.4 1 0.4 1.1 0.6 0.8 0.4 0.9 0.2-0.3 0.7-1.3 2.2-0.2 0.5 0.1 0.9 0.4 1.2 2.6 4.6 3 4.2 0.7 1.1 0.4 1 0.3 1.8-0.1 0.5-1.1 0.3-0.5 0.4-0.6 1.9-0.1 0.9 0.4 1.4-0.1 1.1 0.2 0.7 0.4 0.5 2.6 2.1 1.9 2.1 2.5 2.2 1.9 2.4 1.6 1.5 0.6 0.2 3.2 0.8 3.2 1.8-17.9 14.7-1 1-0.3 0.7 0.6 0.5 0.8 0.3 3.9 0.9 1 0.5 0.7 0.8 0.1 1-0.6 1.1-1.7 1-1.3 0.6-0.8 0.6-0.3 1.2-0.2 11.1-1.4 7.2 0.4 2.2 0.6 1.8 0.1 1.4-0.1 1.4-2.3 11 0 1 0.1 3.4-0.1 0.8-1.4 4.3-0.4 2.5 0.1 1.7 0.1 1.5 0.4 1 0.8 0.7 0.2 0.5-0.2 0.6-1.1 0.6-0.9 0.4-3.7 0.9-1.6 0.1-1.6-0.1-3.8-1.1-3.5-1.9-1-0.4-1.2 0-10.9 0.3-1.2 0.7-1.4 2.8-0.1 0.6 0.5 1.5 0.5 0.6 0.1 1.1 0.6 1.4 0 0.8-1.1 1.5-3 2.2-0.3 0.6-0.3 1.3 0 0.7 0.3 0.9-0.4 1.3 0.1 0.8 1.4 0.2-0.7 0.6-1.5 0.4-19.9 0.8-1.5 0.3-9.6 4.7-1 0.7-0.4 0.7 0.7 0.9 0.3 1.1 0.2 1.8-0.9 4.8-1.5 2.9-0.7 5.6 0.1 3.9 0.3 0.3 0.9-0.3 2.2-1.5 2.1 0.2 2.1 0.6 1.6 1.1 0.8 1 0.6 1.7 0.4 2.2 0.2 2.7-0.1 2.7-1 3.4-0.1 1.4 0.4 0.8 0.6 0.3 0.5 0.5 1.7 2.9 1.4 1.4 1.3 0.6 1.4 0.5 2.4 0.1 0.7 0.2 0.5 0.3 0.3 0.6-0.1 1.4 0 0.8 0.6 1.4 0.8 1 1.1 0.8 0.7 0.3 1.5 0.2 0.6 0.3 0.5 0.4 0.4 0.6 0.5 1.4 0.4 0.6 0.9 1 2.9 1.9 0.8 1 0.2 0.7 0.3 2.4 0.4 0.8 5.2 5.9 0.2 0.8-0.1 1-0.6 1.6-0.2 1.1 0.1 1 0.7 2.1 0 0.9-0.2 2.4 0.1 0.8 0.4 1.5 0.8 1.1 1.5 1.3 0.4 0.5 0.2 0.7 0.4 1.7 0.4 1.4 0 0.8-0.2 0.6-1.7 3-0.5 1.7 0 0.8 0.6 2.8-0.2 1.6-1.3 2.7-0.7 3.2-0.3 0.8-0.5 0.8-1.4 1.8-0.5 0.6-0.1 0.8 0.6 10-0.3 2.1-0.9 1.5-12.7 11.8-1.2 0.1-0.9-0.1-1.7-0.6-2.4-1.4-1 0.1-1.3 1-1.6 0.7-1.1 0.6-0.9 0.1-3.5-0.6-2.3 0-3.2-0.4-1.2-0.3-1.3-0.7-0.7-0.7-1.3-1.4-0.7-0.4-2.9-0.9-1.6-0.9-1.2-1.2-2-2.7-1.3-0.9-2-0.8-1.4-0.9-0.8-0.8-1.1-0.8-0.9-0.6-0.8-0.7-0.7-0.6-0.9-0.6-0.9-0.3-1.5 0-1.4 0.1-1.2 0.5-1.6 0.9-15.1 12.7-2.6 1.3-1.5 0.2-1 0.1-6.5-0.9-2 0-4 0.5-8.9 2.1-5.2-0.2-4.7-1.2-3.5-0.1-0.6-0.1-2.5-0.8-1.4-0.7-0.3-0.5-0.1-0.5 1.7-1.5 18.1-12.5 0.5-0.8 0.4-1.2 6.8-31.8-0.1-0.9-0.8-0.1-5.4 1.8-1.2 0.1-0.7-0.3-0.5-1.6-0.5-1.1-0.8-1.2-1.2-1.1-0.3-0.6-0.2-0.7 0.3-1.2 0.6-1.4 0.8-0.3 0.9-0.6 0.8-0.9 0-1.7 1.2-2.9 0.2-1.5 0-7.1 0.9-0.2 1 0.3 4.2 3 1.2 0.5 1.1-0.6 0.9-0.8 2.2-2.8 0.9-1.9 1-2.6 0.3-1.4 0.1-1.1-0.2-4.4 0-1.2 0.2-0.8 7.6-18.5 0.2-0.9 0.6-6.5 0.2-0.7 8.5-18.1 0.4-1.4 0-1.3-4-6.8-1 0-1.8 1.2-0.5 0-0.5-0.2-0.8-3.4-0.9-1.5-1.8-0.1-8.9 2.2-1.1-0.3-0.6-1.6-0.9-4.2-0.5-1.4-0.7-0.1-0.7 0.1-1.3 0.6-0.7 0.2-5.7 1.3-0.7-0.1-0.8-0.4-5.7-4.4-8.4-4.2-1.1-0.3-1.9-0.1-2.2 1-2.2 0.6-1.4-0.3-1.3-2.7-0.5-1.5-0.2-1.3 0-1.6 1.4-6.6-0.2-1.1-0.4-1.3-1-2.3-0.8-1.5-3.4-3.4-1.1-1.8-1-3-0.1-1.1-0.4-0.8-0.6-0.9-3-2.7-1-1.5-3-5.8-1.3-3.7-1.8-2.2-6.5-6-16-15.4-0.6-1 2.8-4.6 0.4-1-0.1-1.6-0.3-0.9-0.8-1.3-11.5-12.6-1.5-1.1-1.1-1.6-0.2-0.9 0-3.8 0.4-1.3 0.6-0.6 0.8-1.1 0.3-0.6 0.4-1.9 0-1.2-0.5-1.1-2.7-4.7-1-1.4-0.9-1-1.6-0.5-0.9-0.6-1-1-0.7-1.5-0.5-1.6-7.5-34.1 0.1-2.4 0.9-1.2 1.2-0.6 7-1.7 22.3-9.5 1.2-0.9 0.6-1.5-0.1-1.2-0.5-1.5-1.7-3.2-0.9-0.6-1.2-0.2-47.7 0.5-1.9-0.2-2.3-0.7-2-0.8-1.7-0.1-0.7 0.1-2.6 0.9-1.5 0.3-2.3 0.1-0.7 0.2-8-0.1-0.8 0.1-4 1.3-1.1 0.2-5.2 0.3-1.8-0.1-2.4-0.5-6.6 0-3 0.6-1.5 0.1-0.8-0.1-1.6-0.4-12.8-0.4-2.3-0.6-1.7-0.3-5.2-0.3-1.6-0.4-2-1-0.7-0.1-0.8 0-6.8 0.9-1.6-0.1-0.9-0.1-0.9-0.3-1-0.7-1.4-1.2-0.5-1.9-0.2-1.9 0.5-39.4 0.5-0.7 0.7-0.4 3.5-0.8 6.9-0.8 0.6-0.3 0.3-0.4-0.4-1-1.3-0.9-2.6-0.6-1.1-0.4-1.3-0.9-0.5-0.8-0.2-0.9 0.2-0.6 0.9-1 1-0.7 0.5-0.5 0.6-1.3 0.1-0.7-0.2-0.7-0.7-2-0.2-1.5 0.1-2.7-0.3-1-0.5-0.5-0.7-0.1-2 0.5-0.8-0.1-1.2-0.8-0.6-0.7-0.3-0.8-0.3-1.9-0.6-2.1-0.2-0.8 0.1-1 0.8-0.9 2.1-1.6 0.9-1 0.6-1.3 0.3-1.6 0.2-0.7 0.4-0.5 0.5-0.5 1.1-0.6 0.4-0.6 0.2-0.8-0.3-1.3 0-1.7 1.1-2.8 1.6-3.1 0.2-0.9 0-1.2-1.5-6.3 0-1 0.1-0.8 0.6-1.4 0.4-1.6 0.2-0.7 3.4-3 1.1-0.5 1.2 0.3 0.9 0.8 0.6 0.2 1-0.6 0.8-0.9 2-1.7 3.6-3.9 0.2-0.8-0.1-1.1-0.8-3 0-1 0.7-2.1 0.7-3.2 0.9-1.8 0.3-0.6 0-2-0.5-1.7-0.1-1.1 0.1-1 0.2-0.7 0.9-2.2 0.6-2.4 0.9-1 0.2-0.6 0.1-1.7 1-2.7 0.3-1.2 0.3-4.9 4.1 0.7 1.8-0.3 1.5-0.9 12.9-3 2.1-0.3 1.9 0.2 2.9 0.7 0.8-0.1 1.4-0.8 0.7 0.1 1.2 1 1.1 0.7 0.7 0 0.6-0.3 0.9-1.3 0.7-0.8 2.3-1.4 0.6-0.6 5-6.3 1.2-2.6 1.4-2.5 5.1-6 1.2-1 0.9-0.4 0.9-0.1 2.7 0.4 1.2-0.1 0.6-0.3 0.5-0.5 1.1-1.9 0.7-0.8 1.1-0.9 3.7-2.3 1-0.4 6-1.9 1.5-0.2 0.8 0 3.5 0.6 1.1 0 0.8-0.2 0.6-0.3 3.9-3.1 0.7-0.2 0.6 0.2 1.3 1.5 0.6 1.1 0.5 2.1 0.3 0.6 1.1 1.7 0.3 0.5 0.8 1.9 0.7 1.1 0.8 1 1 0.9 8.9 3 3.6 2.9 0.7 0.4 2 0.3 1.6 0.6 1.5 1.3 0.6 0.4 8 2.8 2.2 0.3 1.1-0.2 1.4-0.5 0.9-0.1 0.9 0.1 1.7 0.9 1.2 1 0.9 0.9 0.9 1.8 0.4 1.3 0.6 2.9 0.2 0.7 0.6 1.2 8.5 9.9 0.9 0.5 1.1 0.5 2.3 0.8 0.9 0.6 0.3 0.6-0.9 2.3-0.3 0.5-0.9 0.9-2.2 1.4-1 0.9-0.8 1-0.9 2-0.8 1.2-0.9 0.9-1.1 0.8-0.8 1-0.2 0.7 0 0.8 0.4 0.8 1.5 1.5 0.4 0.7 0.2 0.7 0.3 3.1-0.5 3.3-0.1 3.3-0.1 0.8-0.6 1.4-0.7 1.1-2.1 1.6-0.5 0.4-0.1 0.8 0.2 0.8 1.2 1.3 0.6 0.8 0.3 0.9-0.2 0.7-0.7 1.2-0.8 1.1-1.6 1.2-0.8 1-0.3 0.7-0.6 3.5-0.6 1.4-1.7 2.1-0.3 0.6-0.8 2.1-1.5 2.4-3.4 8.4-0.8 1.1-0.5 1.3-0.2 1.5-0.5 1-0.1 1 0.6 2 0.3 1.4 0.1 0.7-0.1 1.6 0 0.7 0.8 1.9 0.3 1.5 0.4 0.7 0.6 0.8 1.9 1.8 0.4 0.7 0.1 1.6 0.4 1.4 0.3 0.5 3.4 3.2 0.7 1.2 0.6 1.4 0.6 0.8 3.2 3.6 1 0.7 2.8 1.4 0.8 0.6 0.6 0.7 1.1 1.7 1.2 1.4 1 0.6 2 0.5 1.3 0.5 17.6 11.3 4.8 2.3 0.7 0.6 0.4 0.7 0 0.8-0.3 1.7-1.3 3.5-0.2 0.8 0 2.2-0.3 1-1.3 1.2-0.4 0.5-0.2 0.7 0 0.7 0.5 6.3-0.4 2.6 0.1 1.6 0.2 1 0.5 1.1 1 1.6 0.8 0.7 0.9 0.4 1.2 0.3 1.6 0.7 4.9 3 1.3 0.5 0.7-0.1 1.2-0.5 0.7 0 3.2 0.6 0.8 0.1 1 0.2 1.1 0.4 1.6 0.9 0.9 0.8 0.9 1.1 0.8 0.5 0.7 0 1.4-0.3 0.9 0.1 2.7 1.2 1.3 0.3 0.9 0.7 1.1 1.7 0.7 0.6 0.7 0.3 1.9 0.3 4.2 2 0.8 0.3 4.8 0.9 0.7 0 0.5-0.3 1-0.9 0.6-0.4 2-0.6 0.9-0.1 1.1 0.2 4.3 2.1 2.4 0.2 0.8 0.2 3.1 1.6 0.7 0.3 1.6 0.4 1.7 0.1 3.3-0.2 0.8 0.1 4.4 1.2 1.7 0.6 1.6 1 1.1 0.9 2.7 2.9 0.9 0.7 0.9 0.4 2 0.6 3 1.4 2.9 0.6 1.7 0.6 0.9 0.5 1.1 0.9 4.5 4.3z" id="Midlands" name="Midlands"></path>
-                          <path onclick="expandAccordion('collapseFive')" class="noelection" d="M989.6 220.7l-0.8 0-2.7 0.8-9.5 3.8-1.2 0.9-3 2.8-8.5 6.2-1 1.4-3.8 7.6-0.2 0.7-0.1 1.6-0.1 0.9-0.7 1.2-0.8 0.8-0.8 0.5-1.9 0.9-1.3 0.3-4 1.6-0.8 0.6-0.5 0.7-0.2 0.7-0.2 2.4-0.4 1.6-0.4 0.7-5.3 5.8-1.4 0.9-1.1 0.6-0.7 0.2-1.4 0.4-1.9 0.8-2.3 0.2-4.4 2.1-0.7 0.7-1.7 2.2-1.9 2.1-1.1 0.7-0.9 0.2-1.4-0.5-0.8-0.2-0.8 0-1.2 0.2-1.3 0.4-2.4 1.1-2 1.3-5.2 5.3-1.2 0.9-2.9 1.6-1.1 1-0.6 0.6-0.7 1.1-1.2 2.4-1 1.3-1.3 1.2-2.7 1.1-2.7 1.5-3.5 1.3-0.8 0.5-0.6 0.6-0.6 1.4-0.9 5.1-0.1 1.6 0.3 2.3-0.1 0.6-0.5 0.7-29.9 30.6-0.1 0.8 0 0.9 0.3 2.3-0.5 1.4-1 1.8-4.8 6.4-0.4 1.6-0.2 4.4 0.3 2.3 0.4 1.3 0.3 0.5 0.1 1.4-1.9 3.7-0.4 1.4 0.4 2.6-0.2 1.4-0.9 0.7-1.3 0.5-5.6 1.3-1.2 0.5-1 0.6-0.5 1.1-0.2 1.2-0.1 1.4-0.3 1.3-0.3 1.1-1.6 1.3-0.7 0.9 0.5 1 1.4 2.3 0.4 2.2 1.1 2.3 0.1 1.1-0.5 1.4-0.7 1.7 0 1 0.6 1.3 0.3 1.5 0.2 0.6 1.2 1.6 1.2 2.4 0.8 1.1 1.4 1.4 1.1 1.7 1.2 1.6 0.6 1.4 0.6 2.6 0.5 1.5 0.7 1.1 0.5 0.4 1.4 0.6 2.3 0.1 1.5 0.3 1.2 0.8 0.3 0.6 2.8 7.1 2.3 11.7 0.6 1.3 0.4 0.4 1.8 1.1 0.4 0.6 0.3 1.4 0.6 1.2 1.2 1.6 0.7 1.2 0.5 1.2 0.2 1.3-0.4 5.7 0.1 2.5-0.4 2.6 0 1.8 0.6 3.3-0.8 2.4-0.8-0.7-1-0.3-1.3-0.3-0.9 0-2.2 0.7-1.2 0.2-2.6-0.6-5.1-2.5-4.7-1.2-2-1.5-4.8-5-1.8-1.2-2.1-0.7-2.2 0.2-6.3 1-2.4-0.1-4.2-2-2.8-0.8-1.2 0.1-0.5 0.4 0.2 0.6 0.9 1 0.4 1.2-0.1 0.6-0.9 1.9-1 2.9-1.8 3.9-1 1.7-0.8 1.1-2.4 2.3-0.8 0.4-0.8-0.2-1.2-0.7-1.5-0.6-1.5 0-0.9-0.2-0.8-0.3-0.2-0.7-0.1-1.4-0.5-1.3-2.4-2.4-0.8-0.5-1-0.4-0.7 0.1-0.6 0.4-1 1-0.7 0.6-0.8 0.2-0.8-0.1-1.3-0.5-1.2-0.7-1.2-0.3-1.7-0.1-3.4 0.3-1.3 0.6-0.6 0.8-0.1 0.6-0.5 0.8-0.1 5.4-1.3 3.2 0 6.6-1.5 0.8-12.4 1.4-20.1 0.5-5.5-0.8-0.4-0.7-0.2-0.7-0.1-1.6 0.1-1.7 0.4-1.6 0.6-1.3-0.2-0.6 0.5-0.7 0.3-1 0-1.7-0.9-0.3-4.4-0.4-1.4 0.2-0.8 0.7-1.4 2.1-0.8 1-1.1 0.5-1.8 0.3-0.8 0.2-0.3 0.5 0.2 1.1 0.5 1.2-0.2 2.9-5.5 5.1-3.2-1.8-3.2-0.8-0.6-0.2-1.6-1.5-1.9-2.4-2.5-2.2-1.9-2.1-2.6-2.1-0.4-0.5-0.2-0.7 0.1-1.1-0.4-1.4 0.1-0.9 0.6-1.9 0.5-0.4 1.1-0.3 0.1-0.5-0.3-1.8-0.4-1-0.7-1.1-3-4.2-2.6-4.6-0.4-1.2-0.1-0.9 0.2-0.5 1.3-2.2 0.3-0.7-0.9-0.2-0.8-0.4-1.1-0.6-1-0.4-2.7-0.4-3.4 0-2-0.4-2-0.4-0.9-0.4-2.7-2.4-1.9-0.8-2.5-0.7-5.5-2.4-3.2-2.3-2-2-2.2-0.9-6.8-1.8 2.2-2.2 0.9-2 1.1-6.3 0.3-1.1 5.5-11.3 1-1.3 0.7-0.3 0.6 0.4 0.7 1.2 1.3 4 0.9 1.3 2.1 4.9 0.6 0.1 1-0.1 2.6-0.9 1-0.7 0.5-0.5-0.5-1.9-0.1-0.7 0.1-0.6 0.5-0.3 0.8 0.1 2.7 0.9 0.5 0.4 1.1 0.9 0.7 0.3 0.9 0.1 1.4-0.2 0.7-0.8-0.7-2.7 0-0.8 0.2-0.8 0.6-0.2 0.7 0.1 2.9 0.7 0.4 0.2 0.8 1.1 0.6-0.6 5.9-10.1 5.5-5.4 0.8-1.1 0.5-1.1 0.3-1.7 1-18.5 0.2-1.1 0.3-1.4 0.7-0.9 0.8-0.7 1.3-1 0.5-0.8 0.1-0.7-0.1-0.7-0.6-1.3-0.7-1.1-3.5-3.9-5.3-4.9-0.9-1-0.6-1.2-0.1-0.7-0.2-4.4 0.1-1.3 0.3-0.7 0.6-0.5 1.8-0.8 1-1 1.2-1.4 2.2-3.5 0.7-1.7 0.2-1.2-0.4-1.3 0.1-0.8 1.2-4.3 0.5-1.1 0.7-0.7 1.7-1.3 0.4-0.7 0-0.7-1.9-4.5-0.3-1.9 0.3-1.6 0.4-0.8 0.5-0.8 2-0.8 1.4-1 0.3-0.7 0-0.7-0.7-2-0.2-0.8 0-1.2 0.3-1.8 0.4-1 0.5-0.2 1.4 0.6 3.5 1.4 1.7 0.9 0.7 0.5 3.4 3.2 2.5 1 1.6 0.4 4.9 2.1 6.2 4.1 2.9 2.6 1.2 0.5 0.8 0.2 0.9-0.2 2.2-1.2 0.9-0.2 1.6-0.2 0.7-0.3 2.2-1.7 0.4-0.5-0.1-0.3-1.2-0.9-0.4-0.6 0.1-0.6 0.4-1 1.8-0.9 1.2-1.4 0.5-2.3 0.1-0.6-0.1-1.5-0.5-2.3 0.1-0.8 4.7-2.1 1.1-0.7 0.7-0.8 0.1-1.4 0.2-0.9 0.5-0.9 1.3-1.3 0.5-0.8 0.3-0.7-0.2-1.1-1.2-2.6-0.3-1.1-0.3-1.4-0.1-0.8 0.1-1.5-0.2-0.8-0.8-1.7-0.3-0.9 0-0.9 0.6-2.3 0.1-1.5-0.2-1.4-0.4-1.5-0.6-0.6-1.2-0.3-4.2 0.1-2.4-0.4-0.9-0.4-0.5-0.9-0.4-1-0.2-1-0.4-0.5-0.6-0.3-2.4-0.1 2.6-11.2-0.1-1-0.3-1.2-0.9-0.1-0.8-0.5-0.8-1.7 0.2-0.7 2.7-3.1 2-4.3 1.7-1.8 1.7-0.9 20.1 1.8 1 0.3 0.1 0.8-0.2 0.8-4.3 11.3-0.3 1.5 0.2 1.4 0.4 1.4 0.6 1.3 0.9 1 1.2-0.2 2.8-1.5 1.5-0.5 4.4 1.8 1.4-0.6 1.4-1.1 6.7-6.5 1.4-1 0.7 0 1.6 0.6 0.9-1.1 0.8-1.2 1.3-2.6 1.4-2.3 0.5-0.8 11.7-6.2 2.2-2.2 0.3-1.2 2.1-3.4 10.9-10.8 2.1-2.7 1.2-3.1-0.2-3.6-0.4-2.2-0.2-2.5 0.2-2.4 1.1-1.9 1.4-1.2 3.3-1.9 1.4-1.3 0.7-1 1.1-2 0.7-0.9 0.7-0.6 2.5-1.4 2-1.9 1.7-2.1 2.9-4.9 0.6-1.3 0.8-4.4 0.8-2.4 1.2-2.3 1.7-2 1.8-1.6 4.2-2.1 1.1-1.1 0.7-1.3 1.4-6.3 0.9-2.2 1.2-1.9 1.3-1.5 3.6-2.2 2.1-0.8 1.8-0.3 1.2 0.1 2.1 0.9 1.2 0.3 2.7-0.1 3-0.7 3-1.1 2.4-1.4 2.1-1.5 1.1-0.5 1.4-0.3 5.2 0.2 1.8-0.2 3.3-1.2 6.1-3.7 3.3-1.2 3.1-0.4 17.3 2.2 1.1 0.4 2.2 1.1 1.1 0.5 7.3 0.6 2.4-0.4 2.2-0.9 3.3-3.3 0.5-0.3 1.2-0.7 1.7-0.7 2-0.3 4 0.2 7.8 1.8 4 0.2 2.1-0.6 3.8-2.4 2.2-0.9 1.5-0.2-0.9 3.8-3.6 14.1-2.1 4.3-2 2.6-9.2 9 0.2 0.9 12.5 22.4 3.3 7.7 1.7 8.2 0.2 5z" id="Mashonaland East" name="Mashonaland East"></path>
-                          <path onclick="expandAccordion('collapseThree')" class="noelection" d="M918.1 764.8l-12.2-7.9-2.1-2.6 0.2-2.1-4.5-11.1-1-3.2-0.6-0.7-8.9-4.5 1.4-2.1-0.4-1.3-2.8-2.3-0.7-1.2-0.4-1.3-1.2-6.3-0.5-1.3-1.1-1.6-0.1-1.2 1.8-3 0.5-1.4 0.6-3 4.6-8.7 2.4-7 0.2-2.8 0.5-2.4 1.2-2.1 2.7-3.4 1.3-8.1 1.8-2.6 1.1-6.6 0.6-19.2 6.4-38.2 0.1-13.6-0.8-1.1-0.3-1.3-2.4-1.5-6.6-3.4-8.5-6.6-1.7-0.6-1.2-0.3-1-0.2-2.5 0.1-2.9 0.5-0.8-0.3-0.8-0.5-1.1-1.2-0.8-0.8-0.9-0.6-1.5-0.4-1.1-0.2-1.4-0.3-1.6-0.8-2.7-2-1.9-2-1-1.2-1.1-2-0.5-0.6-0.8-0.7-3.4-1.5-1.4-1.1-1-1.3-0.8-1.7-1.2-4.2-0.7-0.8-1-1.1-3.9-3.7-3-3.5-0.7-1.3-0.8-2.6-0.4-0.7-0.9-0.9-1.5-1-5.9-3.2-0.8-0.8-1.1-1.2-0.6-0.9-0.3-0.8-0.1-0.8-0.4-1.3-0.5-0.6-3.9-3.8-0.6-1.3-0.4-1 0-1.9-0.5-0.5-0.9-0.4-3.1-0.5-1.3-0.3-1.8-0.8-1.1-0.6-0.9-0.8-0.7-0.4-1-0.1-1.3 0.5-0.7 0.2-0.8-0.2-0.8-0.5-0.7-1-0.5-0.8-0.7-0.8-1.1-0.9-3.3-2.4-1.3-0.7-2.5-0.5-1.3-0.7-1.4-1.4-0.5-0.4-0.8-0.2-1.3-0.1-0.9 0.2-1.3 0.7-0.6 0.2-0.8-0.1-1.5-0.7-1.6-1.2-4.7-3.8-20.7-12.8-1.6-2.1 12.4-1.4 1.5-0.8 0-6.6 1.3-3.2 0.1-5.4 0.5-0.8 0.1-0.6 0.6-0.8 1.3-0.6 3.4-0.3 1.7 0.1 1.2 0.3 1.2 0.7 1.3 0.5 0.8 0.1 0.8-0.2 0.7-0.6 1-1 0.6-0.4 0.7-0.1 1 0.4 0.8 0.5 2.4 2.4 0.5 1.3 0.1 1.4 0.2 0.7 0.8 0.3 0.9 0.2 1.5 0 1.5 0.6 1.2 0.7 0.8 0.2 0.8-0.4 2.4-2.3 0.8-1.1 1-1.7 1.8-3.9 1-2.9 0.9-1.9 0.1-0.6-0.4-1.2-0.9-1-0.2-0.6 0.5-0.4 1.2-0.1 2.8 0.8 4.2 2 2.4 0.1 6.3-1 2.2-0.2 2.1 0.7 1.8 1.2 4.8 5 2 1.5 4.7 1.2 5.1 2.5 2.6 0.6 1.2-0.2 2.2-0.7 0.9 0 1.3 0.3 1 0.3 0.8 0.7 0.8-2.4-0.6-3.3 0-1.8 0.4-2.6-0.1-2.5 0.4-5.7-0.2-1.3-0.5-1.2-0.7-1.2-1.2-1.6-0.6-1.2-0.3-1.4-0.4-0.6-1.8-1.1-0.4-0.4-0.6-1.3-2.3-11.7-2.8-7.1-0.3-0.6-1.2-0.8-1.5-0.3-2.3-0.1-1.4-0.6-0.5-0.4-0.7-1.1-0.5-1.5-0.6-2.6-0.6-1.4-1.2-1.6-1.1-1.7-1.4-1.4-0.8-1.1-1.2-2.4-1.2-1.6-0.2-0.6-0.3-1.5-0.6-1.3 0-1 0.7-1.7 0.5-1.4-0.1-1.1-1.1-2.3-0.4-2.2-1.4-2.3-0.5-1 0.7-0.9 1.6-1.3 0.3-1.1 0.3-1.3 0.1-1.4 0.2-1.2 0.5-1.1 1-0.6 1.2-0.5 5.6-1.3 1.3-0.5 0.9-0.7 0.2-1.4-0.4-2.6 0.4-1.4 1.9-3.7-0.1-1.4-0.3-0.5-0.4-1.3-0.3-2.3 0.2-4.4 0.4-1.6 4.8-6.4 1-1.8 0.5-1.4-0.3-2.3 0-0.9 0.1-0.8 29.9-30.6 0.5-0.7 0.1-0.6-0.3-2.3 0.1-1.6 0.9-5.1 0.6-1.4 0.6-0.6 0.8-0.5 3.5-1.3 2.7-1.5 2.7-1.1 1.3-1.2 1-1.3 1.2-2.4 0.7-1.1 0.6-0.6 1.1-1 2.9-1.6 1.2-0.9 5.2-5.3 2-1.3 2.4-1.1 1.3-0.4 1.2-0.2 0.8 0 0.8 0.2 1.4 0.5 0.9-0.2 1.1-0.7 1.9-2.1 1.7-2.2 0.7-0.7 4.4-2.1 2.3-0.2 1.9-0.8 1.4-0.4 0.7-0.2 1.1-0.6 1.4-0.9 5.3-5.8 0.4-0.7 0.4-1.6 0.2-2.4 0.2-0.7 0.5-0.7 0.8-0.6 4-1.6 1.3-0.3 1.9-0.9 0.8-0.5 0.8-0.8 0.7-1.2 0.1-0.9 0.1-1.6 0.2-0.7 3.8-7.6 1-1.4 8.5-6.2 3-2.8 1.2-0.9 9.5-3.8 2.7-0.8 0.8 0 0 1.3 0.5 2.9 1.4 2.7 1.1 0.9 2.8 1.6 0.9 1.2 0.1 2.1-0.8 2.1-2.4 3.8-5 9.8-0.8 1-1.1 0.7-0.8 0.9 0 1.5 1.3 4.5 0.6 1.1 2.2 1.8 4.8 2.2 1.7 2.4 0.6 2.7-0.5 2.6-2.1 5-0.5 5.1 0.4 5.9-0.6 4.9-3.2 2.2-2.1 0.9-1.4 2.3-0.9 2.8-0.3 2.6 0.2 2.6 1.5 3.8 0.2 2.3-0.5 1.8-1 0.9-1 0.7-0.6 1 0.2 1.3 1.5 1.9-0.1 1.1-0.7 2.7 0.3 3 4.5 13.8 0.4 4.5-0.1 1-1.1 2.8-1 1.8-0.7 1-0.3 1.2 0.6 2 1.9 2.8 6 4.9 2.3 2.6 1 2.5-0.6 1.5-3.7 2.8-2.7 4-0.3-0.1 0.2 1.3 1.6 1.9 0.4 1.4-0.8 2.7-2.3 1.7-2.8 1.4-2.5 1.5-2.2 1.2-2.5 0.7-2.2 0.9-1.5 1.8-0.4 2.3 0.5 2.8 1.6 4.8 3.8 7.7 1 3.6-0.2 4.5-0.9 3.6-1.4 2.9-2.2 1.8-3.4 0.3-5.2-0.4-3.8 0.6-12.3 5.8-0.2 1.2 0.9 7.2 0.8 2 1.6 1.1-1.4 1-1.6 0.9-1.3 1.2-0.1 1.6 0.9 3 0.2 1.5-0.2 1.7 0.3 1.8 1 1.1 1.5 0.5 1.7 0.1 7.9-1.2 2.3 0.2 1.3 0.6 0.8 0.6 0.4 1 0.3 1.5 0.6 1.7 1 1 1.2 1 1.1 1.3 0.8 4.6-3.7 16.8-0.2 3.3-0.4 2.4-1 2.3-1.9 3-4.7 5.4-0.3 1.4 0.2 3.9-0.8 5.5 0.2 2.8 1.3 1.6 2.5 0.1 2.3-0.3 1.8 0.7 0.8 2.9 0.1 2.5-0.9 9.8 0 1.2 0.3 1.4 0.2 1.7-0.5 1.3-0.8 1.2-0.4 1.4 0.4 3 1.5 1.5 2.3 0.5 2.9 0.1 2.9-0.8 3.8-3.9 2.4-0.8 2.3 1.3 0.1 2.7-1 5.3 1 2.4 2.2 2.1 2.7 1.8 2.8 1.2 1.3 1.5-0.4 2.6-0.8 3.2-0.2 5.6-2.5 8-0.5 10 0.8 3.2 0.4 1-6.9-0.2-1.7 1.5-0.7 4.2-1 1.9-2 0.6-2.1 0.4-1.2 1.3-0.9 6.6-0.7 2.1-1.7 3.2-0.3 1.3 0.2 1 0.8 1.8 0.1 1.1-0.9 4.1-0.7 2-1 1.7-14 17.4-4 7.8-4.1 8.2-3.3 3.6-5.4 0.9-6-0.7-5.6 0.7-4 5.2-1.3 5.8-0.3 5.6 1.9 14.7 1.7 14.2-0.8 5.2-3 6-6.4 8.3-9.9 12.7 0.7 1.2 1.9 1.2 1.1 1.6 1.2 0 0.3 0.3 0 0.9-0.9 1.7-0.2 0.5 9.3 16 0.3 1.2-4.9-3.2z" id="Manicaland" name="Manicaland"></path>
-                          <path onclick="expandAccordion('collapseNine')" class="noelection" d="M576.1 728.4l2 6.5 0.9 2 5.8 6.8 0.6 0.4 1 0.4 3 1.8 0.5 0.5-0.1 1.4 0.3 1.2 1.3 2.9 0.7 1.1 0.6 0.7 1.1 0.2 0.7 0.3 1.2 0.8 0.5 0.7 0.3 1 0.2 3.8 0.3 0.9 0.3 0.4 1.1 0.2 1 0.4 0.5 0.5 0.2 0.7 0.3 1.7 0.3 0.4 1.3 0.7 0.7 0.7 1.9 4.6 0.6 1.2 0.6 0.8 2 1.1 1 0.8 1.1 0.9 1.4 0.8 0.7 0.5 1.3 1.4 2.2 3.7 0.5 0.7 1.4 0.8 2.4 2.2 1 1.7 0.7 1 0.7 0.6 0.8 0.3 1 0.6 0.5 0.8 0.6 1.1 0.5 0.4 0.5 0.2 1-0.2 0.6 0 1.7 0.6 0.7 0.1 1.7 0 1.1 0.5 0.5 0.8 0.5 1.9 0.5 0.5 0.7 0.3 1 0.4 2.7 1.4 0.9 0.5 1.1 0.2 0.6 0.5 0.4 0.5 0.2 0.7 0 0.8-0.2 1.8 0.4 0.6 0.5 0.4 0.8 0.2 10.4 1.3 1.4 0.5 0.7 0.1 0.7-0.2 1.3-0.5 0.7-0.1 3 1.5 3.2 2.2 2.7 1.3 1 1 4 1.4 2.5 0.2 1 0.4 0.4 0.5 0 0.6-0.8 1.1-0.2 0.5 0.1 0.5 1.1 1.6 2.6 2.8 0.7 1 1 1.8 0.6 0.3 1.4-0.1 0.7 0.3 1.6 0.9 2.9 1.2 0.8 0 0.6-0.2 1.4-0.5 0.8 0.1 0.4 0.4 0.1 0.8-0.2 1.6 0.5 0.4 1.7 0.9 0.5 0.7 0.1 0.8 0.1 1.5 0.9 3 0.4 0.9 0.4 0.6 3.3 2 0.7 0.7 0.6 0.8 0.4 0.8 5.7 7.4 0.3 0.6-0.2 1.5 0.1 1 0.9 1.5 0.8 0.8 1 0.6 1.3 0.6 0.4 0.7 0 0.7-0.2 0.6-0.1 2-0.8 1.3-0.1 0.6 0.4 0.4 1.4 0.1 1.1 0.2 1.1 0.5 1.8 1.2 0.9 0.9 0.8 1.2 0.8 0.8 1.3 1.1 0.6 0.9 0.7 1.9 0.5 0.5 0.7 0.2 1.7-0.2 1.2 0 0.6 0.5 0.3 0.6 0 1.6 0.2 0.7 0.4 0.7 1.1 1.4 0.6 1.3 0.3 2 0.5 1.2 0.6 0.7 0.6 0.5 2 0.3 1.3 0.5 0.6 0.5 0.2 0.8-0.2 1.5 0.5 0.4 0.7 0 1.6-0.1 0.9 0.1 1 0.5 0.4 0.6 0.3 1.7 0.3 1.1 0.9 1.7 0.4 0.9 0 1.7 0.3 1 1.5 2.1 0.3 0.9 0.2 1.7 0.4 1 0.7 0.5 0.8 0.3 0.9 0.2 1.5 0 0.5 0.6 1.8 3.5-1.2 0.3-2.2-0.5-4.4-1.9-13.9-3.3-7.6-0.9-3.8-1-4.1 1.7-14.2 1.2-2.5 0.8-3.5 2.4-1.9 0.6-0.9-0.3-1.9-1.4-1.2-0.3-3.7 0.1-8.2-1-2.4 0.1-2.5 0.6-4.8 2.3-2.4 0.8-5.2 0.9-4.7 0.1-4.4-1-4-2.9-1.8-1.6-1.9-1.2-2.4-0.7-3.1-0.2-5.7 0.8-2.2-0.2-3.1-1.6-3.6-2.6-1.9-0.8-3.8-0.5-0.4-1.1-2.5-2.6-1.3-0.6-2.7-0.7-1.3-0.5-3.5-2.2-1.8-0.5-4.6-0.4-3.1-1.7-4.4-0.9-7.4-5-2.6-0.7-8.6 0.4-1.5 0.6-2.3-1.6-2.6 0.3-4.8 2.2-4.3-0.4-2.4 0.5-1.1 2.3-1.4 1.4-3.2-0.3-6.3-1.6-2.7 0.6-4.7 2.6-2.7 1.5-1.9-0.1-0.8-0.2-0.9-0.5-9.7-8.5-0.8-1.3-1-2.7-0.7-1.3-1.2-1.5-0.7-0.5-12 0.4-4.7-0.8-4.8-2.5-3.8-4.2-2.5-5.2-1-5.9 0.6-5.8 1.4-2.9 2.1-3.3 1.5-3.2-0.3-2.7-2.1-1.7-5.1-1.6-2.3-1.5-3.7-0.9-7.7-0.5-3.9-1-18.7-8.8-5.8-1.9-5-3.9-1.7-0.6-3.8-0.3-4.1-1.1-1.4 0.2-1.4 0.7-4.4 1.1-2.1 0.9-2.1 0.4-2.8-0.7-10.3-5.4-5.1-1.8-4.7-0.9-15.2-0.2-9.6-1.9-7.4-0.5-2.1-0.6-1.8-1.2-1.5-1.7-0.7-1.3-1.2-2.8-0.6-1.1-0.9-0.5-0.7 0.1-0.7-0.1-0.5-1.3 0.7-1.8-0.5-0.8-1.4-0.6 0.3-1.3 1-1.6 0.4-1.1-0.3-1.4-3.8-7.8-2.1-2.3-0.8-1.3-0.2-1 0-2.1-0.3-1.1-1.2-2-4.5-5.5-3.3-5.2-3.8-4.7-8.8-6.5-2-2.1-4.4-6.1-1-2.6 0-2.4 1.6-7.2 0.1-2.9-0.9-7.7-0.1-1.3 0.4-3.1-0.1-1.5 0.2-1.8 0.7-1.3 0.9-1.1 0.7-1.6 2-11-0.3-5.5-3.2-10.8 1-4.9 1.6-4.8 0.4-5.4-1-2.4-1.8-1.8-2.3-0.9-5.1-0.1-4.5-2.1-7.2 1.4-10.2-1.4-14.5 0-4.4 0.6-4.8 2.5 2-19.6-2.3-16-6.5-16.8-1.7-2.4-2.3-1.4-2.7-0.8-2.7-0.5-1.5 0-1.3 0.1-1.3-0.1-1.5-0.6-1.4-1.1-2.2-3.2-1.2-1.3-4.3-2.4-4.1-0.4-4.2 0-4.6-0.8-14.4-7.4-4.8-0.9-3 0-2.6-0.5-2.1-1.2-2-2-1.8-2.4-0.9-1.1 2.2-1.3 4.1-2.3 2-0.7 25-6.1 2.3-0.1 2.3 0.2 2.8 0.6 17.7-2.2 3.2 0.5 1.6 0.2 0.7 0.2 1.5 0.9 1.4 0.3 1.5-0.3 1.9-0.1 2.3 0.5 2.1 0.2 1.1-0.2 0.9-0.3 1.8-1.5 1.1-0.7 0.9-0.2 1-0.1 6.8 0.9 2.6 0.6 2.4 1.4 4.4 3 1.8 1 2.9 0.7 3.3 0.5 1.6 0.4 1.1 0.4 1.1 1.7 0.9 1.1 1.6 1.1 0.8 1.2 0.4 1.5 0.1 1.7 0.3 2.5 0.6 1.3 0.9 0.9 0.8 0.7 0.7 0.7 2.5 3.9 4.5 5 1 0.9 2.3 1.4 2.1 1.6 9.4 9.2 2.1 1.7 3 1.6 1 0.9 1 1.4 1.5 1 1.7 0.5 5.2 0.9 4 0 0.6-0.7 0.4-1.4 0.2-3.8 0.8-4.3 1.8-5.4 0.5-1.1 0.5-0.4 0.7 0.8 4.5 7 0.7 0.3 0.5 0.1 4.7-2.4 1.2-0.4 5.4-0.2 1.3-0.2 4.3-1.8 1-0.1 0.6 0.7 0.8 2 0.5 0.5 0.7 0.4 1.8 0.7 0.7 0.4 0.5 0.5 0.3 0.6 0.6 2.1 1.1 1.7 0.2 0.6 0.1 1.7 0.4 0.5 2.7 3 2.6 2.1 0.8 2 0.9 0.9 1.2 0.7 0.5 0.4 0.9 2 1.4 1.4 1.5 2.1 0.3 0.6 0.5 1.3 0.7 2.1 1.2 2.7 0.7 0.7 0.9-0.2 17.2-13 3.3-1.4 2.2 2.6 1.3 0.1 4.1-3.5 1.1 0.1 0.9 0.4 1.5 0.4 1.6 0.8 6.6 5.4 1 0.2 1.7-0.2 3.4-3.6 0.8-2.1 2.1-1.6 2.4-2.3 12.5-15.2 0.4-0.9 0-0.7-0.8-2.7-0.1-1.7 0.4-1 0.4-0.6 0.6-0.4 5.6-2.3 8.9-5.1 1.5-1.2 2.2-3.6 0.3-0.7 0-1-1.2-3-1.8-7.1-0.5-1.3-0.2-0.8 0.1-0.9 0.4-0.4 0.7-0.1 7.6 1.5 1.4-0.3 1.7-0.7 3-2.2 0.8-1.1 0.4-1 0.1-0.9 0.9-2.5 0.6-2 0.2-1.2 0.1-5.3-0.1-1.5-0.4-1-0.8-0.8-1-0.6-0.9-0.7-1.7-1.7-0.6-0.7-0.3-1 0.4-0.8 0.5-0.6 5.6-5 1.1-1.5 0.7-1.1 0.4-2.1 0.1-1.2-0.2-1-0.5-1-0.8-1.1-1.9-1.7-0.7-0.9-0.4-1 0.1-1.6 0.3-0.7 0.7-0.5 1.8-0.3 0.7 0 4.2 0.8 1.4 0.4 1.1 0.8 0.7 0.5 0.9 0.6 1 0.2 1-0.2 1.3-1 0.7-0.7 1-2.3 6.5 6 1.8 2.2 1.3 3.7 3 5.8 1 1.5 3 2.7 0.6 0.9 0.4 0.8 0.1 1.1 1 3 1.1 1.8 3.4 3.4 0.8 1.5 1 2.3 0.4 1.3 0.2 1.1-1.4 6.6 0 1.6 0.2 1.3 0.5 1.5 1.3 2.7 1.4 0.3 2.2-0.6 2.2-1 1.9 0.1 1.1 0.3 8.4 4.2 5.7 4.4 0.8 0.4 0.7 0.1 5.7-1.3 0.7-0.2 1.3-0.6 0.7-0.1 0.7 0.1 0.5 1.4 0.9 4.2 0.6 1.6 1.1 0.3 8.9-2.2 1.8 0.1 0.9 1.5 0.8 3.4 0.5 0.2 0.5 0 1.8-1.2 1 0 4 6.8 0 1.3-0.4 1.4-8.5 18.1-0.2 0.7-0.6 6.5-0.2 0.9-7.6 18.5-0.2 0.8 0 1.2 0.2 4.4-0.1 1.1-0.3 1.4-1 2.6-0.9 1.9-2.2 2.8-0.9 0.8-1.1 0.6-1.2-0.5-4.2-3-1-0.3-0.9 0.2 0 7.1-0.2 1.5-1.2 2.9 0 1.7-0.8 0.9-0.9 0.6-0.8 0.3-0.6 1.4-0.3 1.2 0.2 0.7 0.3 0.6 1.2 1.1 0.8 1.2 0.5 1.1 0.5 1.6 0.7 0.3 1.2-0.1 5.4-1.8 0.8 0.1 0.1 0.9-6.8 31.8-0.4 1.2-0.5 0.8-18.1 12.5-1.7 1.5 0.1 0.5 0.3 0.5 1.4 0.7 2.5 0.8 0.6 0.1 3.5 0.1 4.7 1.2 5.2 0.2 8.9-2.1 4-0.5 2 0z" id="Matabeleland South" name="Matabeleland South"></path>
-                          <path onclick="expandAccordion('collapseOne')" class="noelection" d="M432.2 621l-1.6-0.8-1.5-0.4-0.9-0.4-1.1-0.1-4.1 3.5-1.3-0.1-2.2-2.6 1.6-3.7-0.3-1.4-1.2-1.3-0.9-1.5-1-0.4-1 0.1-1.5 0.7-1.5 0.1-2.2-0.6-1-0.1-1.6 0.1-1-0.1-1.6-0.5-0.6-0.7-0.1-0.6 0.4-0.6 1.7-1 0.8-0.6 0.5-0.9-0.1-1.4 0.1-1 0.2-1 0.6-1.3 0.2-0.7 0-1.2-1.2-5-0.2-1.6 0.2-0.7 0.4-0.3 0.6 0 0.9 0.2 7.2 3.9 1.3 0.4 1-0.1 0.8-0.4 1.6-1.4 0.8-0.3 2.8-0.5 2.5-0.8 0.7-0.1 0.6 0.6-0.6 1.7-0.1 1.7-0.1 0.5 0.1 0.7 0.7 0.6 1.9 0.4 0.6 0.3 1.3 1.1 0.9 0.4 1 0.1 0.9-0.3 1.7-0.8 0.8-0.1 0.6 0.5 0.1 1.6 0.2 0.6 0.5 0.4 1.7 0.7 0.4 0.4 0.1 0.7-0.6 1.9-0.8 1.5-0.2 1 0 0.6 0.8 1 2.5 1.7 0.5 0.6 0.3 0.6 0 0.6-0.3 0.8-0.4 0.8-0.7 0.8-0.9 0.7-2.1 0.9-8.6 1.9z" id="Bulawayo" name="Bulawayo"></path>
-                          <path onclick="expandAccordion('collapseSeven')" class="noelection" d="M763.8 487.1l1.6 2.1 20.7 12.8 4.7 3.8 1.6 1.2 1.5 0.7 0.8 0.1 0.6-0.2 1.3-0.7 0.9-0.2 1.3 0.1 0.8 0.2 0.5 0.4 1.4 1.4 1.3 0.7 2.5 0.5 1.3 0.7 3.3 2.4 1.1 0.9 0.7 0.8 0.5 0.8 0.7 1 0.8 0.5 0.8 0.2 0.7-0.2 1.3-0.5 1 0.1 0.7 0.4 0.9 0.8 1.1 0.6 1.8 0.8 1.3 0.3 3.1 0.5 0.9 0.4 0.5 0.5 0 1.9 0.4 1 0.6 1.3 3.9 3.8 0.5 0.6 0.4 1.3 0.1 0.8 0.3 0.8 0.6 0.9 1.1 1.2 0.8 0.8 5.9 3.2 1.5 1 0.9 0.9 0.4 0.7 0.8 2.6 0.7 1.3 3 3.5 3.9 3.7 1 1.1 0.7 0.8 1.2 4.2 0.8 1.7 1 1.3 1.4 1.1 3.4 1.5 0.8 0.7 0.5 0.6 1.1 2 1 1.2 1.9 2 2.7 2 1.6 0.8 1.4 0.3 1.1 0.2 1.5 0.4 0.9 0.6 0.8 0.8 1.1 1.2 0.8 0.5 0.8 0.3 2.9-0.5 2.5-0.1 1 0.2 1.2 0.3 1.7 0.6 8.5 6.6 6.6 3.4 2.4 1.5 0.3 1.3 0.8 1.1-0.1 13.6-6.4 38.2-0.6 19.2-1.1 6.6-1.8 2.6-1.3 8.1-2.7 3.4-1.2 2.1-0.5 2.4-0.2 2.8-2.4 7-4.6 8.7-0.6 3-0.5 1.4-1.8 3 0.1 1.2 1.1 1.6 0.5 1.3 1.2 6.3 0.4 1.3 0.7 1.2 2.8 2.3 0.4 1.3-1.4 2.1 8.9 4.5 0.6 0.7 1 3.2 4.5 11.1-0.2 2.1 2.1 2.6 12.2 7.9-4.5 5.2-6.2 6.9-6.7 7.4-6.7 7.5-13.4 14.9-26.7 29.8-6.7 7.5-6.7 7.5-6.7 7.5-13.3 15-13.4 14.9-6.7 7.5-6.6 7.5-8.4 5.9-10.1 7.2-3-4.4-1.3-1-1.2-0.1-2.1 0.9-1 0.1-1.1-0.4-1.9-1.3-1-0.2-0.9-0.7-2.6-3.2-1.3-0.9-1.9 0.3-4.3 2.1-0.9 0.2-1.8-3.5-0.5-0.6-1.5 0-0.9-0.2-0.8-0.3-0.7-0.5-0.4-1-0.2-1.7-0.3-0.9-1.5-2.1-0.3-1 0-1.7-0.4-0.9-0.9-1.7-0.3-1.1-0.3-1.7-0.4-0.6-1-0.5-0.9-0.1-1.6 0.1-0.7 0-0.5-0.4 0.2-1.5-0.2-0.8-0.6-0.5-1.3-0.5-2-0.3-0.6-0.5-0.6-0.7-0.5-1.2-0.3-2-0.6-1.3-1.1-1.4-0.4-0.7-0.2-0.7 0-1.6-0.3-0.6-0.6-0.5-1.2 0-1.7 0.2-0.7-0.2-0.5-0.5-0.7-1.9-0.6-0.9-1.3-1.1-0.8-0.8-0.8-1.2-0.9-0.9-1.8-1.2-1.1-0.5-1.1-0.2-1.4-0.1-0.4-0.4 0.1-0.6 0.8-1.3 0.1-2 0.2-0.6 0-0.7-0.4-0.7-1.3-0.6-1-0.6-0.8-0.8-0.9-1.5-0.1-1 0.2-1.5-0.3-0.6-5.7-7.4-0.4-0.8-0.6-0.8-0.7-0.7-3.3-2-0.4-0.6-0.4-0.9-0.9-3-0.1-1.5-0.1-0.8-0.5-0.7-1.7-0.9-0.5-0.4 0.2-1.6-0.1-0.8-0.4-0.4-0.8-0.1-1.4 0.5-0.6 0.2-0.8 0-2.9-1.2-1.6-0.9-0.7-0.3-1.4 0.1-0.6-0.3-1-1.8-0.7-1-2.6-2.8-1.1-1.6-0.1-0.5 0.2-0.5 0.8-1.1 0-0.6-0.4-0.5-1-0.4-2.5-0.2-4-1.4-1-1-2.7-1.3-3.2-2.2-3-1.5-0.7 0.1-1.3 0.5-0.7 0.2-0.7-0.1-1.4-0.5-10.4-1.3-0.8-0.2-0.5-0.4-0.4-0.6 0.2-1.8 0-0.8-0.2-0.7-0.4-0.5-0.6-0.5-1.1-0.2-0.9-0.5-2.7-1.4-1-0.4-0.7-0.3-0.5-0.5-0.5-1.9-0.5-0.8-1.1-0.5-1.7 0-0.7-0.1-1.7-0.6-0.6 0-1 0.2-0.5-0.2-0.5-0.4-0.6-1.1-0.5-0.8-1-0.6-0.8-0.3-0.7-0.6-0.7-1-1-1.7-2.4-2.2-1.4-0.8-0.5-0.7-2.2-3.7-1.3-1.4-0.7-0.5-1.4-0.8-1.1-0.9-1-0.8-2-1.1-0.6-0.8-0.6-1.2-1.9-4.6-0.7-0.7-1.3-0.7-0.3-0.4-0.3-1.7-0.2-0.7-0.5-0.5-1-0.4-1.1-0.2-0.3-0.4-0.3-0.9-0.2-3.8-0.3-1-0.5-0.7-1.2-0.8-0.7-0.3-1.1-0.2-0.6-0.7-0.7-1.1-1.3-2.9-0.3-1.2 0.1-1.4-0.5-0.5-3-1.8-1-0.4-0.6-0.4-5.8-6.8-0.9-2-2-6.5 6.5 0.9 1-0.1 1.5-0.2 2.6-1.3 15.1-12.7 1.6-0.9 1.2-0.5 1.4-0.1 1.5 0 0.9 0.3 0.9 0.6 0.7 0.6 0.8 0.7 0.9 0.6 1.1 0.8 0.8 0.8 1.4 0.9 2 0.8 1.3 0.9 2 2.7 1.2 1.2 1.6 0.9 2.9 0.9 0.7 0.4 1.3 1.4 0.7 0.7 1.3 0.7 1.2 0.3 3.2 0.4 2.3 0 3.5 0.6 0.9-0.1 1.1-0.6 1.6-0.7 1.3-1 1-0.1 2.4 1.4 1.7 0.6 0.9 0.1 1.2-0.1 12.7-11.8 0.9-1.5 0.3-2.1-0.6-10 0.1-0.8 0.5-0.6 1.4-1.8 0.5-0.8 0.3-0.8 0.7-3.2 1.3-2.7 0.2-1.6-0.6-2.8 0-0.8 0.5-1.7 1.7-3 0.2-0.6 0-0.8-0.4-1.4-0.4-1.7-0.2-0.7-0.4-0.5-1.5-1.3-0.8-1.1-0.4-1.5-0.1-0.8 0.2-2.4 0-0.9-0.7-2.1-0.1-1 0.2-1.1 0.6-1.6 0.1-1-0.2-0.8-5.2-5.9-0.4-0.8-0.3-2.4-0.2-0.7-0.8-1-2.9-1.9-0.9-1-0.4-0.6-0.5-1.4-0.4-0.6-0.5-0.4-0.6-0.3-1.5-0.2-0.7-0.3-1.1-0.8-0.8-1-0.6-1.4 0-0.8 0.1-1.4-0.3-0.6-0.5-0.3-0.7-0.2-2.4-0.1-1.4-0.5-1.3-0.6-1.4-1.4-1.7-2.9-0.5-0.5-0.6-0.3-0.4-0.8 0.1-1.4 1-3.4 0.1-2.7-0.2-2.7-0.4-2.2-0.6-1.7-0.8-1-1.6-1.1-2.1-0.6-2.1-0.2-2.2 1.5-0.9 0.3-0.3-0.3-0.1-3.9 0.7-5.6 1.5-2.9 0.9-4.8-0.2-1.8-0.3-1.1-0.7-0.9 0.4-0.7 1-0.7 9.6-4.7 1.5-0.3 19.9-0.8 1.5-0.4 0.7-0.6-1.4-0.2-0.1-0.8 0.4-1.3-0.3-0.9 0-0.7 0.3-1.3 0.3-0.6 3-2.2 1.1-1.5 0-0.8-0.6-1.4-0.1-1.1-0.5-0.6-0.5-1.5 0.1-0.6 1.4-2.8 1.2-0.7 10.9-0.3 1.2 0 1 0.4 3.5 1.9 3.8 1.1 1.6 0.1 1.6-0.1 3.7-0.9 0.9-0.4 1.1-0.6 0.2-0.6-0.2-0.5-0.8-0.7-0.4-1-0.1-1.5-0.1-1.7 0.4-2.5 1.4-4.3 0.1-0.8-0.1-3.4 0-1 2.3-11 0.1-1.4-0.1-1.4-0.6-1.8-0.4-2.2 1.4-7.2 0.2-11.1 0.3-1.2 0.8-0.6 1.3-0.6 1.7-1 0.6-1.1-0.1-1-0.7-0.8-1-0.5-3.9-0.9-0.8-0.3-0.6-0.5 0.3-0.7 1-1 17.9-14.7 5.5-5.1 0.2-2.9-0.5-1.2-0.2-1.1 0.3-0.5 0.8-0.2 1.8-0.3 1.1-0.5 0.8-1 1.4-2.1 0.8-0.7 1.4-0.2 4.4 0.4 0.9 0.3 0 1.7-0.3 1-0.5 0.7 0.2 0.6-0.6 1.3-0.4 1.6-0.1 1.7 0.1 1.6 0.2 0.7 0.4 0.7 5.5 0.8 20.1-0.5z" id="Masvingo" name="Masvingo"></path>
-                          <path onclick="expandAccordion('collapseSix')" class="noelection" d="M648.6 4.2l-0.3 1.5 0.1 5.3 0.5 1.9 1.5 1.8 0.7 1.3 1 2.9-0.5 1.9-1 1.7-33.3 28.9-0.7 0.9 0 1.2 0.2 0.7 0.7 1.2 0.9 0.8 0.6 0.4 2.7 1 0.4 0.7 0.1 1.2-0.5 3.4 0 1.2 0.3 1.4 0.2 0.6 0.7 1.1 0.9 0.8 0.2 0.9 0 1.4 0.1 0.7 0.8 1.1 1 0.8 0.6 0.1 1.4-0.1 0.7 0.1 0.6 0.4 0.3 0.7 0.1 1.3-0.2 0.8-0.5 0.6-3.3 2.2-0.6 0.6-1.6 2.6-0.4 1.1-0.2 1 0 0.9 0.7 4.3-0.1 1.8-0.2 1.1-0.4 0.8-0.4 0.5-1.5 1.1-0.7 0.6-0.8 1.3-2.2 5-0.1 1.4 0.2 0.7 1.3 0.7 1.4 0.4 1.4 0 0.5-0.4 0.4-0.5 0.8-2 0.9-0.9 1.3-0.5 1.5-0.1 2.8 0.7 0.7 0 0.6-0.3 1.2-1.5 1.1-0.7 2.8-0.7 1.1-0.6 0.9-1 0.5-1.3-0.1-0.9-0.6-2.7-0.1-0.7 0.4-1.4 0.9-0.9 1.3-0.6 4.6-0.5 0.8 0 1.7 0.2 0.7 0.3 0.7 0.6 0.5 1.1 1.1 3.5 0.5 0.9 2.2 2.5 0.9 0.6 0.7 0.1 7.3-0.4 0.8 0.2 0.9 0.5 1 1.8 0.7 1.7 0.8 2.9 0.2 1.5 0 1.2-0.3 0.7-1.6 2.9-0.6 1.7-0.3 3.4-0.9 4.2-0.5 1.3-1.1 1.8-1 3-1 5.7 0.1 1.1 0.2 0.9 1.3 2 1 1.9 0.4 0.6 0.6 0.4 2 0.9 1.7 1.1 0.6 0.3 1.5 0.2 0.7 0.3 4.1 2.5 1 0.5 0.7 0.6 1.9 4.4 0.1 0.9-0.8 2.2 1.1 0.7 1.3 0.7 0.7 0.5 0.6 0.9 0.9 1.7 0.3 1.2 0.1 1-0.2 0.8-0.6 1.2-2 2.6-0.6 1.3-0.2 1.7 0.7 11.7 0.3 1.1 0.7 1 2.1 1.7 0.9 1.2-0.1 0.7-0.3 0.4-1.6 0.9 0 0.5 0.1 3.5 0.5 2.7 0.4 0.6 0.5 0.4 1.5 0.1 3.2-0.2 0.8 0 1.7 0.8 0.7 0.1 0.6-0.2 1.5-1.2 1.7-1 0.7-0.3 0.7 0 0.7 0.5 0.4 0.8 0.1 1.3 0.6 0.5 0.5 0 1.6-1 1.3-0.5 1.5 0.2 1.5 0.5 0.7 0.3 0.6 0.7 0.2 1.6-1.4 11-0.5 1.3-0.3 0.6-1.6 2.3-1.6 1.9-1.9 1.8-1.1 1-0.4 0.7 0.2 0.6 1 1 0.6 0.7-0.2 1.3-4.8 9.2-1.8 2.9-0.5 1.6 1.7 7.6 0.2 2.1 0 1.9-1.5 11.1 0 3.2 1.2 0.8 17.9-0.1 0.8 0.2 0.2 0.5-0.5 2.4-0.9 2.6-0.3 1 0 1.2 0.5 0.8 1.2 0.8 7 2.9 6 3.2 1.8 1.2 0.8 0.5 0.8 0 0.8-0.7 0.7-0.8 0.7-0.8 0.8-0.4 2.4 0.8 3.5 5.9-1.5 4.2-3.5 4.2-1.5 1.1-1.4 0.6-1.2 0.3-0.6 0.6-0.3 0.9-0.2 1.5 0 1.1 0.3 0.7 0.5 0.6 0.3 0.9 0 1.5-0.8 1.8-0.2 1.1 0.3 0.8 0.7 0.6 2.7 1.5 0.6 0.8 0.6 0.9 0.4 1.3-0.2 0.7-0.5 0.6-4.2 1.5-3.4 0.7-0.7-0.5-1.7-0.9-3.5-1.4-1.4-0.6-0.5 0.2-0.4 1-0.3 1.8 0 1.2 0.2 0.8 0.7 2 0 0.7-0.3 0.7-1.4 1-2 0.8-0.5 0.8-0.4 0.8-0.3 1.6 0.3 1.9 1.9 4.5 0 0.7-0.4 0.7-1.7 1.3-0.7 0.7-0.5 1.1-1.2 4.3-0.1 0.8 0.4 1.3-0.2 1.2-0.7 1.7-2.2 3.5-1.2 1.4-1 1-1.8 0.8-0.6 0.5-0.3 0.7-0.1 1.3 0.2 4.4 0.1 0.7 0.6 1.2 0.9 1 5.3 4.9 3.5 3.9 0.7 1.1 0.6 1.3 0.1 0.7-0.1 0.7-0.5 0.8-1.3 1-0.8 0.7-0.7 0.9-0.3 1.4-0.2 1.1-1 18.5-0.3 1.7-0.5 1.1-0.8 1.1-5.5 5.4-5.9 10.1-0.6 0.6-0.8-1.1-0.4-0.2-2.9-0.7-0.7-0.1-0.6 0.2-0.2 0.8 0 0.8 0.7 2.7-0.7 0.8-1.4 0.2-0.9-0.1-0.7-0.3-1.1-0.9-0.5-0.4-2.7-0.9-0.8-0.1-0.5 0.3-0.1 0.6 0.1 0.7 0.5 1.9-0.5 0.5-1 0.7-2.6 0.9-1 0.1-0.6-0.1-2.1-4.9-0.9-1.3-1.3-4-0.7-1.2-0.6-0.4-0.7 0.3-1 1.3-5.5 11.3-0.3 1.1-1.1 6.3-0.9 2-2.2 2.2-4.5-4.3-1.1-0.9-0.9-0.5-1.7-0.6-2.9-0.6-3-1.4-2-0.6-0.9-0.4-0.9-0.7-2.7-2.9-1.1-0.9-1.6-1-1.7-0.6-4.4-1.2-0.8-0.1-3.3 0.2-1.7-0.1-1.6-0.4-0.7-0.3-3.1-1.6-0.8-0.2-2.4-0.2-4.3-2.1-1.1-0.2-0.9 0.1-2 0.6-0.6 0.4-1 0.9-0.5 0.3-0.7 0-4.8-0.9-0.8-0.3-4.2-2-1.9-0.3-0.7-0.3-0.7-0.6-1.1-1.7-0.9-0.7-1.3-0.3-2.7-1.2-0.9-0.1-1.4 0.3-0.7 0-0.8-0.5-0.9-1.1-0.9-0.8-1.6-0.9-1.1-0.4-1-0.2-0.8-0.1-3.2-0.6-0.7 0-1.2 0.5-0.7 0.1-1.3-0.5-4.9-3-1.6-0.7-1.2-0.3-0.9-0.4-0.8-0.7-1-1.6-0.5-1.1-0.2-1-0.1-1.6 0.4-2.6-0.5-6.3 0-0.7 0.2-0.7 0.4-0.5 1.3-1.2 0.3-1 0-2.2 0.2-0.8 1.3-3.5 0.3-1.7 0-0.8-0.4-0.7-0.7-0.6-4.8-2.3-17.6-11.3-1.3-0.5-2-0.5-1-0.6-1.2-1.4-1.1-1.7-0.6-0.7-0.8-0.6-2.8-1.4-1-0.7-3.2-3.6-0.6-0.8-0.6-1.4-0.7-1.2-3.4-3.2-0.3-0.5-0.4-1.4-0.1-1.6-0.4-0.7-1.9-1.8-0.6-0.8-0.4-0.7-0.3-1.5-0.8-1.9 0-0.7 0.1-1.6-0.1-0.7-0.3-1.4-0.6-2 0.1-1 0.5-1 0.2-1.5 0.5-1.3 0.8-1.1 3.4-8.4 1.5-2.4 0.8-2.1 0.3-0.6 1.7-2.1 0.6-1.4 0.6-3.5 0.3-0.7 0.8-1 1.6-1.2 0.8-1.1 0.7-1.2 0.2-0.7-0.3-0.9-0.6-0.8-1.2-1.3-0.2-0.8 0.1-0.8 0.5-0.4 2.1-1.6 0.7-1.1 0.6-1.4 0.1-0.8 0.1-3.3 0.5-3.3-0.3-3.1-0.2-0.7-0.4-0.7-1.5-1.5-0.4-0.8 0-0.8 0.2-0.7 0.8-1 1.1-0.8 0.9-0.9 0.8-1.2 0.9-2 0.8-1 1-0.9 2.2-1.4 0.9-0.9 0.3-0.5 0.9-2.3-0.3-0.6-0.9-0.6-2.3-0.8-1.1-0.5-0.9-0.5-8.5-9.9-0.6-1.2-0.2-0.7-0.6-2.9-0.4-1.3-0.9-1.8-0.9-0.9-1.2-1-1.7-0.9-0.9-0.1-0.9 0.1-1.4 0.5-1.1 0.2-2.2-0.3-8-2.8-0.6-0.4-1.5-1.3-1.6-0.6-2-0.3-0.7-0.4-3.6-2.9-8.9-3-1-0.9-0.8-1-0.7-1.1-0.8-1.9-0.3-0.5-1.1-1.7-0.3-0.6-0.5-2.1-0.6-1.1-1.3-1.5-0.6-0.2-0.7 0.2-3.9 3.1-0.6 0.3-0.8 0.2-1.1 0-3.5-0.6-0.8 0-1.5 0.2-6 1.9-1 0.4-3.7 2.3-1.1 0.9-0.7 0.8-1.1 1.9-0.5 0.5-0.6 0.3-1.2 0.1-2.7-0.4-0.9 0.1-0.9 0.4-1.2 1-5.1 6-1.4 2.5-1.2 2.6-5 6.3-0.6 0.6-2.3 1.4-0.7 0.8-0.9 1.3-0.6 0.3-0.7 0-1.1-0.7-1.2-1-0.7-0.1-1.4 0.8-0.8 0.1-2.9-0.7-1.9-0.2-2.1 0.3-12.9 3-1.5 0.9-1.8 0.3-4.1-0.7-1.5-5.9-1.4-1.7-1-0.2-1.1-0.5-1.4-0.9-1.2-1.5-2.5-1.9-0.5-0.8-0.3-1.2-0.2-1.3-0.7-2.2 0.1-2.3-0.1-1.1-0.5-0.9-0.8-1-0.3-0.8-0.1-0.7 0.6-1.5 0.1-1.4-0.4-0.9-0.8-1.1-0.3-0.9-0.2-0.8 0.1-0.8 0.4-1.6 0.1-0.9-0.3-0.5-0.6-0.4-1.4-0.5-0.7-0.1-1.3 0.2-0.8 0-0.9-0.3-0.6-0.7-0.4-1-0.6-1.5-0.5-0.8-0.7-0.6-1.8-0.7-1-0.7-0.7-1 0.1-1 0.6 0.5 0.7-3 1.6-1.9 2.2-1.1 2.6-0.4 0-1-0.9 0 0.6-1.1-1.4-2.1 1-0.9 1.9-0.7 1.4-1.6-1.8 0.2-3.1 1.3-1.6 0.3-2.6-0.1-0.3-0.5 0.8-0.9 0.7-1.2 0.7-3.2 1-2 1.7-1.5 2.7-1.5-2.3-1.2 0.3-1.8 1.3-2 1.6-3.5 1.9-0.8 4.3-0.7 7.8-3.1 4.2-0.5 0.2 2.7 5.9-1.1 1-0.3 0.2-2.1 0.9-1.7 1.3-0.9 1.9 0.6 0.5-2.5 1.6-2 1.8-0.6 1.5 1.4-0.2 1.3-0.9 1.2-1.1 1-0.6 0.6 0.2 1.3 0.6 1.4 0.2 1 1 1.6 2.2 1 2.5 0.4 1.8 0.2 1.8 1 0.9 4.8 2.1 1.4-1.2-6.3-1-0.9-0.5-0.3-0.8-0.7-0.7-0.8-0.2-0.9 0.4-0.9 0.6 0 0.8 0.3 0.8-0.3 3.1-5.5 2.2-2.2 2.6 0.3 0.6-0.3 1.5-1 0.5-0.4-0.9-2 1.8-0.9 0.7 1.4 1.2 0.1 1.5-0.1 1.8 0.5-1-2.6 1.3-0.2 2 0.3 1.3-1 2.6 0.5 2.1-4.4 3.1-0.8 1.9 1.5-0.4 2.6 0 2.1 2.8 0.1-0.8 1.3-2.2 2.5-0.5 1.3 0.5 1.1 1.8 1 0.4 1.5 1.2 2.4 2.9 0.5 3.2-0.2 2.2 0.6 1.1-1.6 1.3-1.1 0.8-1.4-0.5-2.3 5.2 1.4 2.7-3.1 0.7-4.4-1.2-2.2-2-0.9 0.7-1.9 1.9-1.9 2-0.8 1.5 0.7 4.2 5.9 0-2.8 0.7-2.2 1.3-1.8 1.5-1.6-2.4 0.1-0.5-0.6 0.8-1.1 1.3-1.1 1.3-0.7 4.1-1.1 1.6-0.1-1.2-1.4-2.1-0.8-2.5-0.4-2.1-0.1 1.1-2.4 1.5-2.1-0.9-1-5.1 2.9-1.9 0.8-2.4 0.3-1.9-0.4-3.5-1.7 1.2-0.8 1.6-0.2 1.7 0.2 1.6 0.8 0.3-0.6 0.6-0.3-2.3-1.5-1.6-1.1-1.7-0.9-8.5-0.5-2.5 0.2 1-2.2 5.1-3.9 1.7-2.1 0.9-4.8 0.5-1.1 3.1-5-0.1-3.1-2.1-5.5-0.4-2.3 0.4-2.9 3.1-7.1-2.2-3.8 0.7-5.3 1.6-5.5 0.7-4.5-0.3-0.7-0.6-0.7-0.6-1-0.2-1.2 0.4-1.5 1.7-2.7 0.4-0.9 2.8-3.5 4.3-4.2 2.4-1.2 2.7-0.5 5.8-0.1 3.1-0.6 1.6-1.5 2.7-5.2 1.3-1.4 2-1.8 2.5-1.6 2.6-0.6 1.1-0.8 4.5-4.8 28.2-13 1.9-0.4 11-1 2.3-1.5 4.8-4 3-0.9 2.7 0.4 2.5 0.7 2.6 0.4 3.1-0.5 7.3-2.4 5.5-0.9 5.3-2.5 2.9-0.6 5.7 0.5 10.9 3 5.5 0.7 5.1-0.8 5-1.5 5.1-0.7 5.1 1.1 3.3 2.2 1.5 0.6 2-0.5 1-0.6 1.9-1.7 1.2-0.4 3.2 0.4 2 0.9z" id="Mashonaland West" name="Mashonaland West"></path>
-                          <!-- <text class="hidden-text" x="380" y="530" text-anchor="middle" fill="red" font-size="58">Hello SVG!</text>-->
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
+          <!-- mashwest -->
+          <div class="modal fade" id="mashwest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mashwestLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="mashwestLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="modal fade" id="masvingo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="masvingoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="masvingoLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="bulawayocity" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bulawayocityLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bulawayocityLabel">Bulawayo Metropolitan Province</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <u><strong>Seats: 12</strong></u><br />
+                  CCC: 12/12<br /><br />
+                  Bulawayo Central:<br />
+                  <strong>CCC</strong> Kapoikilu Surrender 11066<br />
+                  <strong>ZANU PF</strong> Charuka Tendayi 3140<br />
+                  <br />Bulawayo North:<br />
+                  <strong>CCC</strong> Gumede Minehle Ntandoyenkosi 10206<br />
+                  <strong>ZANU PF</strong> Mkandla Nkosana 2679<br />
+                  <strong>UZA</strong> Mhlanga Frank 356<br />
+                  <strong>DOP</strong> Khumalo Sibonokuhle 182<br />
+                  <br />Bulawayo South:<br />
+                  <strong>CCC</strong> Watson Nicola Jane 10470<br />
+                  <strong>ZANU PF</strong> Modi Rajeshkumari 3752<br />
+                  <strong>DOP</strong> Gomba Admore 0<br />
+                  <br />Cowdray Park:<br />
+                  <strong>CCC</strong> Sibanda Pashor Raphael 8411<br />
+                  <strong>ZANU PF</strong> Ncube Mthuli 6513<br />
+                  <br />Emakhandeni / Luveve:<br />
+                  <strong>CCC</strong> Bajila Collins Discent 9657<br />
+                  <strong>ZANU PF</strong> Samuriwo Brian 3416<br />
+                  <strong>M UZA</strong> Ncube Nicodemus 175<br />
+                  <strong>ZANC</strong> Ndlovu Khulumani 129<br />
+                  <br />Entumbane / Njube:<br />
+                  <strong>CCC</strong> Dube Prince 8330<br />
+                  <strong>ZANU PF</strong> Chinamano Linda 2464<br />
+                  <strong>CCC</strong> Tshuma Dingilizwe 1803<br />
+                  <strong>ZANC</strong> Ndlovu Nqobizitha 140<br />
+                  <strong>UZA</strong> Mugurasave Beauty 116<br />
+                  <br />Lobengula / Magwegwe:<br />
+                  <strong>CCC</strong> Gono Ereck 10114<br />
+                  <strong>ZANU PF</strong> Ndhlovu Butholezwe 2400<br />
+                  <strong>MRP</strong> Khanye Lwazi 782<br />
+                  <strong>ZAPU</strong> Ndlovu Nigel 438<br />
+                  <strong>UFP</strong> Zivavose Godwin 187<br />
+                  <strong>EFF</strong> Ndibali Innocent 142<br />
+                  <strong>ZANC</strong> Ncube Douglas 139<br />
+                  <strong>UZA</strong> Dube Arnold 101<br />
+                  <br />Mpopoma / Mzilikazi:<br />
+                  <strong>CCC</strong> Makaza Desmond 10808<br />
+                  <strong>ZANU PF</strong> Masikati Admire Tonderai 2433<br />
+                  <strong>INDEPENDENT</strong> Tapfumaneyi Pardon 570<br />
+                  <strong>ZAPU</strong> Ncube Bekezela 346<br />
+                  <strong>F.A</strong> Muzenda Sihle 148<br />
+                  <strong>INDEPENDENT</strong> Mkandla Strike 107<br />
+                  <strong>DOP</strong> Sibanda Blessings 54<br />
+                  <strong>ZANC</strong> Zvikwete Innocent Mbano 43<br />
+                  <br />Nketa:<br />
+                  <strong>CCC</strong> Manduna Obert 10605<br />
+                  <strong>ZANU PF</strong> Zidya Tavengwa 2556<br />
+                  <strong>INDEPENDENT</strong> Ndlovu Vincent Bhala 1996<br />
+                  <strong>UZA</strong> Dube Catherine 183<br />
+                  <br />Nkulumane:<br />
+                  <strong>CCC</strong> Moyo Desire 9880<br />
+                  <strong>ZANU PF</strong> Murechu Freedom Phineas 2402<br />
+                  <strong>ZANC</strong> Bhebhe Nompilo 177<br />
+                  <strong>UZA</strong> Mtetwa Floridah Deliah 151<br />
+                  <strong>FREEZIM CONGRESS</strong> Mhlanga Adelaide 101<br />
+                  <strong>ZAPU</strong> Ndlovu Andrew 465<br />
+                  <br />Pelandaba / Tshabalala:<br />
+                  <strong>CCC</strong> Siziva Gift 6651<br />
+                  <strong>CCC</strong> Moyo Soneni 3829<br />
+                  <strong>ZANU PF</strong> Verenga Cecilia Melody 2954<br />
+                  <strong>DOP</strong> Ndlovu Gift 169<br />
+                  <strong>EFF</strong> Maplanka Sanpoulus 144<br />
+                  <strong>UZA</strong> Moyo Moureen 88<br />
+                  <br />Pumula:<br />
+                  <strong>CCC</strong> Mahlangu Sichelesile 7546<br />
+                  <strong>ZANU PF</strong> Nsingo Pumulani 2606<br />
+                  <strong>CCC</strong> Mhlanga Albert 2349<br />
+                  <strong>ZAPU</strong> Mkwananzi Trust Mazwi 516<br />
+                  <strong>UZA</strong> Msipha Memory 64<br />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="matsouth" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="matsouthLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="matsouthLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="manica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manicaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="manicaLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="masheast" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="masheastLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="masheastLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="midlands" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="midlandsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="midlandsLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="hararecity" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="hararecityLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="hararecityLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="matnorth" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="matnorthLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="matnorthLabel">Matabeleland North Province</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <u><strong>Seats: 13</strong></u><br />
+                  CCC: 9/13<br />
+                  ZANU-PF: 4/13<br /><br />
+                  <u><strong>Binga North:</strong></u><span> (CCC) Sibanda Dubeko Prince</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Sibanda Dubeko Prince 13530<br />
+                  <strong>ZANU-PF</strong> Munsaka Kudakwashe Mavula 9663<br />
+                  <strong>NCA</strong> Munsaka Million 289<br />
+                  <strong>INDEPENDENT</strong> Nyoni Peter 174<br />
+                  <strong>MDC-T</strong> Siachami Wessele Siankumba 288<br />
+                  <br />
+                  <u><strong>Binga South:</strong></u><span> (CCC) Cumazala Fanuel</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Cumazala Fanuel 10967<br />
+                  <strong>ZANU-PF</strong> Phiri Challenge 7258<br />
+                  <strong>INDEPENDENT</strong> Kujulu Munkombwe Themba Toonset 1044<br />
+                  <strong>ZCPD</strong> Gava Anesu 349<br />
+                  <strong>INDEPENDENT</strong> Sianaga John 174<br />
+                  <br />
+                  <u><strong>Bubi:</strong></u><span> (ZANU-PF) Sibanda Simelisizwe</span><br />
+                  Votes<br />
+                  <strong>ZANU-PF</strong> Sibanda Simelisizwe 11208<br />
+                  <strong>CCC</strong> Mabhena Bekhithemba 4672<br />
+                  <strong>INDEPENDENT</strong> Mathe Nkululeko 899<br />
+                  <strong>ZAPU</strong> Moyo Luke 753<br />
+                  <strong>MDC-T</strong> Sibanda Fortune Jamela 583<br />
+                  <strong>UANC</strong> Nyathi Bekezela 250<br />
+                  <strong>Free Zim Congress</strong> Ncube Enerst 150<br />
+                  <br />
+                  <u><strong>Hwange Central:</strong></u><span> (CCC) Molokela-Tsiye Fortune Daniel</span>
+                  <br />
+                  Votes<br />
+                  <strong>CCC</strong> Molokela-Tsiye Fortune Daniel 9167<br />
+                  <strong>ZANU-PF</strong> Dube Reeds 5157<br />
+                  <strong>INDEPENDENT</strong> Ndhlovu Cosmas 646<br />
+                  <strong>INDEPENDENT</strong> Chinene Brian 225<br />
+                  <strong>MDC-T</strong> Nkomazana Salani 102<br />
+                  <strong>Free Zim Congress</strong> Nyathi Harriet 74<br />
+                  <br />
+                  <u><strong>Hwange East:</strong></u><span> (CCC) Bonda Joseph</span>
+                  <br />
+                  Votes<br />
+                  <strong>CCC</strong> Bonda Joseph 8931<br />
+                  <strong>ZANU-PF</strong> Sikuka Alois Sundano 8485<br />
+                  <strong>MDC-T</strong> Phiri Michael 684<br />
+                  <br />
+                  <u><strong>Hwange West:</strong></u><span> (CCC) Moyo Vusumuzi</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Moyo Vusumuzi 7954<br />
+                  <strong>ZANU-PF</strong> Moyo Philani 7504<br />
+                  <strong>MDC-T</strong> Dhlamini Somveli 1985<br />
+                  <strong>ZAPU</strong> Nkomo Ditsheni 186<br />
+                  <br />
+                  <u><strong>Lupane East:</strong></u><span> (CCC) Vanya Moyo Bright</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Vanya Moyo Bright 6476<br />
+                  <strong>ZANU-PF</strong> Machangu Ncube Phathisiwe 6241<br />
+                  <strong>ZAPU</strong> Gumbo Mtenjwa 881<br />
+                  <strong>UZA</strong> Moyo Ezekiel 171<br />
+                  <br />
+                  <u><strong>Lupane West:</strong></u><span> (CCC) Sibanda Mxolisi Charles</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Sibanda Mxolisi Charles 8098<br />
+                  <strong>ZANU-PF</strong> Ndlovu Mpumelelo 7104<br />
+                  <strong>MDC-T</strong> Keswa Engelinah 701<br />
+                  <strong>UZA</strong> Moyo Henry 280<br />
+                  <br />
+                  <u><strong>Nkayi North:</strong> <span> (ZANU-PF) Nyoni Sithembiso Gile G.</span></u>
+                  <br />
+                  Votes<br />
+                  <strong>ZANU-PF</strong> Nyoni Sithembiso Gile G. 5492<br />
+                  <strong>MDC-T</strong> Ndlovu Chief 4065<br />
+                  <strong>CCC</strong> Ndlovu Mandla 3110<br />
+                  <strong>INDEPENDENT</strong> Mathema Sithabisiwe 804<br />
+                  <br />
+                  <u><strong>Nkayi South:</strong></u><span> (CCC) Hadebe Jabulani</span><br />
+                  Votes<br />
+                  <strong>CCC</strong> Hadebe Jabulani 6269<br />
+                  <strong>ZANU-PF</strong> Mathe Stars 5066<br />
+                  <strong>ZAPU</strong> Moyo Clilopasi 576<br />
+                  <br />
+                  <u><strong>Tsholotsho North:</strong></u><span> (CCC) Sibanda Libion</span>
+                  <br />
+                  Votes<br />
+                  <strong>CCC</strong> Sibanda Libion 7571<br />
+                  <strong>ZANU-PF</strong> Khumalo Sibangumuzi Sixtone 5798<br />
+                  <strong>ZAPU</strong> Gumbo Dokotela 834<br />
+                  <strong>UZA</strong> Dube Francis Engelbert 308<br />
+                  <strong>INDEPENDENT</strong> Moyo Vincent 170<br />
+                  <br />
+                  <u><strong>Tsholotsho South:</strong></u><span> (ZANU-PF) Ncube Musa</span><br />
+                  Votes<br />
+                  <strong>ZANU-PF</strong> Ncube Musa 7885<br />
+                  <strong>CCC</strong> Sibanda Tapson Nganunu 7111<br />
+                  <strong>ZAPU</strong> Mthombeni Leonard 1180<br />
+                  <strong>INDEPENDENT</strong> Moyo Bongani 353<br />
+                  <br />
+                  <u><strong>Umguza:</strong></u><span> (ZANU-PF) Moyo Richard</span>
+                  <br />
+                  Votes<br />
+                  <strong>ZANU-PF</strong> Moyo Richard 11718<br />
+                  <strong>CCC</strong> Maligwa Queen 8070<br />
+                  <strong>DOP</strong> Ncube Khumbulani Peter 151<br />
+                  <strong>INDEPENDENT</strong> Sibanda Young 144<br />
+                  <strong>UZA</strong> Wilson Andrew 194<br />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="section-title two">
+              <h2>2023 Election Constituency Results</h2>
+            </div>
+            <div class="owl-carousel">
+              <img src="./Results/Bikita East.jpeg" alt="Bikita East" class="img-fluid">
+              <img src="./Results/Chiredzi West.jpeg" alt="Chiredzi West" class="img-fluid">
+              <img src="./Results/Harare West.jpeg" alt="Harare West" class="img-fluid">
+              <img src="./Results/Hwange West.jpeg" alt="Hwange West" class="img-fluid">
+              <img src="./Results/Norton.jpeg" alt="Norton" class="img-fluid">
+              <img src="./Results/Seke.jpeg" alt="Seke" class="img-fluid">
+              <img src="./Results/St Marys.jpeg" alt="St Marys" class="img-fluid">
+              <img src="./Results/Tsholotsho North.jpeg" alt="Tsholotsho North" class="img-fluid">
+              <img src="./Results/Uzumba.jpeg" alt="Uzumba" class="img-fluid">
             </div>
           </div>
         </div>
@@ -608,7 +559,7 @@
                     <div class="section-title two">
                       <span class="sub-title">About ElectionsZW</span>
                       <h2>Updates <span>And Analysis</span></h2>
-                      <p>ZimbabweElections2023.co.zw is the country’s first-ever extensive online platform for independent, fact-checked and real time electoral content & data. This includes visualised statistics, interactive maps with constituencies, battle ground states maps, articles, videos, a Manifesto promise keeper, crowdsourced content and verified electoral related data and much much more. We aim to provide you with all you need to know about the upcoming August 23rd Polls. We aim to demystify key statistics ahead of elections and then to track the elections in real time when they're happening with the use of tech, crowdsourcing and data visualisation.</p>
+                      <p>ZimbabweElections2023.co.zw is the country’s first-ever extensive online platform for <strong>INDEPENDENT</strong>, fact-checked and real time electoral content & data. This includes visualised statistics, interactive maps with constituencies, battle ground states maps, articles, videos, a Manifesto promise keeper, crowdsourced content and verified electoral related data and much much more. We aim to provide you with all you need to know about the upcoming August 23rd Polls. We aim to demystify key statistics ahead of elections and then to track the elections in real time when they're happening with the use of tech, crowdsourcing and data visualisation.</p>
                     </div>
                     <ul class="align-items-center">
                     </ul>
