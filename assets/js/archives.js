@@ -315,5 +315,5 @@ function setClickEvents() {
 
 document.getElementById("partners").innerHTML = text;
 
-setTimeout(setClickEvents, 10000)
+setTimeout(setClickEvents, 1000)
 /////End of Partners Page///
