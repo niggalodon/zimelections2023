@@ -31,18 +31,6 @@ let articlesData = [
     "Title": 'Five years on, Mnangagwa did "nothing" to address the August 1 shootings',
     "Para1": "President Emmerson Mnangagwa's administration has been criticised for tarnishing the credibility of the upcoming 2023 elections by failing to implement reforms in the security sector tabled in the Motlanthe Commission recommendations."
   },
-
-  {
-    "Date": "August 05 2023",
-    "Author": "Own Correspondent",
-    "OriginalLink": "Zimbabwean elections marred by perpetual political violence.html",
-    "CoverImage": "images/police.png",
-    "AuthorImage": "images/police.png",
-    "Category": "Elections",
-    "Title": "Zimbabwean elections marred by perpetual political violence",
-    "Para1": "Despite several efforts by the International community, civil society organisations and election observers for Zimbabwe to end the culture of political violence, especially during polls, the southern African country continues to experience massive political violations with the latest being the murder of an opposition Citizens Coalition for Change (CCC) activist in Riverside area, Glen Norah near Tanaka Grounds, Harare."
-  },
-
   {
     "Date": "1 January 2023",
     "Author": "Daniel Chigundu",
