@@ -26,13 +26,13 @@ document.getElementById("navbar").innerHTML =
   \<div class\=\"main-nav\"\>\
     \<div class\=\"container\"\>\
       \<nav class\=\"navbar navbar-expand-md navbar-light\"\>\
-        \<a class\=\"navbar-brand\" href\=\"../index.html\"\>\
+        \<a class\=\"navbar-brand\" href\=\"https://zimbabweelections2023.co.zw\"\>\
           \<img src\=\"../assets/images/logo.png\" alt\=\"Logo\"\>\
         \</a\>\
         \<div class\=\"collapse navbar-collapse mean-menu\" id\=\"navbarSupportedContent\" style\=\"display: block;\"\>\
           \<ul class\=\"navbar-nav\"\>\
             \<li class\=\"nav-item\"\>\
-              \<a href\=\"../index.html\" class\=\"nav-link\"\>\Home\</a\>\
+              \<a href\=\"https://zimbabweelections2023.co.zw\" class\=\"nav-link\"\>\Home\</a\>\
             \</li\>\
             \<li class\=\"nav-item\"\>\
               \<a href\=\"../dashboard.html\" class\=\"nav-link \"\>\Election DashBoard\</a\>\
