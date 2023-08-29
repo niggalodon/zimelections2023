@@ -5,15 +5,7 @@ document.getElementsByTagName("HEAD")[0].innerHTML = page_title +
 "\
   \<meta charset\=\"UTF-8\"\>\
   \<meta name\=\"viewport\" content\=\"width\=device-width, initial-scale\=1.0\"\>\
-  \<meta http-equiv\=\"X-UA-Compatible\" content\=\"ie=edge\"\>\
-  \<meta name\=\"mobile-web-app-capable\" content\=\"yes\"\>\
-  \<meta name\=\"apple-mobile-web-app-capable\" content\=\"yes\"\>\
-  \<meta name\=\"apple-mobile-web-app-status-bar\" content\=\"#172966\"\>\
-  \<meta name\=\"theme-color\" content\=\"#172966\"\>\
-  \<script src\=\"../assets/js/partials/pwa.js\"\>\</script\\>\
-  \<link rel\=\"manifest\" href\=\"./manifest.json\"/\>\
-  \<link rel\=\"apple-touch-icon\" href\=\"../assets/images/pwa.png\"\>\
-  \<link rel\=\"icon\" type\=\"image/png\" href\=\"../assets/images/pwa.png\"\>\
+  \<link rel\=\"stylesheet\" href\=\"../assets/css/bootstrap.min.css\"\>\
   \<link rel\=\"stylesheet\" href\=\"../assets/css/meanmenu.css\"\>\
   \<link rel\=\"stylesheet\" href\=\"../assets/css/animate.min.css\"\>\
   \<link rel\=\"stylesheet\" href\=\"../assets/css/odometer.min.css\"\>\
