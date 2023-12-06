@@ -3,6 +3,81 @@
   <head>
     <title>Zimbabwe National Elections 2023 Dashboard</title>
   </head>
+  <style type="text/css">
+  .owl-carousel .owl-nav button {
+    font-size: 18px;
+    color: #fff !important;
+    height: 70px;
+    width: 30px;
+    line-height: 70px;
+    text-align: center;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    -webkit-transform: translateY(-35px);
+    background: #172966 !important;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -35px;
+  }
+
+  .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .owl-carousel .owl-dots button {
+    height: 12px;
+    width: 12px;
+    border: 1px solid #172966;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  .owl-carousel .owl-dots button.active {
+    background: #172966;
+    border-color: #172966;
+  }
+
+  .owl-carousel .owl-dots button:last-child {
+    margin-right: 0;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .owl-carousel .owl-nav button {
+      left: -20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -20px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .owl-carousel .owl-nav {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .owl-carousel .owl-nav button {
+      position: relative;
+      left: 0;
+      top: 0;
+      -webkit-transform: translateY(0);
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      right: -10px;
+    }
+
+    .owl-carousel .owl-dots {
+      position: relative;
+      top: -102%;
+    }
+  }
+  </style>
 
   <body>
     <!-- Google tag (gtag.js) -->
@@ -54,154 +129,166 @@
                   </div>
                 </div>
               </div>
+              <div class="row sparkboxes mt-4 mb-4 text-center">
+                <div class="col-md-4">
+                  <div class="box shadow">
+                    <div id=""></div>
+                    <h5>Proportional Representation:<br />
+                      Women's Quota
+                    </h5>
+                    <h2>60</h2>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box shadow">
+                    <div id=""></div>
+                    <h5>
+                      Chiefs Elected to<br />
+                      National Council of Chiefs
+                    </h5>
+                    <h2>6</h2>
+                  </div>
+                </div>
+              </div>
+              <br />
               <!--End of top row summary 1a-->
-              <h3>Presidential Election Winner</h3>
+              <h3>Presidential Election</h3>
               <!--Row 1 Presidents-->
               <div class="profile-area">
                 <div class="container">
                   <div class="row justify-content-md-center">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/ED.jpg" /></div>
-                        <div class="main-text">
-                          <h2>Mnangagwa Emmerson Dambudzo</h2>
-                          <p>ZANU PF</p>
-                          <p>Winner</p>
-                          <p>52.6% of Vote</p>
+                    <div class="col-md-4">
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-10">
+                          <h4>Winner</h4>
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/ED.jpg" /></div>
+                            <div class="main-text">
+                              <h2>Mnangagwa Emmerson Dambudzo</h2>
+                              <p>ZANU PF</p>
+                              <p>Winner</p>
+                              <p>52.6% of Vote</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--End of top row summary 1a-->
-              <h3>Presidential Candidates</h3>
-              <!--Row 1 Presidents-->
-                  <div class="profile-area">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/JMB.jpg" /></div>
-                        <div class="main-text">
-                          <h3>1. Busha Joseph Makamba</h3>
-                          <p>FREEZIM Congress</p>
+                      <br />
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-10">
+                          <h4>Runner Up</h4>
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/NC.jpg" /></div>
+                            <div class="main-text">
+                              <h3>Chamisa Nelson</h3>
+                              <p>CCC</p>
+                              <p>Runner Up</p>
+                              <p>44% of Vote</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      <br />
                     </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/NC.jpg" /></div>
-                        <div class="main-text">
-                          <h3>2. Chamisa Nelson</h3>
-                          <p>CCC</p>
-                          <p>Runner Up</p>
-                          <p>44% of Vote</p>
+                    <div class="col-md-8">
+                      <div class="row justify-content-md-center">
+                        <h4>Presidential Candidates</h4>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/JMB.jpg" /></div>
+                            <div class="main-text">
+                              <h2>1. Busha Joseph Makamba</h2>
+                              <p>FREEZIM Congress</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/TC.jpg" /></div>
+                            <div class="main-text">
+                              <h2>2. Chikohora Trust Tapiwa</h2>
+                              <p>ZCPD</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/KB.jpg" /></div>
+                            <div class="main-text">
+                              <h2>3. Kasiyamhuru Blessing</h2>
+                              <p>ZIPP</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/TC.jpg" /></div>
-                        <div class="main-text">
-                          <h2>3. Chikohora Trust Tapiwa</h2>
-                          <p>ZCPD</p>
+                      <br />
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/KS.jpg" /></div>
+                            <div class="main-text">
+                              <h2>4. Kasukuwere Saviour</h2>
+                              <p>Independent</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/LM.jpg" /></div>
+                            <div class="main-text">
+                              <h2>5. Madhuku Lovemore</h2>
+                              <p>NCA</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/WM.jpg" /></div>
+                            <div class="main-text">
+                              <h2>6. Mubaiwa Wilbert Archbald</h2>
+                              <p>NPC</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/KB.jpg" /></div>
-                        <div class="main-text">
-                          <h2>4. Kasiyamhuru Blessing</h2>
-                          <p>ZIPP</p>
+                      <br />
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/HM.jpg" /></div>
+                            <div class="main-text">
+                              <h2>7. Muzorewa Gwinyai Henry</h2>
+                              <p>The UANC</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="profile-area">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/KS.jpg" /></div>
-                        <div class="main-text">
-                          <h2>5. Kasukuwere Saviour</h2>
-                          <p>Independent</p>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/DM.jpg" /></div>
+                            <div class="main-text">
+                              <h2>8. Mwonzora Douglas Togarasei</h2>
+                              <p>MDC</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/LM.jpg" /></div>
-                        <div class="main-text">
-                          <h2>6. Madhuku Lovemore</h2>
-                          <p>NCA</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/ED.jpg" /></div>
-                        <div class="main-text">
-                          <h2>7. Mnangagwa Emmerson Dambudzo</h2>
-                          <p>ZANU PF</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/WM.jpg" /></div>
-                        <div class="main-text">
-                          <h2>8. Mubaiwa Wilbert Archbald</h2>
-                          <p>NPC</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="profile-area">
-                <div class="container">
-                  <div class="row justify-content-md-center">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/HM.jpg" /></div>
-                        <div class="main-text">
-                          <h2>9. Muzorewa Gwinyai Henry</h2>
-                          <p>The UANC</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/DM.jpg" /></div>
-                        <div class="main-text">
-                          <h2>10. Mwonzora Douglas Togarasei</h2>
-                          <p>MDC</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="img1"><img src="./images/34.jpg" alt=""></div>
-                        <div class="img2"><img alt="avatar1" src="./images/candidates/HPW.jpg" /></div>
-                        <div class="main-text">
-                          <h2>11. Wilson Harry Peter</h2>
-                          <p>DOP</p>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="img1"><img src="./images/34.jpg" alt=""></div>
+                            <div class="img2"><img alt="avatar1" src="./images/candidates/HPW.jpg" /></div>
+                            <div class="main-text">
+                              <h2>9. Wilson Harry Peter</h2>
+                              <p>DOP</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -213,7 +300,435 @@
               <div id="repiz">
                 <div class="accordion" id="province-accordion"></div>
               </div>
-              <br>
+              <br><br>
+              <h3>Proportional Representation System: Women's Quota</h3>
+              <br />
+              <h4>Bulawayo Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mlilo Stabile</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Toffa Jasmine</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Khupe Thokozani</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Dube Janeth</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Maseko Samukeliso</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Mkwanda Judith</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Harare Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Shiriyedenga Ellen</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Makuvire Juliana</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Mazingaidzo Linnet</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Hlatywayo Gladys Kudzaishe</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Chikwinya Nyasha Eunice Grace</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mugomo Mercy</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Manicaland Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mutandi Getrude</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Kudhlande Patricia</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Chakukura Univencia Amanda</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mukwada Monica</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Matinenga Miriam</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Mungani Sekai</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Mashonaland Central Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gezi Tsitsi</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Chibagu Getrude</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Thompson Barbra Tinotenda</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mashonganyika Dorothy</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Shongedza Elizabeth</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Majaya Bacillia</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Mashonaland East Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Murwira Tabeth</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mudzingwa Lucia</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Jesaya Emily</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Zemura Lilian</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Chihota Constance</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Gutsa Dephine</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Mashonaland West Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mhlanga Jennifer Nomsa</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Gava Abygail</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Chaimvura Nomsa</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Chari Ruth</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Murombedzi Mutsa Fransisca</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Chivanzvavana Consilia</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Masvingo Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Simbanegavi Yeukai</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Samson Aliginia</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Dhanzi Auxcilia</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Makaza Faith</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mugidho Machirairwa</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Matara Tendeukai</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Matabeleland North Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Simbanegavi Yeukai</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Samson Aliginia</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Dhanzi Auxcilia</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Makaza Faith</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mugidho Machirairwa</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Matara Tendeukai</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Matabeleland South Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mpofu Rossy</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Ndlovu Evelyn</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Ndudzo Patricia Diana</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Ndlovu Nomatemba</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Nkomo Velisiwe</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Moyo Sithabisiwe</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br />
+              <h4>Midlands Province</h4>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Candidate</th>
+                      <th scope="col-3">Party</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nhari Vairet</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Zhou Perseverance</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Mpofu Adionah Rutendo</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Zhou Tsitsi</th>
+                      <td>ZANU PF</td>
+                    </tr>
+                    <tr>
+                      <td>Muzondiwa Emma Shanziwe</th>
+                      <td>CCC</td>
+                    </tr>
+                    <tr>
+                      <td>Marashe Sekai</th>
+                      <td>CCC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br><br>
+              <h3>National Council of Chiefs</h3>
+              <div class="table-responsive-lg">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col-9">Province</th>
+                      <th scope="col-3">Names of Chiefs</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Manicaland</th>
+                      <td>Chief MakumbeChief MutasaChief MapungwanaChief MuushaChief Gwenzi</td>
+                    </tr>
+                    <tr>
+                      <td>Mashonaland West</th>
+                      <td>Chief NgeziChief NegandeChief ChirauChief Chundu</td>
+                    </tr>
+                    <tr>
+                      <td>Masvingo</th>
+                      <td>Chief CharumbiraChief ChitangaChief NhemaChief MazungunyeChief Serima</td>
+                    </tr>
+                    <tr>
+                      <td>Matabeleland North</th>
+                      <td>Chief MtshaneChief SikhobokhoboChief SiabuwaChief NekatambeChief Siansali</td>
+                    </tr>
+                    <tr>
+                      <td>Matabeleland South</th>
+                      <td>Chief StauzeChief BidiChief MphiniChief Ndube</td>
+                    </tr>
+                    <tr>
+                      <td>Midlands</th>
+                      <td>Chief NgungumbaneChief NtabeniChief ChireyaChief MataruseChief Mafala</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br><br>
+              <h3>By Election Candidates</h3>
+              <div class="row">
+                <div class="owl-carousel">
+                  <img src="./Results/byElection/Cowdray-Park.jpeg" alt="Cowdray-Park" class="img-fluid">
+                  <img src="./Results/byElection/Lobengula-Magwegwe.jpeg" alt="Lobengula-Magwegwe" class="img-fluid">
+                </div>
+              </div>
+              <br><br>
             </div>
           </div>
         </div>
@@ -231,6 +746,7 @@
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/odometer.min.js"></script>
     <script src="./assets/js/jquery.appear.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/jquery.nice-select.min.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/materialize.js"></script>
@@ -290,6 +806,27 @@
       padding: 0 35px;
     }
     </style>
+    <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 7000,
+      lazyLoad: true,
+      autoHeight: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+    </script>
   </body>
 
 </html>
